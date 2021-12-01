@@ -9,6 +9,6 @@ namespace Controllers
 {
 	class ClaseControlAdmin
 	{
-		clas
+
 	}
 }
