@@ -9,6 +9,6 @@ namespace ProyectoFormativo
 {
 	class clasesFunciones
 	{
-
+		int num = 0;
 	}
 }
