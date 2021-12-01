@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Models
 {
-	public class ClaseModels
+	public class ClaseModeloFrmLogin
 	{
 		//creo la conexion 
 		public static string cadena = "Server=(local)\\SQLEXPRESS;Database=Proyecto;User Id = ADSI; Password=2144539;";
@@ -22,7 +22,7 @@ namespace Models
 				SqlConnection conexion = new SqlConnection(cadena);
 				return true;
 			}
-			catch(Exception e)
+			catch (Exception e)
 			{
 				msgExcep = e.ToString();
 				return false;
