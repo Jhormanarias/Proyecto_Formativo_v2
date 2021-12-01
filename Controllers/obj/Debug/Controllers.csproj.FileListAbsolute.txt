@@ -3,3 +3,21 @@ C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proy
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\Controllers\obj\Debug\Controllers.dll
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\Controllers\obj\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Controllers.dll
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Controllers.pdb
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Models.dll
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Models.pdb
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.dll
+F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.pdb

@@ -35,12 +35,13 @@ namespace ProyectoFormativo
 			this.Propietario = new System.Windows.Forms.TabPage();
 			this.Equipo = new System.Windows.Forms.TabPage();
 			this.Control = new System.Windows.Forms.TabPage();
-			this.txtNombre = new System.Windows.Forms.TextBox();
-			this.txtEquipo = new System.Windows.Forms.TextBox();
-			this.txtDocumento = new System.Windows.Forms.TextBox();
-			this.txtIdEquipo = new System.Windows.Forms.TextBox();
+			this.gb_Registro_C_U = new System.Windows.Forms.GroupBox();
 			this.btnBuscar = new System.Windows.Forms.Button();
 			this.btnSalida = new System.Windows.Forms.Button();
+			this.txtEquipoAC = new System.Windows.Forms.TextBox();
+			this.txtNombreAC = new System.Windows.Forms.TextBox();
+			this.txtDocumentoAC = new System.Windows.Forms.TextBox();
+			this.txtIdEquipo = new System.Windows.Forms.TextBox();
 			this.DGVControl_U = new System.Windows.Forms.DataGridView();
 			this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,11 +50,19 @@ namespace ProyectoFormativo
 			this.H_Ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.H_Salida = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Observaacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.gb_Registro_C_U = new System.Windows.Forms.GroupBox();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnGuardarAU = new System.Windows.Forms.Button();
+			this.txtApellidoAU = new System.Windows.Forms.TextBox();
+			this.txtNombreAU = new System.Windows.Forms.TextBox();
+			this.txtDocumentoAU = new System.Windows.Forms.TextBox();
+			this.cbDocumento = new System.Windows.Forms.ComboBox();
+			this.cbRolAU = new System.Windows.Forms.ComboBox();
 			this.tc_Usuario.SuspendLayout();
+			this.Usuarios.SuspendLayout();
 			this.Control.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).BeginInit();
 			this.gb_Registro_C_U.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).BeginInit();
+			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btnIngreso
@@ -86,6 +95,7 @@ namespace ProyectoFormativo
 			// Usuarios
 			// 
 			this.Usuarios.BackColor = System.Drawing.SystemColors.Control;
+			this.Usuarios.Controls.Add(this.groupBox1);
 			this.Usuarios.Location = new System.Drawing.Point(4, 22);
 			this.Usuarios.Name = "Usuarios";
 			this.Usuarios.Padding = new System.Windows.Forms.Padding(3);
@@ -125,41 +135,21 @@ namespace ProyectoFormativo
 			this.Control.TabIndex = 3;
 			this.Control.Text = "Control";
 			// 
-			// txtNombre
+			// gb_Registro_C_U
 			// 
-			this.txtNombre.Location = new System.Drawing.Point(21, 62);
-			this.txtNombre.Name = "txtNombre";
-			this.txtNombre.Size = new System.Drawing.Size(100, 20);
-			this.txtNombre.TabIndex = 5;
-			this.txtNombre.Text = "Nombre: ";
-			this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
-			// 
-			// txtEquipo
-			// 
-			this.txtEquipo.Location = new System.Drawing.Point(147, 62);
-			this.txtEquipo.Name = "txtEquipo";
-			this.txtEquipo.Size = new System.Drawing.Size(100, 20);
-			this.txtEquipo.TabIndex = 4;
-			this.txtEquipo.Text = "Equipo: ";
-			this.txtEquipo.Enter += new System.EventHandler(this.txtEquipo_Enter);
-			// 
-			// txtDocumento
-			// 
-			this.txtDocumento.Location = new System.Drawing.Point(147, 23);
-			this.txtDocumento.Name = "txtDocumento";
-			this.txtDocumento.Size = new System.Drawing.Size(100, 20);
-			this.txtDocumento.TabIndex = 3;
-			this.txtDocumento.Text = "Documento: ";
-			this.txtDocumento.Enter += new System.EventHandler(this.txtDocumento_Enter);
-			// 
-			// txtIdEquipo
-			// 
-			this.txtIdEquipo.Location = new System.Drawing.Point(21, 24);
-			this.txtIdEquipo.Name = "txtIdEquipo";
-			this.txtIdEquipo.Size = new System.Drawing.Size(100, 20);
-			this.txtIdEquipo.TabIndex = 2;
-			this.txtIdEquipo.Text = "ID Equipo:";
-			this.txtIdEquipo.Enter += new System.EventHandler(this.txtIdEquipo_Enter);
+			this.gb_Registro_C_U.Controls.Add(this.btnBuscar);
+			this.gb_Registro_C_U.Controls.Add(this.btnSalida);
+			this.gb_Registro_C_U.Controls.Add(this.btnIngreso);
+			this.gb_Registro_C_U.Controls.Add(this.txtEquipoAC);
+			this.gb_Registro_C_U.Controls.Add(this.txtNombreAC);
+			this.gb_Registro_C_U.Controls.Add(this.txtDocumentoAC);
+			this.gb_Registro_C_U.Controls.Add(this.txtIdEquipo);
+			this.gb_Registro_C_U.Location = new System.Drawing.Point(3, 15);
+			this.gb_Registro_C_U.Name = "gb_Registro_C_U";
+			this.gb_Registro_C_U.Size = new System.Drawing.Size(744, 106);
+			this.gb_Registro_C_U.TabIndex = 10;
+			this.gb_Registro_C_U.TabStop = false;
+			this.gb_Registro_C_U.Text = "Registro";
 			// 
 			// btnBuscar
 			// 
@@ -183,6 +173,42 @@ namespace ProyectoFormativo
 			this.btnSalida.TabIndex = 7;
 			this.btnSalida.Text = "Salida";
 			this.btnSalida.UseVisualStyleBackColor = false;
+			// 
+			// txtEquipoAC
+			// 
+			this.txtEquipoAC.Location = new System.Drawing.Point(147, 62);
+			this.txtEquipoAC.Name = "txtEquipoAC";
+			this.txtEquipoAC.Size = new System.Drawing.Size(100, 20);
+			this.txtEquipoAC.TabIndex = 4;
+			this.txtEquipoAC.Text = "Equipo: ";
+			this.txtEquipoAC.Enter += new System.EventHandler(this.txtEquipo_Enter);
+			// 
+			// txtNombreAC
+			// 
+			this.txtNombreAC.Location = new System.Drawing.Point(21, 62);
+			this.txtNombreAC.Name = "txtNombreAC";
+			this.txtNombreAC.Size = new System.Drawing.Size(100, 20);
+			this.txtNombreAC.TabIndex = 5;
+			this.txtNombreAC.Text = "Nombre: ";
+			this.txtNombreAC.Enter += new System.EventHandler(this.txtNombre_Enter);
+			// 
+			// txtDocumentoAC
+			// 
+			this.txtDocumentoAC.Location = new System.Drawing.Point(147, 23);
+			this.txtDocumentoAC.Name = "txtDocumentoAC";
+			this.txtDocumentoAC.Size = new System.Drawing.Size(100, 20);
+			this.txtDocumentoAC.TabIndex = 3;
+			this.txtDocumentoAC.Text = "Documento: ";
+			this.txtDocumentoAC.Enter += new System.EventHandler(this.txtDocumento_Enter);
+			// 
+			// txtIdEquipo
+			// 
+			this.txtIdEquipo.Location = new System.Drawing.Point(21, 24);
+			this.txtIdEquipo.Name = "txtIdEquipo";
+			this.txtIdEquipo.Size = new System.Drawing.Size(100, 20);
+			this.txtIdEquipo.TabIndex = 2;
+			this.txtIdEquipo.Text = "ID Equipo:";
+			this.txtIdEquipo.Enter += new System.EventHandler(this.txtIdEquipo_Enter);
 			// 
 			// DGVControl_U
 			// 
@@ -246,21 +272,85 @@ namespace ProyectoFormativo
 			this.Observaacion.Name = "Observaacion";
 			this.Observaacion.ReadOnly = true;
 			// 
-			// gb_Registro_C_U
+			// groupBox1
 			// 
-			this.gb_Registro_C_U.Controls.Add(this.btnBuscar);
-			this.gb_Registro_C_U.Controls.Add(this.btnSalida);
-			this.gb_Registro_C_U.Controls.Add(this.btnIngreso);
-			this.gb_Registro_C_U.Controls.Add(this.txtEquipo);
-			this.gb_Registro_C_U.Controls.Add(this.txtNombre);
-			this.gb_Registro_C_U.Controls.Add(this.txtDocumento);
-			this.gb_Registro_C_U.Controls.Add(this.txtIdEquipo);
-			this.gb_Registro_C_U.Location = new System.Drawing.Point(3, 15);
-			this.gb_Registro_C_U.Name = "gb_Registro_C_U";
-			this.gb_Registro_C_U.Size = new System.Drawing.Size(744, 106);
-			this.gb_Registro_C_U.TabIndex = 10;
-			this.gb_Registro_C_U.TabStop = false;
-			this.gb_Registro_C_U.Text = "Registro";
+			this.groupBox1.Controls.Add(this.cbRolAU);
+			this.groupBox1.Controls.Add(this.cbDocumento);
+			this.groupBox1.Controls.Add(this.btnGuardarAU);
+			this.groupBox1.Controls.Add(this.txtApellidoAU);
+			this.groupBox1.Controls.Add(this.txtNombreAU);
+			this.groupBox1.Controls.Add(this.txtDocumentoAU);
+			this.groupBox1.Location = new System.Drawing.Point(6, 19);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(728, 106);
+			this.groupBox1.TabIndex = 11;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Agregar";
+			// 
+			// btnGuardarAU
+			// 
+			this.btnGuardarAU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnGuardarAU.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnGuardarAU.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnGuardarAU.FlatAppearance.BorderSize = 0;
+			this.btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnGuardarAU.Location = new System.Drawing.Point(414, 19);
+			this.btnGuardarAU.Name = "btnGuardarAU";
+			this.btnGuardarAU.Size = new System.Drawing.Size(104, 73);
+			this.btnGuardarAU.TabIndex = 0;
+			this.btnGuardarAU.Text = "Guardar";
+			this.btnGuardarAU.UseVisualStyleBackColor = false;
+			// 
+			// txtApellidoAU
+			// 
+			this.txtApellidoAU.Location = new System.Drawing.Point(147, 62);
+			this.txtApellidoAU.Name = "txtApellidoAU";
+			this.txtApellidoAU.Size = new System.Drawing.Size(100, 20);
+			this.txtApellidoAU.TabIndex = 4;
+			this.txtApellidoAU.Text = "Apellido:";
+			// 
+			// txtNombreAU
+			// 
+			this.txtNombreAU.Location = new System.Drawing.Point(21, 62);
+			this.txtNombreAU.Name = "txtNombreAU";
+			this.txtNombreAU.Size = new System.Drawing.Size(100, 20);
+			this.txtNombreAU.TabIndex = 5;
+			this.txtNombreAU.Text = "Nombre: ";
+			// 
+			// txtDocumentoAU
+			// 
+			this.txtDocumentoAU.Location = new System.Drawing.Point(147, 23);
+			this.txtDocumentoAU.Name = "txtDocumentoAU";
+			this.txtDocumentoAU.Size = new System.Drawing.Size(100, 20);
+			this.txtDocumentoAU.TabIndex = 3;
+			this.txtDocumentoAU.Text = "N Documento: ";
+			this.txtDocumentoAU.Enter += new System.EventHandler(this.txtDocumentoAU_Enter);
+			// 
+			// cbDocumento
+			// 
+			this.cbDocumento.FormattingEnabled = true;
+			this.cbDocumento.Items.AddRange(new object[] {
+            "CC",
+            "TI",
+            "CE",
+            "PS"});
+			this.cbDocumento.Location = new System.Drawing.Point(21, 24);
+			this.cbDocumento.Name = "cbDocumento";
+			this.cbDocumento.Size = new System.Drawing.Size(100, 21);
+			this.cbDocumento.TabIndex = 12;
+			this.cbDocumento.Text = "CC";
+			// 
+			// cbRolAU
+			// 
+			this.cbRolAU.FormattingEnabled = true;
+			this.cbRolAU.Items.AddRange(new object[] {
+            "Administrador",
+            "Vigilante"});
+			this.cbRolAU.Location = new System.Drawing.Point(266, 23);
+			this.cbRolAU.Name = "cbRolAU";
+			this.cbRolAU.Size = new System.Drawing.Size(100, 21);
+			this.cbRolAU.TabIndex = 13;
+			this.cbRolAU.Text = "Administrador";
 			// 
 			// FrmControlAdmin
 			// 
@@ -273,10 +363,13 @@ namespace ProyectoFormativo
 			this.Text = "Control";
 			this.Load += new System.EventHandler(this.FrmControlAdmin_Load);
 			this.tc_Usuario.ResumeLayout(false);
+			this.Usuarios.ResumeLayout(false);
 			this.Control.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).EndInit();
 			this.gb_Registro_C_U.ResumeLayout(false);
 			this.gb_Registro_C_U.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).EndInit();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -289,9 +382,9 @@ namespace ProyectoFormativo
 		private System.Windows.Forms.TabPage Propietario;
 		private System.Windows.Forms.TabPage Equipo;
 		private System.Windows.Forms.TabPage Control;
-		private System.Windows.Forms.TextBox txtNombre;
-		private System.Windows.Forms.TextBox txtEquipo;
-		private System.Windows.Forms.TextBox txtDocumento;
+		private System.Windows.Forms.TextBox txtNombreAC;
+		private System.Windows.Forms.TextBox txtEquipoAC;
+		private System.Windows.Forms.TextBox txtDocumentoAC;
 		private System.Windows.Forms.TextBox txtIdEquipo;
 		private System.Windows.Forms.Button btnSalida;
 		private System.Windows.Forms.Button btnBuscar;
@@ -304,6 +397,13 @@ namespace ProyectoFormativo
 		private System.Windows.Forms.DataGridViewTextBoxColumn H_Salida;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Observaacion;
 		private System.Windows.Forms.GroupBox gb_Registro_C_U;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.Button btnGuardarAU;
+		private System.Windows.Forms.TextBox txtApellidoAU;
+		private System.Windows.Forms.TextBox txtNombreAU;
+		private System.Windows.Forms.TextBox txtDocumentoAU;
+		private System.Windows.Forms.ComboBox cbDocumento;
+		private System.Windows.Forms.ComboBox cbRolAU;
 	}
 }
 

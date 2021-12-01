@@ -28,9 +28,12 @@ namespace ProyectoFormativo
 		private void FrmControlAdmin_Load(object sender, EventArgs e)
 		{
 			txtIdEquipo.ForeColor = Color.Gray;
-			txtDocumento.ForeColor = Color.Gray;
-			txtNombre.ForeColor = Color.Gray;
-			txtEquipo.ForeColor = Color.Gray;
+			txtDocumentoAC.ForeColor = Color.Gray;
+			txtNombreAC.ForeColor = Color.Gray;
+			txtEquipoAC.ForeColor = Color.Gray;
+			txtDocumentoAU.ForeColor = Color.Gray;
+			txtNombreAU.ForeColor = Color.Gray;
+			txtApellidoAU.ForeColor = Color.Gray;
 		}
 
 		private void txtIdEquipo_Enter(object sender, EventArgs e)
@@ -41,20 +44,38 @@ namespace ProyectoFormativo
 
 		private void txtDocumento_Enter(object sender, EventArgs e)
 		{
-			txtDocumento.Text = "";
-			txtDocumento.ForeColor = Color.Black;
+			txtDocumentoAC.Text = "";
+			txtDocumentoAC.ForeColor = Color.Black;
 		}
 
 		private void txtNombre_Enter(object sender, EventArgs e)
 		{
-			txtNombre.Text = "";
-			txtNombre.ForeColor = Color.Black;
+			txtNombreAC.Text = "";
+			txtNombreAC.ForeColor = Color.Black;
 		}
 
 		private void txtEquipo_Enter(object sender, EventArgs e)
 		{
-			txtEquipo.Text = "";
-			txtEquipo.ForeColor = Color.Black;
+			txtEquipoAC.Text = "";
+			txtEquipoAC.ForeColor = Color.Black;
+		}
+
+		private void txtDocumentoAU_Enter(object sender, EventArgs e)
+		{
+			txtDocumentoAC.Text = "";
+			txtDocumentoAC.ForeColor = Color.Black;
+		}
+
+		private void txtNombreAU_Enter(object sender, EventArgs e)
+		{
+			txtNombreAU.Text = "";
+			txtNombreAU.ForeColor = Color.Black;
+		}
+
+		private void txtApellidoAU_Enter(object sender, EventArgs e)
+		{
+			txtApellidoAU.Text = "";
+			txtApellidoAU.ForeColor = Color.Black;
 		}
 	}
 }
