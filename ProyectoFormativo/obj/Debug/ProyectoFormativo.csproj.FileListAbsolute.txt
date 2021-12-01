@@ -73,3 +73,12 @@ C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\Proyecto
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
