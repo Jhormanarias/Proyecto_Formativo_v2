@@ -28,5 +28,13 @@ namespace Models
 				return false;
 			}
 		}
+
+		public static DataTable TreaerAdmi()
+		{
+			DataTable tabla = new DataTable();
+			SqlDataAdapter adap = new SqlDataAdapter();
+			adap.Fill(tabla);
+			return tabla;
+		}
 	}
 }
