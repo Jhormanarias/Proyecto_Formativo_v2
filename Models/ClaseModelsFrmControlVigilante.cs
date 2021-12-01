@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Models
 {
-	public class ClaseModels
+	public class ClaseModelsFrmControlVigilante
 	{
 		//creo la conexion 
 		public static string cadena = "Server=(local)\\SQLEXPRESS;Database=Proyecto;User Id = ADSI; Password=2144539;";

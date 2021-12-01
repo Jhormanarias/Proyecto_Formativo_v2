@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Controllers;
+using System.Data;
+using System.Windows;
+using Models;
 
-namespace ProyectoFormativo
+
+namespace Controllers
 {
-	class clasesFunciones
+	public class ClaseControlFrmLogin
 	{
-		int num = 0;
+		
 	}
 }
