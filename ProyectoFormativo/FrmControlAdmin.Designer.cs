@@ -32,6 +32,13 @@ namespace ProyectoFormativo
 			this.btnIngreso = new System.Windows.Forms.Button();
 			this.tc_Usuario = new System.Windows.Forms.TabControl();
 			this.Usuarios = new System.Windows.Forms.TabPage();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.cbRolAU = new System.Windows.Forms.ComboBox();
+			this.cbDocumento = new System.Windows.Forms.ComboBox();
+			this.btnGuardarAU = new System.Windows.Forms.Button();
+			this.txtApellidoAU = new System.Windows.Forms.TextBox();
+			this.txtNombreAU = new System.Windows.Forms.TextBox();
+			this.txtDocumentoAU = new System.Windows.Forms.TextBox();
 			this.Propietario = new System.Windows.Forms.TabPage();
 			this.Equipo = new System.Windows.Forms.TabPage();
 			this.Control = new System.Windows.Forms.TabPage();
@@ -50,19 +57,12 @@ namespace ProyectoFormativo
 			this.H_Ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.H_Salida = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Observaacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.btnGuardarAU = new System.Windows.Forms.Button();
-			this.txtApellidoAU = new System.Windows.Forms.TextBox();
-			this.txtNombreAU = new System.Windows.Forms.TextBox();
-			this.txtDocumentoAU = new System.Windows.Forms.TextBox();
-			this.cbDocumento = new System.Windows.Forms.ComboBox();
-			this.cbRolAU = new System.Windows.Forms.ComboBox();
 			this.tc_Usuario.SuspendLayout();
 			this.Usuarios.SuspendLayout();
+			this.groupBox1.SuspendLayout();
 			this.Control.SuspendLayout();
 			this.gb_Registro_C_U.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).BeginInit();
-			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btnIngreso
@@ -102,6 +102,86 @@ namespace ProyectoFormativo
 			this.Usuarios.Size = new System.Drawing.Size(750, 387);
 			this.Usuarios.TabIndex = 0;
 			this.Usuarios.Text = "Usuarios";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.cbRolAU);
+			this.groupBox1.Controls.Add(this.cbDocumento);
+			this.groupBox1.Controls.Add(this.btnGuardarAU);
+			this.groupBox1.Controls.Add(this.txtApellidoAU);
+			this.groupBox1.Controls.Add(this.txtNombreAU);
+			this.groupBox1.Controls.Add(this.txtDocumentoAU);
+			this.groupBox1.Location = new System.Drawing.Point(6, 19);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(728, 106);
+			this.groupBox1.TabIndex = 11;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Agregar";
+			// 
+			// cbRolAU
+			// 
+			this.cbRolAU.FormattingEnabled = true;
+			this.cbRolAU.Items.AddRange(new object[] {
+            "Administrador",
+            "Vigilante"});
+			this.cbRolAU.Location = new System.Drawing.Point(266, 23);
+			this.cbRolAU.Name = "cbRolAU";
+			this.cbRolAU.Size = new System.Drawing.Size(100, 21);
+			this.cbRolAU.TabIndex = 13;
+			this.cbRolAU.Text = "Administrador";
+			// 
+			// cbDocumento
+			// 
+			this.cbDocumento.FormattingEnabled = true;
+			this.cbDocumento.Items.AddRange(new object[] {
+            "CC",
+            "TI",
+            "CE",
+            "PS"});
+			this.cbDocumento.Location = new System.Drawing.Point(21, 24);
+			this.cbDocumento.Name = "cbDocumento";
+			this.cbDocumento.Size = new System.Drawing.Size(100, 21);
+			this.cbDocumento.TabIndex = 12;
+			this.cbDocumento.Text = "CC";
+			// 
+			// btnGuardarAU
+			// 
+			this.btnGuardarAU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnGuardarAU.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnGuardarAU.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnGuardarAU.FlatAppearance.BorderSize = 0;
+			this.btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnGuardarAU.Location = new System.Drawing.Point(414, 19);
+			this.btnGuardarAU.Name = "btnGuardarAU";
+			this.btnGuardarAU.Size = new System.Drawing.Size(104, 73);
+			this.btnGuardarAU.TabIndex = 0;
+			this.btnGuardarAU.Text = "Guardar";
+			this.btnGuardarAU.UseVisualStyleBackColor = false;
+			// 
+			// txtApellidoAU
+			// 
+			this.txtApellidoAU.Location = new System.Drawing.Point(147, 62);
+			this.txtApellidoAU.Name = "txtApellidoAU";
+			this.txtApellidoAU.Size = new System.Drawing.Size(100, 20);
+			this.txtApellidoAU.TabIndex = 4;
+			this.txtApellidoAU.Text = "Apellido:";
+			// 
+			// txtNombreAU
+			// 
+			this.txtNombreAU.Location = new System.Drawing.Point(21, 62);
+			this.txtNombreAU.Name = "txtNombreAU";
+			this.txtNombreAU.Size = new System.Drawing.Size(100, 20);
+			this.txtNombreAU.TabIndex = 5;
+			this.txtNombreAU.Text = "Nombre: ";
+			// 
+			// txtDocumentoAU
+			// 
+			this.txtDocumentoAU.Location = new System.Drawing.Point(147, 23);
+			this.txtDocumentoAU.Name = "txtDocumentoAU";
+			this.txtDocumentoAU.Size = new System.Drawing.Size(100, 20);
+			this.txtDocumentoAU.TabIndex = 3;
+			this.txtDocumentoAU.Text = "N Documento: ";
+			this.txtDocumentoAU.Enter += new System.EventHandler(this.txtDocumentoAU_Enter);
 			// 
 			// Propietario
 			// 
@@ -272,86 +352,6 @@ namespace ProyectoFormativo
 			this.Observaacion.Name = "Observaacion";
 			this.Observaacion.ReadOnly = true;
 			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.cbRolAU);
-			this.groupBox1.Controls.Add(this.cbDocumento);
-			this.groupBox1.Controls.Add(this.btnGuardarAU);
-			this.groupBox1.Controls.Add(this.txtApellidoAU);
-			this.groupBox1.Controls.Add(this.txtNombreAU);
-			this.groupBox1.Controls.Add(this.txtDocumentoAU);
-			this.groupBox1.Location = new System.Drawing.Point(6, 19);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(728, 106);
-			this.groupBox1.TabIndex = 11;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Agregar";
-			// 
-			// btnGuardarAU
-			// 
-			this.btnGuardarAU.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.btnGuardarAU.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnGuardarAU.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.btnGuardarAU.FlatAppearance.BorderSize = 0;
-			this.btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.btnGuardarAU.Location = new System.Drawing.Point(414, 19);
-			this.btnGuardarAU.Name = "btnGuardarAU";
-			this.btnGuardarAU.Size = new System.Drawing.Size(104, 73);
-			this.btnGuardarAU.TabIndex = 0;
-			this.btnGuardarAU.Text = "Guardar";
-			this.btnGuardarAU.UseVisualStyleBackColor = false;
-			// 
-			// txtApellidoAU
-			// 
-			this.txtApellidoAU.Location = new System.Drawing.Point(147, 62);
-			this.txtApellidoAU.Name = "txtApellidoAU";
-			this.txtApellidoAU.Size = new System.Drawing.Size(100, 20);
-			this.txtApellidoAU.TabIndex = 4;
-			this.txtApellidoAU.Text = "Apellido:";
-			// 
-			// txtNombreAU
-			// 
-			this.txtNombreAU.Location = new System.Drawing.Point(21, 62);
-			this.txtNombreAU.Name = "txtNombreAU";
-			this.txtNombreAU.Size = new System.Drawing.Size(100, 20);
-			this.txtNombreAU.TabIndex = 5;
-			this.txtNombreAU.Text = "Nombre: ";
-			// 
-			// txtDocumentoAU
-			// 
-			this.txtDocumentoAU.Location = new System.Drawing.Point(147, 23);
-			this.txtDocumentoAU.Name = "txtDocumentoAU";
-			this.txtDocumentoAU.Size = new System.Drawing.Size(100, 20);
-			this.txtDocumentoAU.TabIndex = 3;
-			this.txtDocumentoAU.Text = "N Documento: ";
-			this.txtDocumentoAU.Enter += new System.EventHandler(this.txtDocumentoAU_Enter);
-			// 
-			// cbDocumento
-			// 
-			this.cbDocumento.FormattingEnabled = true;
-			this.cbDocumento.Items.AddRange(new object[] {
-            "CC",
-            "TI",
-            "CE",
-            "PS"});
-			this.cbDocumento.Location = new System.Drawing.Point(21, 24);
-			this.cbDocumento.Name = "cbDocumento";
-			this.cbDocumento.Size = new System.Drawing.Size(100, 21);
-			this.cbDocumento.TabIndex = 12;
-			this.cbDocumento.Text = "CC";
-			// 
-			// cbRolAU
-			// 
-			this.cbRolAU.FormattingEnabled = true;
-			this.cbRolAU.Items.AddRange(new object[] {
-            "Administrador",
-            "Vigilante"});
-			this.cbRolAU.Location = new System.Drawing.Point(266, 23);
-			this.cbRolAU.Name = "cbRolAU";
-			this.cbRolAU.Size = new System.Drawing.Size(100, 21);
-			this.cbRolAU.TabIndex = 13;
-			this.cbRolAU.Text = "Administrador";
-			// 
 			// FrmControlAdmin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,12 +364,12 @@ namespace ProyectoFormativo
 			this.Load += new System.EventHandler(this.FrmControlAdmin_Load);
 			this.tc_Usuario.ResumeLayout(false);
 			this.Usuarios.ResumeLayout(false);
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.Control.ResumeLayout(false);
 			this.gb_Registro_C_U.ResumeLayout(false);
 			this.gb_Registro_C_U.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DGVControl_U)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}

@@ -21,7 +21,3 @@ F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CoreC
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.dll
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.pdb
-F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Controlador.dll
-F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Modelo.dll
-F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Controlador.pdb
-F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\bin\Debug\Modelo.pdb

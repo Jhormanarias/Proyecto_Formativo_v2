@@ -77,5 +77,6 @@ namespace ProyectoFormativo
 			txtApellidoAU.Text = "";
 			txtApellidoAU.ForeColor = Color.Black;
 		}
+
 	}
 }

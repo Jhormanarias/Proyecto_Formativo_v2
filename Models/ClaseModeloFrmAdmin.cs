@@ -8,6 +8,9 @@ namespace Models
 {
 	public class ClaseModeloFrmAdmin
 	{
-		
+		public static bool funcionPrueba()
+		{
+			return true;
+		}
 	}
 }
