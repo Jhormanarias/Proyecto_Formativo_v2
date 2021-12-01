@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Controllers;
 
 
 namespace ProyectoFormativo
@@ -97,7 +98,7 @@ namespace ProyectoFormativo
 
 		private void BtnIngresar_Click(object sender, EventArgs e)
 		{
-
+			
 		}
 	}
 }
