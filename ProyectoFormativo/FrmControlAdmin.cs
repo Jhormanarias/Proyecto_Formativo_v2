@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Globalization;
+using System.Collections;
 
 namespace ProyectoFormativo
 {
@@ -27,10 +29,10 @@ namespace ProyectoFormativo
 
 		private void FrmControlAdmin_Load(object sender, EventArgs e)
 		{
-			txtIdEquipo.ForeColor = Color.Gray;
+			txtIdBienAC.ForeColor = Color.Gray;
 			txtDocumentoAC.ForeColor = Color.Gray;
 			txtNombreAC.ForeColor = Color.Gray;
-			txtEquipoAC.ForeColor = Color.Gray;
+			txtBienAC.ForeColor = Color.Gray;
 			txtDocumentoAU.ForeColor = Color.Gray;
 			txtNombreAU.ForeColor = Color.Gray;
 			txtApellidoAU.ForeColor = Color.Gray;
@@ -38,8 +40,8 @@ namespace ProyectoFormativo
 
 		private void txtIdEquipo_Enter(object sender, EventArgs e)
 		{
-			txtIdEquipo.Text = "";
-			txtIdEquipo.ForeColor = Color.Black;
+			txtIdBienAC.Text = "";
+			txtIdBienAC.ForeColor = Color.Black;
 		}
 
 		private void txtDocumento_Enter(object sender, EventArgs e)
@@ -56,8 +58,8 @@ namespace ProyectoFormativo
 
 		private void txtEquipo_Enter(object sender, EventArgs e)
 		{
-			txtEquipoAC.Text = "";
-			txtEquipoAC.ForeColor = Color.Black;
+			txtBienAC.Text = "";
+			txtBienAC.ForeColor = Color.Black;
 		}
 
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
@@ -78,5 +80,14 @@ namespace ProyectoFormativo
 			txtApellidoAU.ForeColor = Color.Black;
 		}
 
-	}
+        private void btnBuscar_EquipoU_Click(object sender, EventArgs e)
+        {
+			MessageBox.Show("Prueba del botón", "SIIIUUUU", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void timerAdmin_Tick(object sender, EventArgs e)
+        {
+			lbl_horaAdmin.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
+		}
+    }
 }
