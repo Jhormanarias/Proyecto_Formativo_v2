@@ -340,6 +340,7 @@ namespace ProyectoFormativo
 			this.btnGuardarAU.TabIndex = 0;
 			this.btnGuardarAU.Text = "Guardar";
 			this.btnGuardarAU.UseVisualStyleBackColor = false;
+			this.btnGuardarAU.Click += new System.EventHandler(this.btnGuardarAU_Click);
 			// 
 			// txtApellidoAU
 			// 
@@ -484,7 +485,7 @@ namespace ProyectoFormativo
 			this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
 			this.button2.FlatAppearance.BorderSize = 0;
 			this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button2.Location = new System.Drawing.Point(475, 19);
+			this.button2.Location = new System.Drawing.Point(476, 19);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(104, 41);
 			this.button2.TabIndex = 11;

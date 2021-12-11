@@ -89,5 +89,10 @@ namespace ProyectoFormativo
         {
 			lbl_horaAdmin.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
 		}
-    }
+
+		private void btnGuardarAU_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
