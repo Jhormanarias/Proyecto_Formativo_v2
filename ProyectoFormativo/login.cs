@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Controllers;
+using System.Data.SqlClient;
 
 
 namespace ProyectoFormativo
@@ -19,6 +20,51 @@ namespace ProyectoFormativo
 		{
 			InitializeComponent();
 		}
+		public static string cadena = "Data Source = .;Initial Catalog=controlbienes;User ID=ADSI;Password=2144539";
+		public void Func_Login(string documento, string contrasena)
+		{
+			SqlConnection conexion = new SqlConnection(cadena);
+			try
+			{
+				
+				conexion.Open();
+				SqlCommand cmd = new SqlCommand("SELECT rol, contrasena FROM Usuario WHERE  documento = @documento  AND contrasena = @contrasena", conexion);
+				cmd.Parameters.AddWithValue("documento", documento);
+				cmd.Parameters.AddWithValue("contrasena", contrasena);
+				SqlDataAdapter adap = new SqlDataAdapter(cmd);
+				DataTable tabla = new DataTable();
+				adap.Fill(tabla);
+
+				if (tabla.Rows.Count > 0)
+				{
+					this.Hide();
+					if (tabla.Rows[0][0].ToString() == "Administrador")
+					{
+						MessageBox.Show("admi");
+						new FrmControlAdmin().Show();
+					}
+					else if (tabla.Rows[0][0].ToString() == "Vigilante")
+					{
+						new FrmControl().Show();
+						MessageBox.Show("vigi");
+					}
+				}
+				else
+				{
+					MessageBox.Show("Documento Y/O contraseña son incorrectos");
+				}
+
+			}
+			catch (Exception e)
+			{
+				MessageBox.Show(e.Message);
+			}
+			finally
+			{
+				conexion.Close();
+			}
+
+		}
 		[DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
 		private extern static void ReleaseCapture();
 		[DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -26,7 +72,7 @@ namespace ProyectoFormativo
 
 		private void txtUsusario_Enter(object sender, EventArgs e)
 		{
-			if (txtUsusario.Text == "Usuario")
+			if (txtUsusario.Text == "Documento")
 			{
 				txtUsusario.Text = "";
 				txtUsusario.ForeColor = Color.LightGray;
@@ -37,7 +83,7 @@ namespace ProyectoFormativo
 		{
 			if (txtUsusario.Text == "")
 			{
-				txtUsusario.Text = "Usuario";
+				txtUsusario.Text = "Documento";
 				txtUsusario.ForeColor = Color.DimGray;
 			}
 		}
@@ -82,13 +128,13 @@ namespace ProyectoFormativo
 		private void btnCerrar_Click(object sender, EventArgs e)
 		{
 			DialogResult rpt = new DialogResult();
-			rpt= MessageBox.Show("Desea Salir?", "Informacion!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-			if(rpt == DialogResult.OK)
+			rpt = MessageBox.Show("Desea Salir?", "Informacion!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if (rpt == DialogResult.OK)
 			{
 				Application.Exit();
 			}
 
-			
+
 		}
 
 		private void btnMinimizar_Click(object sender, EventArgs e)
@@ -98,7 +144,7 @@ namespace ProyectoFormativo
 
 		private void BtnIngresar_Click(object sender, EventArgs e)
 		{
-			
+			Func_Login(this.txtUsusario.Text, this.txtContrasena.Text);
 		}
 	}
 }
