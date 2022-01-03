@@ -103,7 +103,7 @@
 			this.txtUsusario.Name = "txtUsusario";
 			this.txtUsusario.Size = new System.Drawing.Size(404, 21);
 			this.txtUsusario.TabIndex = 1;
-			this.txtUsusario.Text = "Usuario";
+			this.txtUsusario.Text = "Documento";
 			this.txtUsusario.Enter += new System.EventHandler(this.txtUsusario_Enter);
 			this.txtUsusario.Leave += new System.EventHandler(this.txtUsusario_Leave);
 			// 
