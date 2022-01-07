@@ -84,3 +84,38 @@ C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proy
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
 F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\Controllers.dll
 F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache

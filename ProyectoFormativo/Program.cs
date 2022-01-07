@@ -16,7 +16,7 @@ namespace ProyectoFormativo
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmControlAdmin());
+			Application.Run(new FrmControl());
 		}
 	}
 }

@@ -21,3 +21,29 @@ F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CoreC
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.dll
 F:\CAMBIOS MVC\Proyecto_Formativo\Controllers\obj\Debug\Controllers.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
