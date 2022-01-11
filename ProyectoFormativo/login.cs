@@ -146,5 +146,15 @@ namespace ProyectoFormativo
 		{
 			Func_Login(this.txtUsusario.Text, this.txtContrasena.Text);
 		}
+
+		private void txtUsusario_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+
+
+		}
 	}
 }

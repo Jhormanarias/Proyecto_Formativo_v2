@@ -105,6 +105,7 @@
 			this.txtUsusario.TabIndex = 1;
 			this.txtUsusario.Text = "Documento";
 			this.txtUsusario.Enter += new System.EventHandler(this.txtUsusario_Enter);
+			this.txtUsusario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsusario_KeyPress);
 			this.txtUsusario.Leave += new System.EventHandler(this.txtUsusario_Leave);
 			// 
 			// txtContrasena
