@@ -236,12 +236,49 @@ namespace Controllers
         //seria lo mismo para la salida validar q el ultimo registro en la db MAX(ID) del bien en el cual
         //la hora de salida este vacia y si lo esta puede darle salida de lo contrario no puede por q el bien ya salio
 
+
+        //CONSULTO LOS REPORTES DEL CONTROL
         public static DataTable Func_Reportes()
         {
             DataTable tabla = new DataTable();
             SqlConnection conexion = new SqlConnection(cadena);
             SqlDataAdapter adap = new SqlDataAdapter("PA_REPORTE", conexion);
             adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.Fill(tabla);
+            return tabla;
+        }
+
+
+        //FILTRO LOS REPORTES
+        public static DataTable Func_Filtrar(DateTime fecha, long doc)
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTEX2", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
+            adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
+            adap.Fill(tabla);
+            return tabla;
+        }
+
+        public static DataTable Func_FiltrarDoc(long doc)
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
+            adap.Fill(tabla);
+            return tabla;
+        }
+        public static DataTable Func_FiltrarFe(DateTime fecha)
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
             adap.Fill(tabla);
             return tabla;
         }

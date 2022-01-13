@@ -81,12 +81,6 @@ namespace ProyectoFormativo
 						btn_Ingreso_U.Enabled = true;
 					}
 				}
-				//else
-				//{
-				//	btn_Ingreso_U.Enabled = true;
-				//	btn_Salida_U.Enabled = true;
-				//}
-
 			}
 		}
 
@@ -102,8 +96,6 @@ namespace ProyectoFormativo
             {
 				dt.Clear();
 			}
-			
-
 		}
 
 
@@ -188,7 +180,7 @@ namespace ProyectoFormativo
 			if (txt_filtrarReporteDoc.Text == "Documento")
 			{
 				txt_filtrarReporteDoc.Text = "";
-				this.txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.Silver;
+				this.txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.Black;
 			}
 		}
 
@@ -204,20 +196,32 @@ namespace ProyectoFormativo
         private void cb_Documento_R_CheckedChanged(object sender, EventArgs e)
         {
 			txt_filtrarReporteDoc.Enabled = true;
+			btn_Feltar.Enabled = true;
 			if (this.cb_Documento_R.Checked == false)
             {
 				txt_filtrarReporteDoc.Enabled = false;
 				txt_filtrarReporteDoc.Text = "Documento";
 				txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.Silver;
 			}
+			if (this.cb_Fecha_R.Checked == false && this.cb_Documento_R.Checked == false)
+			{
+				DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				btn_Feltar.Enabled = false;
+			}
 		}
 
         private void cb_Fecha_R_CheckedChanged(object sender, EventArgs e)
         {
 			dt_Fecha_R.Enabled = true;
+			btn_Feltar.Enabled = true;
 			if (this.cb_Fecha_R.Checked == false)
 			{
 				dt_Fecha_R.Enabled = false;
+			}
+			if (this.cb_Fecha_R.Checked == false && this.cb_Documento_R.Checked == false)
+            {
+				DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				btn_Feltar.Enabled = false;
 			}
 		}
 
@@ -258,5 +262,96 @@ namespace ProyectoFormativo
                 }
             }
         }
+
+        private void btn_Feltar_Click(object sender, EventArgs e)
+        {
+			DateTime fechaR = dt_Fecha_R.Value;
+			long doc = 0;
+			if (this.cb_Documento_R.Checked == true && this.cb_Fecha_R.Checked == false)
+            {
+				if (txt_filtrarReporteDoc.Text == "Documento" || txt_filtrarReporteDoc.Text == "")
+				{
+					MessageBox.Show("Ingrese un documento");
+				}
+				else
+				{
+					doc = Convert.ToInt64(txt_filtrarReporteDoc.Text);
+					DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
+					if (tabla.Rows.Count > 0)
+                    {
+						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
+					}
+                    else
+                    {
+						MessageBox.Show("Sin reportes", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						DataTable dt = (DataTable)DGVReportes.DataSource;
+						if (dt == null)
+						{
+							DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+						}
+					}
+				}
+			}
+			
+			if (this.cb_Fecha_R.Checked == true && this.cb_Documento_R.Checked == false)
+            {
+				DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
+				if (tabla.Rows.Count > 0)
+				{
+
+					DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
+				}
+				else
+				{
+					MessageBox.Show("Sin reportes", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					DataTable dt = (DataTable)DGVReportes.DataSource;
+					if (dt == null)
+					{
+						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+					}
+				}
+				
+			}
+
+			if(this.cb_Documento_R.Checked == true & this.cb_Fecha_R.Checked == true)
+            {
+				if (txt_filtrarReporteDoc.Text == "Documento" || txt_filtrarReporteDoc.Text == "")
+				{
+					MessageBox.Show("Ingrese un documento");
+				}
+				else
+				{
+					doc = Convert.ToInt64(txt_filtrarReporteDoc.Text);
+					DataTable tabla = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
+					if (tabla.Rows.Count > 0)
+					{
+						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
+					}
+					else
+					{
+						MessageBox.Show("Sin reportes", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						DataTable dt = (DataTable)DGVReportes.DataSource;
+						if (dt == null)
+						{
+							DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+						}
+					}
+					
+				}
+			}
+				
+		}
+
+        private void txt_filtrarReporteDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			if (e.KeyChar == (char)13)
+			{
+				btn_Feltar_Click(sender, e);
+			}
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
     }
 }
