@@ -19,6 +19,9 @@ namespace Controllers
         public static string nomvisitante = "";
         //variables publicas 
         public static long idbien = 0;
+        public static long idusuario = 0;
+        public static string usuario = "";
+        public static string rol = "";
 
 
         //funcion conectar
@@ -39,6 +42,24 @@ namespace Controllers
         }
 
         //--------------------------------------------- BUSCAR VISITANTE Y BIEN ---------------------------------------
+
+        public static string Func_Prueba(long valor1, string valor2)
+        {
+            string valor = "";
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_PRUEBA", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@VALOR1", SqlDbType.BigInt).Value = valor1;
+            adap.SelectCommand.Parameters.Add("@VALOR2", SqlDbType.NVarChar).Value = valor2;
+            adap.Fill(tabla);
+            //pregunto si hay datos en la tabla
+            if (tabla.Rows.Count > 0)
+            {
+                valor = tabla.Rows[0][1].ToString() + ' ' + tabla.Rows[0][2].ToString();
+            }
+            return valor;
+        }
 
         //FUNCION TRAER NOMBRE DEL VISITANTE Y BIEN CON DOCUMENTO
         public static string Func_TraeNomVisitante(long doc)
@@ -139,7 +160,7 @@ namespace Controllers
 
         //TRER LOS DATOS DEL VISITANTE
         //PARAMETRO: DOC DEL VISITANDE
-        //RETORNO: TABLA (CODIGO-NOMBRE-APELLIDO-TIPOBIEN-SERIAL-COLOR-OBSERVACION)
+        //RETORNO: TABLA (IDBIEN-NOMBRE-APELLIDO-TIPOBIEN-SERIAL-COLOR-OBSERVACION)
         public static DataTable Func_BusVisitante(long doc)
         {
             DataTable tabla = new DataTable();
@@ -161,6 +182,7 @@ namespace Controllers
             return tabla;
         }
 
+        //REGISTRO ENTRADA O SALIDA DEL BIEN
         public static bool Fun_ControlBien(long idbien)
         {
 			try
@@ -181,7 +203,7 @@ namespace Controllers
                 }
 				else
 				{
-                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (fecha_registro, hora_entrada, hora_salida, id_usuario, id_bien) VALUES ('" + fecha + "', ' " + horas + "', NULL, '1', '" + idbien.ToString() + "' )", conexion);
+                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (fecha_registro, hora_entrada, hora_salida, id_usuario, id_bien) VALUES ('" + fecha + "', ' " + horas + "', NULL, '" + idusuario + "', '" + idbien.ToString() + "' )", conexion);
                     adap1.Fill(tabla);
                 }
 
@@ -194,6 +216,7 @@ namespace Controllers
 			}
 		}
 
+        //CONSULTO EL ESTADO Y SELECCIONO EL BIEN
         public static DataTable Fun_ValidarBien(long idbien)
         {
             string idmaximo = "";
@@ -208,10 +231,19 @@ namespace Controllers
 
             return tabla;
         }
-            //funcion q recibe el id del bien, luego con el id consulta la hora de entrada si esta vacia en 
-            //caso de q se le valla a dar entrada al bien, en caso de q no este vacia es por q el bien ya ingreso
-            //seria lo mismo para la salida validar q el ultimo registro en la db MAX(ID) del bien en el cual
-            //la hora de salida este vacia y si lo esta puede darle salida de lo contrario no puede por q el bien ya salio
+        //funcion q recibe el id del bien, luego con el id consulta la hora de entrada si esta vacia en 
+        //caso de q se le valla a dar entrada al bien, en caso de q no este vacia es por q el bien ya ingreso
+        //seria lo mismo para la salida validar q el ultimo registro en la db MAX(ID) del bien en el cual
+        //la hora de salida este vacia y si lo esta puede darle salida de lo contrario no puede por q el bien ya salio
 
+        public static DataTable Func_Reportes()
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_REPORTE", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.Fill(tabla);
+            return tabla;
+        }
     }
 }

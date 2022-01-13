@@ -16,3 +16,9 @@ F:\CAMBIOS MVC\Proyecto_Formativo\Models\obj\Debug\Models.csproj.AssemblyReferen
 F:\CAMBIOS MVC\Proyecto_Formativo\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 F:\CAMBIOS MVC\Proyecto_Formativo\Models\obj\Debug\Models.dll
 F:\CAMBIOS MVC\Proyecto_Formativo\Models\obj\Debug\Models.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb

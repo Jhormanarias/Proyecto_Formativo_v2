@@ -20,7 +20,7 @@ namespace ProyectoFormativo
 		{
 			InitializeComponent();
 		}
-		public static string cadena = "Data Source = .;Initial Catalog=controlbienes;User ID=ADSI;Password=2144539";
+		public static string cadena = "Data Source = .;Initial Catalog=BD_PROYECTO;User ID=ADSI;Password=2144539";
 		public void Func_Login(string documento, string contrasena)
 		{
 			SqlConnection conexion = new SqlConnection(cadena);
@@ -28,32 +28,36 @@ namespace ProyectoFormativo
 			{
 				
 				conexion.Open();
-				SqlCommand cmd = new SqlCommand("SELECT rol, contrasena FROM Usuario WHERE  documento = @documento  AND contrasena = @contrasena", conexion);
-				cmd.Parameters.AddWithValue("documento", documento);
-				cmd.Parameters.AddWithValue("contrasena", contrasena);
-				SqlDataAdapter adap = new SqlDataAdapter(cmd);
+				SqlCommand cmd = new SqlCommand("SELECT id_usuario, nom_user, apellido, rol, contrasena FROM USUARIO WHERE documento = @documento AND contrasena = @contrasena", conexion);
+                cmd.Parameters.AddWithValue("documento", documento);
+                cmd.Parameters.AddWithValue("contrasena", contrasena);
+                SqlDataAdapter adap = new SqlDataAdapter(cmd);
 				DataTable tabla = new DataTable();
 				adap.Fill(tabla);
 
+				
+
 				if (tabla.Rows.Count > 0)
 				{
+					ClaseControlFrmVigilante.idusuario = Convert.ToInt64(tabla.Rows[0][0]);
+					ClaseControlFrmVigilante.usuario = tabla.Rows[0][1].ToString() + " " + tabla.Rows[0][2].ToString();
+					ClaseControlFrmVigilante.rol = tabla.Rows[0][3].ToString();
 					this.Hide();
-					if (tabla.Rows[0][0].ToString() == "Administrador")
+					if (tabla.Rows[0][3].ToString() == "Administrador")
 					{
-						MessageBox.Show("admi");
+						MessageBox.Show("Administrador", "Bienvenido");
 						new FrmControlAdmin().Show();
 					}
-					else if (tabla.Rows[0][0].ToString() == "Vigilante")
+					else if (tabla.Rows[0][3].ToString() == "Vigilante")
 					{
-						new FrmControl().Show();
-						MessageBox.Show("vigi");
+						new FrmControlVigi().Show();
+						MessageBox.Show("Vigilante", "Bienvenido");
 					}
 				}
 				else
 				{
 					MessageBox.Show("Documento Y/O contraseña son incorrectos");
 				}
-
 			}
 			catch (Exception e)
 			{
@@ -108,11 +112,6 @@ namespace ProyectoFormativo
 			}
 		}
 
-		private void txtContrasena_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
 		private void login_MouseDown(object sender, MouseEventArgs e)
 		{
 			ReleaseCapture();
@@ -127,14 +126,7 @@ namespace ProyectoFormativo
 
 		private void btnCerrar_Click(object sender, EventArgs e)
 		{
-			DialogResult rpt = new DialogResult();
-			rpt = MessageBox.Show("Desea Salir?", "Informacion!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-			if (rpt == DialogResult.OK)
-			{
 				Application.Exit();
-			}
-
-
 		}
 
 		private void btnMinimizar_Click(object sender, EventArgs e)
@@ -144,7 +136,34 @@ namespace ProyectoFormativo
 
 		private void BtnIngresar_Click(object sender, EventArgs e)
 		{
-			Func_Login(this.txtUsusario.Text, this.txtContrasena.Text);
+            if (txtUsusario.Text == "Documento" && txtContrasena.Text == "Contraseña" || txtUsusario.Text == "" && txtContrasena.Text == "")
+            {
+                MessageBox.Show("Por favor llene los campos");
+            }
+            else
+            {
+                Func_Login(this.txtUsusario.Text, this.txtContrasena.Text);
+            }
+        }
+
+        private void txtUsusario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			if (e.KeyChar == (char)13)
+			{
+				BtnIngresar_Click(sender, e);
+			}
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtContrasena_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			if (e.KeyChar == (char)13)
+			{
+				BtnIngresar_Click(sender, e);
+			}
 		}
-	}
+    }
 }

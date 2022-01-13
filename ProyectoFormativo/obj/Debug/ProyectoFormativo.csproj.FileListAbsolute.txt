@@ -119,3 +119,5 @@ C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\Proyect
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources

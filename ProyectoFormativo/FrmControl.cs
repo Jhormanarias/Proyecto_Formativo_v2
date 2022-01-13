@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controllers;
+using System.Runtime.InteropServices;
 
 namespace ProyectoFormativo
 {
-	public partial class FrmControl : Form
+	public partial class FrmControlVigi : Form
 	{
-		public FrmControl()
+		public FrmControlVigi()
 		{
 			InitializeComponent();
 		}
@@ -24,6 +25,10 @@ namespace ProyectoFormativo
 		{
 			lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
 		}
+		//private void FrmControl_Load(object sender, EventArgs e)
+		//{
+		//	dataGridView1.AutoGenerateColumns = false;
+		//}
 
 		private void btn_salir_C_U_Click(object sender, EventArgs e)
 		{
@@ -37,6 +42,7 @@ namespace ProyectoFormativo
 
         private void btn_Busrcar_R_U_Click(object sender, EventArgs e)
         {
+			//DGVControl_U.ColumnHeadersVisible = false;
 			if (txt_Documento_C_U.Text == "" & txt_BuscarBien_C_U.Text == "")
 			{
 				MessageBox.Show("Llene un campo", "Adertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -44,21 +50,36 @@ namespace ProyectoFormativo
 			else
 			{
 				//buscar en la base de datos el visitante o bien
-				if (txt_Documento_C_U.Text != "")
-                {
+                if (txt_Documento_C_U.Text != "")
+				{
 					txt_nombre_R_U.Text = ClaseControlFrmVigilante.Func_TraeNomVisitante(Convert.ToInt64(txt_Documento_C_U.Text));
 					DGVControl_U.DataSource = ClaseControlFrmVigilante.Func_BusVisitante(Convert.ToInt64(txt_Documento_C_U.Text));
-
 				}
-                else
-                {
+				else if (txt_BuscarBien_C_U.Text != "")
+				{
 					txt_nombre_R_U.Text = ClaseControlFrmVigilante.Func_TraeNomVisitanteS(txt_BuscarBien_C_U.Text);
 					DGVControl_U.DataSource = ClaseControlFrmVigilante.Func_BusVisitanteBien(txt_BuscarBien_C_U.Text);
 				}
-				
+
 				if (txt_nombre_R_U.Text == "")
 				{
 					MessageBox.Show("Visitante o bien no registrado", "Adertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+                else
+                {
+					
+					long idbien = Convert.ToInt64(DGVControl_U.CurrentRow.Cells[0].Value);
+					DataTable tabla = ClaseControlFrmVigilante.Fun_ValidarBien(idbien);
+					if (tabla.Rows.Count > 1)
+					{
+						btn_Ingreso_U.Enabled = false;
+						btn_Salida_U.Enabled = true;
+					}
+					else
+					{
+						btn_Salida_U.Enabled = false;
+						btn_Ingreso_U.Enabled = true;
+					}
 				}
 				//else
 				//{
@@ -77,14 +98,14 @@ namespace ProyectoFormativo
 			txt_Documento_C_U.Clear();
 			txt_BuscarBien_C_U.Clear();
 			DataTable dt = (DataTable)DGVControl_U.DataSource;
-			dt.Clear();
+			if (dt != null)
+            {
+				dt.Clear();
+			}
+			
 
 		}
 
-        private void cb_FechaFiltrar_U_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_Ingreso_U_Click(object sender, EventArgs e)
         {
@@ -92,8 +113,9 @@ namespace ProyectoFormativo
 			long idbien = Convert.ToInt64(DGVControl_U.CurrentRow.Cells[0].Value.ToString());
 			if (ClaseControlFrmVigilante.Fun_ControlBien(idbien))
 			{
-				MessageBox.Show("Bien ingresado satisfactoriamente");
+				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
+				FrmControlVigi_Load(sender, e);
 			}
 		}
 
@@ -117,8 +139,9 @@ namespace ProyectoFormativo
 			long idbien = Convert.ToInt64(DGVControl_U.CurrentRow.Cells[0].Value.ToString());
 			if (ClaseControlFrmVigilante.Fun_ControlBien(idbien))
 			{
-				MessageBox.Show("Vuelva pronto");
+				MessageBox.Show("Salida registrada", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
+				FrmControlVigi_Load(sender, e);
 			}
 		}
 
@@ -142,7 +165,8 @@ namespace ProyectoFormativo
         {
 			n = e.RowIndex;
 
-			
+			if (n != -1)
+            {
 				long idbien = Convert.ToInt64(DGVControl_U.CurrentRow.Cells[0].Value);
 				DataTable tabla = ClaseControlFrmVigilante.Fun_ValidarBien(idbien);
 				if (tabla.Rows.Count > 1)
@@ -150,17 +174,89 @@ namespace ProyectoFormativo
 					btn_Ingreso_U.Enabled = false;
 					btn_Salida_U.Enabled = true;
 				}
-                else
-                {
+				else
+				{
 					btn_Salida_U.Enabled = false;
 					btn_Ingreso_U.Enabled = true;
 				}
-            
+			}
         }
 
-        private void FrmControl_Activated(object sender, EventArgs e)
-        {
+		private void txt_filtrarReporteDoc_Enter(object sender, EventArgs e)
+		{
 
+			if (txt_filtrarReporteDoc.Text == "Documento")
+			{
+				txt_filtrarReporteDoc.Text = "";
+				this.txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.Silver;
+			}
+		}
+
+        private void txt_filtrarReporteDoc_Leave(object sender, EventArgs e)
+        {
+			if (txt_filtrarReporteDoc.Text == "")
+			{
+				txt_filtrarReporteDoc.Text = "Documento";
+				this.txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void cb_Documento_R_CheckedChanged(object sender, EventArgs e)
+        {
+			txt_filtrarReporteDoc.Enabled = true;
+			if (this.cb_Documento_R.Checked == false)
+            {
+				txt_filtrarReporteDoc.Enabled = false;
+				txt_filtrarReporteDoc.Text = "Documento";
+				txt_filtrarReporteDoc.ForeColor = System.Drawing.Color.Silver;
+			}
+		}
+
+        private void cb_Fecha_R_CheckedChanged(object sender, EventArgs e)
+        {
+			dt_Fecha_R.Enabled = true;
+			if (this.cb_Fecha_R.Checked == false)
+			{
+				dt_Fecha_R.Enabled = false;
+			}
+		}
+
+        private void FrmControlVigi_Activated(object sender, EventArgs e)
+        {
+			//lbl_Nom_User.Visible = true;
+			//lbl_Nom_User.Text = ClaseControlFrmVigilante.usuario;
+			//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+
+			//int c = DGVReportes.Rows.Count;
+			//if (c > 0)
+			//{
+			//	for (int i = 0; i < c; i++)
+			//	{
+			//		if (DGVReportes.Rows[i].Cells[5].Value.GetType() == typeof(System.DBNull))
+			//		{
+			//			DGVReportes.Rows[i].DefaultCellStyle.BackColor = System.Drawing.Color.Yellow;
+
+			//		}
+			//	}
+			//}
+		}
+
+		private void FrmControlVigi_Load(object sender, EventArgs e)
+		{
+			lbl_Nom_User.Visible = true;
+			lbl_Nom_User.Text = ClaseControlFrmVigilante.usuario;
+			DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+		}
+
+		private void DGVReportes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (this.DGVReportes.Columns[e.ColumnIndex].HeaderText == "H. Salida")
+            {
+                if (e.Value.GetType() == typeof(System.DBNull))
+                {
+                    e.CellStyle.BackColor = System.Drawing.Color.Yellow;
+                }
+            }
         }
     }
 }

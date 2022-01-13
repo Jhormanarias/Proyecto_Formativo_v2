@@ -12,7 +12,7 @@ namespace Models
 	public class ClaseModeloFrmLogin
 	{
 		//creo la conexion 
-		public static string cadena = "Server=(local)\\SQLEXPRESS;Database=Proyecto;User Id = ADSI; Password=2144539;";
+		public static string cadena = "Server=.\\SQLEXPRESS;Database=Proyecto;User Id = ADSI; Password=2144539;";
 		public static string msgExcep = "";
 
 		public static bool Func_Conectar()
@@ -29,7 +29,7 @@ namespace Models
 			}
 		}
 
-		public static DataTable TreaerAdmi()
+		public static DataTable TreaerAdmin()
 		{
 			DataTable tabla = new DataTable();
 			SqlDataAdapter adap = new SqlDataAdapter();
