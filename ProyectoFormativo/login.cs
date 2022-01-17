@@ -51,7 +51,6 @@ namespace ProyectoFormativo
 					else if (tabla.Rows[0][3].ToString() == "Vigilante")
 					{
 						new FrmControlVigi().Show();
-						MessageBox.Show("Vigilante", "Bienvenido");
 					}
 				}
 				else

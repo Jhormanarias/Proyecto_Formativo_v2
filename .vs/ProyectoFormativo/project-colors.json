@@ -5,7 +5,12 @@
       "ProjectGuid": "6696b406-23fe-40ae-ae3c-2cef34f4e1ba",
       "DisplayName": "ProyectoFormativo",
       "ColorIndex": 0
+    },
+    "dd8927a3-9efc-493e-a261-a5b2565321a0": {
+      "ProjectGuid": "dd8927a3-9efc-493e-a261-a5b2565321a0",
+      "DisplayName": "Controllers",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

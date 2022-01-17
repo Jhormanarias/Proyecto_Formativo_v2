@@ -14,21 +14,223 @@ using System.Runtime.InteropServices;
 namespace ProyectoFormativo
 {
 	public partial class FrmControlVigi : Form
+
+		
 	{
+		ClaseControlFrmVigilante objp = new ClaseControlFrmVigilante();
+		DataSet dsTabla;
+		int PagInicio = 1, Indice = 0, NumFilas = 10, PagFinal, control = 0;
+		DateTime fechaR;
+		long doc = 0;
 		public FrmControlVigi()
 		{
 			InitializeComponent();
+			PagFinal = NumFilas;
+			CargarDG();
 		}
 		
 		private int n = 0;
+
+		private void CargarDG()
+        {
+			objp.Inicio1 = PagInicio;
+			objp.Final1 = PagFinal;
+			dsTabla = objp.Func_Reportes();
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+            {
+				combox_pag.Items.Add(x.ToString());
+			}
+			
+			combox_pag.SelectedIndex = Indice;
+
+			control = 0;
+		}
+
+		private void CargarDGFiltrarC()
+		{
+			objp.Inicio1 = PagInicio;
+			objp.Final1 = PagFinal;
+			dsTabla = objp.Func_FiltrarDoc(doc);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = Indice-1;
+
+			control = 1;
+		}
+
+		private void CargarDGFiltrarCx()
+		{
+			objp.Inicio1 = 1;
+			objp.Final1 = 10;
+			dsTabla = objp.Func_FiltrarDoc(doc);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = 0;
+
+			control = 1;
+		}
+		private void CargarDGFiltrarF()
+		{
+			objp.Inicio1 = PagInicio;
+			objp.Final1 = PagFinal;
+			dsTabla = objp.Func_FiltrarFe(fechaR);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = 0;
+
+			control = 2;
+		}
+		private void CargarDGFiltrarFx()
+		{
+			objp.Inicio1 = 1;
+			objp.Final1 = 10;
+			dsTabla = objp.Func_FiltrarFe(fechaR);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = 0;
+
+			control = 2;
+		}
+
+		private void CargarDGFiltrarDF()
+		{
+			objp.Inicio1 = PagInicio;
+			objp.Final1 = PagFinal;
+			dsTabla = objp.Func_Filtrar(fechaR, doc);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = 0;
+
+			control = 3;
+		}
+		private void CargarDGFiltrarDFx()
+		{
+			objp.Inicio1 = 1;
+			objp.Final1 = 10;
+			dsTabla = objp.Func_Filtrar(fechaR, doc);
+			DGVReportes.DataSource = dsTabla.Tables[1];
+			//DGVReportes.Columns[0].Visible = false;
+
+			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+
+			if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) cantidad++;
+
+			txt_Cantidad.Text = cantidad.ToString();
+			combox_pag.Items.Clear();
+
+			for (int x = 1; x <= cantidad; x++)
+			{
+				combox_pag.Items.Add(x.ToString());
+			}
+
+			combox_pag.SelectedIndex = 0;
+
+			control = 3;
+		}
+
+		private void combox_pag_SelectionChangeCommitted(object sender, EventArgs e)
+		{
+			int pagina = Convert.ToInt32(combox_pag.SelectedItem.ToString());
+			Indice = pagina - 1;
+			PagInicio = (pagina - 1) * NumFilas + 1;
+			PagFinal = pagina * NumFilas;
+
+			if (control == 0)
+			{
+				CargarDG();
+			}
+			if (control == 1)
+			{
+				CargarDGFiltrarC();
+			}
+			if (control == 2)
+            {
+				CargarDGFiltrarF();
+			}
+			if (control == 3)
+			{
+				CargarDGFiltrarDF();
+			}
+		}
 		private void relog_Tick(object sender, EventArgs e)
 		{
 			lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
 		}
-		//private void FrmControl_Load(object sender, EventArgs e)
-		//{
-		//	dataGridView1.AutoGenerateColumns = false;
-		//}
 
 		private void btn_salir_C_U_Click(object sender, EventArgs e)
 		{
@@ -133,7 +335,8 @@ namespace ProyectoFormativo
 			{
 				MessageBox.Show("Salida registrada", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
-				FrmControlVigi_Load(sender, e);
+				//FrmControlVigi_Load(sender, e);
+				combox_pag_SelectionChangeCommitted(sender, e);
 			}
 		}
 
@@ -205,7 +408,8 @@ namespace ProyectoFormativo
 			}
 			if (this.cb_Fecha_R.Checked == false && this.cb_Documento_R.Checked == false)
 			{
-				DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				CargarDG();
 				btn_Feltar.Enabled = false;
 			}
 		}
@@ -220,7 +424,8 @@ namespace ProyectoFormativo
 			}
 			if (this.cb_Fecha_R.Checked == false && this.cb_Documento_R.Checked == false)
             {
-				DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+				CargarDG();
 				btn_Feltar.Enabled = false;
 			}
 		}
@@ -248,13 +453,16 @@ namespace ProyectoFormativo
 		private void FrmControlVigi_Load(object sender, EventArgs e)
 		{
 			lbl_Nom_User.Visible = true;
+			lbl_Rol.Visible = true;
 			lbl_Nom_User.Text = ClaseControlFrmVigilante.usuario;
-			DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+			lbl_Rol.Text = ClaseControlFrmVigilante.rol;
+			//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+			
 		}
 
-		private void DGVReportes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void DGVReportes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (this.DGVReportes.Columns[e.ColumnIndex].HeaderText == "H. Salida")
+            if (this.DGVReportes.Columns[e.ColumnIndex].HeaderText == "Hora S.")
             {
                 if (e.Value.GetType() == typeof(System.DBNull))
                 {
@@ -265,8 +473,7 @@ namespace ProyectoFormativo
 
         private void btn_Feltar_Click(object sender, EventArgs e)
         {
-			DateTime fechaR = dt_Fecha_R.Value;
-			long doc = 0;
+			fechaR = dt_Fecha_R.Value;
 			if (this.cb_Documento_R.Checked == true && this.cb_Fecha_R.Checked == false)
             {
 				if (txt_filtrarReporteDoc.Text == "Documento" || txt_filtrarReporteDoc.Text == "")
@@ -276,10 +483,14 @@ namespace ProyectoFormativo
 				else
 				{
 					doc = Convert.ToInt64(txt_filtrarReporteDoc.Text);
-					DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
-					if (tabla.Rows.Count > 0)
+					//DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
+					dsTabla = objp.Func_FiltrarDocx(doc);
+					DataTable Tabla = dsTabla.Tables[1];
+
+					if (Tabla.Rows.Count > 0)
                     {
-						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
+						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
+						CargarDGFiltrarCx();
 					}
                     else
                     {
@@ -287,7 +498,8 @@ namespace ProyectoFormativo
 						DataTable dt = (DataTable)DGVReportes.DataSource;
 						if (dt == null)
 						{
-							DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+							//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+							CargarDG();
 						}
 					}
 				}
@@ -295,11 +507,13 @@ namespace ProyectoFormativo
 			
 			if (this.cb_Fecha_R.Checked == true && this.cb_Documento_R.Checked == false)
             {
-				DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
-				if (tabla.Rows.Count > 0)
+				//DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
+				dsTabla = objp.Func_FiltrarFex(fechaR);
+				DataTable Tabla = dsTabla.Tables[1];
+				if (Tabla.Rows.Count > 0)
 				{
-
-					DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
+					//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
+					CargarDGFiltrarFx();
 				}
 				else
 				{
@@ -307,7 +521,8 @@ namespace ProyectoFormativo
 					DataTable dt = (DataTable)DGVReportes.DataSource;
 					if (dt == null)
 					{
-						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+						CargarDG();
 					}
 				}
 				
@@ -322,10 +537,13 @@ namespace ProyectoFormativo
 				else
 				{
 					doc = Convert.ToInt64(txt_filtrarReporteDoc.Text);
-					DataTable tabla = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
-					if (tabla.Rows.Count > 0)
+					//DataTable tabla = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
+					dsTabla = objp.Func_Filtrarx(fechaR, doc);
+					DataTable Tabla = dsTabla.Tables[1];
+					if (Tabla.Rows.Count > 0)
 					{
-						DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
+						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
+						CargarDGFiltrarDFx();
 					}
 					else
 					{
@@ -333,7 +551,8 @@ namespace ProyectoFormativo
 						DataTable dt = (DataTable)DGVReportes.DataSource;
 						if (dt == null)
 						{
-							DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+							//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
+							CargarDG();
 						}
 					}
 					

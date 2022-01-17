@@ -47,3 +47,4 @@ C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pd
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
