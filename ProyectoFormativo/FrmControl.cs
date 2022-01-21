@@ -22,14 +22,13 @@ namespace ProyectoFormativo
 		int PagInicio = 1, Indice = 0, NumFilas = 10, PagFinal, control = 0;
 		DateTime fechaR;
 		long doc = 0;
+		private int n = 0;
 		public FrmControlVigi()
 		{
 			InitializeComponent();
 			PagFinal = NumFilas;
 			CargarDG();
 		}
-		
-		private int n = 0;
 
 		private void CargarDG()
         {
@@ -178,6 +177,7 @@ namespace ProyectoFormativo
 
 			control = 3;
 		}
+
 		private void CargarDGFiltrarDFx()
 		{
 			objp.Inicio1 = 1;
@@ -203,6 +203,7 @@ namespace ProyectoFormativo
 			control = 3;
 		}
 
+		//accion para cambiar de paginas en la tabla
 		private void combox_pag_SelectionChangeCommitted(object sender, EventArgs e)
 		{
 			int pagina = Convert.ToInt32(combox_pag.SelectedItem.ToString());
@@ -286,6 +287,7 @@ namespace ProyectoFormativo
 			}
 		}
 
+		//Limpio la tabla y las cajas de texto y desavilito los botones entrada y salida
         private void btn_cancelar_C_U_Click(object sender, EventArgs e)
         {
 			txt_nombre_R_U.Clear();
@@ -350,12 +352,18 @@ namespace ProyectoFormativo
 
 		private void txt_Documento_C_U_KeyPress(object sender, KeyPressEventArgs e)
 		{
+			if (e.KeyChar == (char)13)
+			{
+				btn_Busrcar_R_U_Click(sender, e);
+			}
+
 			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
 			{
 				e.Handled = true;
 			}
 		}
 
+		//Selecciono fila para dara ingrso o salida
         private void DGVControl_U_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 			n = e.RowIndex;
@@ -364,6 +372,7 @@ namespace ProyectoFormativo
             {
 				long idbien = Convert.ToInt64(DGVControl_U.CurrentRow.Cells[0].Value);
 				DataTable tabla = ClaseControlFrmVigilante.Fun_ValidarBien(idbien);
+				
 				if (tabla.Rows.Count > 1)
 				{
 					btn_Ingreso_U.Enabled = false;
@@ -396,7 +405,8 @@ namespace ProyectoFormativo
 			}
 		}
 
-        private void cb_Documento_R_CheckedChanged(object sender, EventArgs e)
+		//Recargo nuevanmentela tabla reporte cuando no este filtrando por documento
+		private void cb_Documento_R_CheckedChanged(object sender, EventArgs e)
         {
 			txt_filtrarReporteDoc.Enabled = true;
 			btn_Feltar.Enabled = true;
@@ -414,6 +424,7 @@ namespace ProyectoFormativo
 			}
 		}
 
+		//Recargo nuevanmentela tabla reporte cuando no este filtrando por fecha
         private void cb_Fecha_R_CheckedChanged(object sender, EventArgs e)
         {
 			dt_Fecha_R.Enabled = true;
@@ -430,6 +441,7 @@ namespace ProyectoFormativo
 			}
 		}
 
+		//Coloreo filas que esten vacias en el campo Salida
         private void FrmControlVigi_Activated(object sender, EventArgs e)
         {
 			//lbl_Nom_User.Visible = true;
@@ -450,6 +462,7 @@ namespace ProyectoFormativo
 			//}
 		}
 
+		//Muestro nombre de usuario y tipo de rol
 		private void FrmControlVigi_Load(object sender, EventArgs e)
 		{
 			lbl_Nom_User.Visible = true;
@@ -471,9 +484,11 @@ namespace ProyectoFormativo
             }
         }
 
+		//filtrar por busqueda en la tabla reporte 
         private void btn_Feltar_Click(object sender, EventArgs e)
         {
 			fechaR = dt_Fecha_R.Value;
+			//filtro por documento
 			if (this.cb_Documento_R.Checked == true && this.cb_Fecha_R.Checked == false)
             {
 				if (txt_filtrarReporteDoc.Text == "Documento" || txt_filtrarReporteDoc.Text == "")
@@ -505,6 +520,7 @@ namespace ProyectoFormativo
 				}
 			}
 			
+			//Filtro por fecha
 			if (this.cb_Fecha_R.Checked == true && this.cb_Documento_R.Checked == false)
             {
 				//DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
@@ -527,7 +543,8 @@ namespace ProyectoFormativo
 				}
 				
 			}
-
+			
+			//Filtro por fecha y documendo
 			if(this.cb_Documento_R.Checked == true & this.cb_Fecha_R.Checked == true)
             {
 				if (txt_filtrarReporteDoc.Text == "Documento" || txt_filtrarReporteDoc.Text == "")
@@ -561,6 +578,7 @@ namespace ProyectoFormativo
 				
 		}
 
+		//Permitir solo la entrada numerica y ejecutar evento con la tecla enter (tabla reporte)
         private void txt_filtrarReporteDoc_KeyPress(object sender, KeyPressEventArgs e)
         {
 			if (e.KeyChar == (char)13)
