@@ -42,10 +42,14 @@ namespace ProyectoFormativo
 					ClaseControlFrmVigilante.idusuario = Convert.ToInt64(tabla.Rows[0][0]);
 					ClaseControlFrmVigilante.usuario = tabla.Rows[0][1].ToString() + " " + tabla.Rows[0][2].ToString();
 					ClaseControlFrmVigilante.rol = tabla.Rows[0][3].ToString();
+
+					ClaseControlAdmin.idusuario = Convert.ToInt64(tabla.Rows[0][0]);
+					ClaseControlAdmin.usuario = tabla.Rows[0][1].ToString() + " " + tabla.Rows[0][2].ToString();
+					ClaseControlAdmin.rol = tabla.Rows[0][3].ToString();
+
 					this.Hide();
 					if (tabla.Rows[0][3].ToString() == "Administrador")
 					{
-						MessageBox.Show("Administrador", "Bienvenido");
 						new FrmControlAdmin().Show();
 					}
 					else if (tabla.Rows[0][3].ToString() == "Vigilante")

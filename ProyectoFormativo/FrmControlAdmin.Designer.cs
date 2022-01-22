@@ -30,16 +30,16 @@ namespace ProyectoFormativo
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControlAdmin));
             this.btnIngresoAdmin = new System.Windows.Forms.Button();
             this.tc_Usuario = new System.Windows.Forms.TabControl();
@@ -572,14 +572,14 @@ namespace ProyectoFormativo
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle98.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle98.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle98.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle98;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView1.ColumnHeadersHeight = 25;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -596,18 +596,18 @@ namespace ProyectoFormativo
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle99.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle99.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle99.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle99.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle99.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle99.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle99;
-            dataGridViewCellStyle100.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle100.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle100.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle100;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(721, 155);
             this.dataGridView1.TabIndex = 13;
@@ -933,14 +933,14 @@ namespace ProyectoFormativo
             this.DGVControl_Admin.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGVControl_Admin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DGVControl_Admin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle91.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle91.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle91.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle91.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVControl_Admin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle91;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVControl_Admin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.DGVControl_Admin.ColumnHeadersHeight = 25;
             this.DGVControl_Admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGVControl_Admin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -956,18 +956,18 @@ namespace ProyectoFormativo
             this.DGVControl_Admin.Name = "DGVControl_Admin";
             this.DGVControl_Admin.ReadOnly = true;
             this.DGVControl_Admin.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle92.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle92.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle92.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle92.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle92.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVControl_Admin.RowHeadersDefaultCellStyle = dataGridViewCellStyle92;
-            dataGridViewCellStyle93.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle93.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle93.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGVControl_Admin.RowsDefaultCellStyle = dataGridViewCellStyle93;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVControl_Admin.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGVControl_Admin.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.DGVControl_Admin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVControl_Admin.Size = new System.Drawing.Size(721, 124);
             this.DGVControl_Admin.TabIndex = 12;
@@ -1110,21 +1110,21 @@ namespace ProyectoFormativo
             // 
             this.DGVReportesAdmin.AllowUserToAddRows = false;
             this.DGVReportesAdmin.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle94.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle94.ForeColor = System.Drawing.Color.Black;
-            this.DGVReportesAdmin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle94;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
+            this.DGVReportesAdmin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
             this.DGVReportesAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVReportesAdmin.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.DGVReportesAdmin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DGVReportesAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle95.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle95.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle95.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle95.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVReportesAdmin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle95;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVReportesAdmin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.DGVReportesAdmin.ColumnHeadersHeight = 25;
             this.DGVReportesAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGVReportesAdmin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1142,21 +1142,22 @@ namespace ProyectoFormativo
             this.DGVReportesAdmin.Location = new System.Drawing.Point(25, 42);
             this.DGVReportesAdmin.Name = "DGVReportesAdmin";
             this.DGVReportesAdmin.ReadOnly = true;
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle96.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle96.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle96.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle96.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVReportesAdmin.RowHeadersDefaultCellStyle = dataGridViewCellStyle96;
-            dataGridViewCellStyle97.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle97.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle97.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGVReportesAdmin.RowsDefaultCellStyle = dataGridViewCellStyle97;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVReportesAdmin.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGVReportesAdmin.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.DGVReportesAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVReportesAdmin.Size = new System.Drawing.Size(720, 220);
             this.DGVReportesAdmin.TabIndex = 7;
+            this.DGVReportesAdmin.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DGVReportesAdmin_CellFormatting);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -1273,6 +1274,7 @@ namespace ProyectoFormativo
             this.txt_filtrarReporteDocAdmin.TabIndex = 6;
             this.txt_filtrarReporteDocAdmin.Text = "Documento";
             this.txt_filtrarReporteDocAdmin.Enter += new System.EventHandler(this.txt_filtrarReporteDocAdmin_Enter);
+            this.txt_filtrarReporteDocAdmin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_filtrarReporteDocAdmin_KeyPress);
             this.txt_filtrarReporteDocAdmin.Leave += new System.EventHandler(this.txt_filtrarReporteDocAdmin_Leave);
             // 
             // cb_Documento_RAdmin
@@ -1315,7 +1317,7 @@ namespace ProyectoFormativo
             // 
             this.lbl_Rol.AutoSize = true;
             this.lbl_Rol.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Rol.Location = new System.Drawing.Point(704, 11);
+            this.lbl_Rol.Location = new System.Drawing.Point(687, 11);
             this.lbl_Rol.Name = "lbl_Rol";
             this.lbl_Rol.Size = new System.Drawing.Size(31, 19);
             this.lbl_Rol.TabIndex = 9;
@@ -1326,7 +1328,7 @@ namespace ProyectoFormativo
             // 
             this.pictureBox1.Image = global::ProyectoFormativo.Properties.Resources.user3;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(674, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(657, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

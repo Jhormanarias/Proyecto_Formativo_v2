@@ -473,6 +473,7 @@ namespace ProyectoFormativo
 			
 		}
 
+		//Coloreo celda bacia
         private void DGVReportes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (this.DGVReportes.Columns[e.ColumnIndex].HeaderText == "Hora S.")

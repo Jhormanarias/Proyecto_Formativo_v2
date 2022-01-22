@@ -186,12 +186,6 @@ namespace Controllers
         //CONSULTO LOS REPORTES DEL CONTROL
         public DataSet Func_Reportes()
         {
-            //DataSet tabla = new DataSet();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            ////SqlDataAdapter adap = new SqlDataAdapter("PA_REPORTE", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.Fill(tabla);
-            //return tabla;
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTAR", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -209,14 +203,6 @@ namespace Controllers
         //FILTRO LOS REPORTES
         public DataSet Func_Filtrar(DateTime fecha, long doc)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTEX2", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
-            //adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
-            //adap.Fill(tabla);
-            //return tabla;
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADOX2", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -231,14 +217,6 @@ namespace Controllers
         }
         public DataSet Func_Filtrarx(DateTime fecha, long doc)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTEX2", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
-            //adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
-            //adap.Fill(tabla);
-            //return tabla;
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADOX2", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -254,13 +232,6 @@ namespace Controllers
 
         public DataSet Func_FiltrarDoc(long doc)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
-            //adap.Fill(tabla);
-            //return tabla;
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -275,13 +246,6 @@ namespace Controllers
 
         public DataSet Func_FiltrarDocx(long doc)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
-            //adap.Fill(tabla);
-            //return tabla;
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -295,14 +259,6 @@ namespace Controllers
         }
         public DataSet Func_FiltrarFe(DateTime fecha)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
-            //adap.Fill(tabla);
-            //return tabla;
-
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);
             comando.CommandType = CommandType.StoredProcedure;
@@ -317,14 +273,6 @@ namespace Controllers
 
         public DataSet Func_FiltrarFex(DateTime fecha)
         {
-            //DataTable tabla = new DataTable();
-            //SqlConnection conexion = new SqlConnection(cadena);
-            //SqlDataAdapter adap = new SqlDataAdapter("PA_FILTRARREPORTE", conexion);
-            //adap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            //adap.SelectCommand.Parameters.Add("@FECHA", SqlDbType.Date).Value = fecha;
-            //adap.Fill(tabla);
-            //return tabla;
-
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);
             comando.CommandType = CommandType.StoredProcedure;

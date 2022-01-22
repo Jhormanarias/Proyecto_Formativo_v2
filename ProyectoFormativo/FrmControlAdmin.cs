@@ -34,60 +34,6 @@ namespace ProyectoFormativo
 			CargarDG();
 		}
 
-
-		//private void FrmControlAdmin_Load(object sender, EventArgs e)
-		//{
-		//	txtIdBienAC.ForeColor = Color.Gray;
-		//	txtDocumentoAC.ForeColor = Color.Gray;
-		//	txtNombreAC.ForeColor = Color.Gray;
-		//	txtBienAC.ForeColor = Color.Gray;
-		//	txtDocumentoAU.ForeColor = Color.Gray;
-		//	txtNombreAU.ForeColor = Color.Gray;
-		//	txtApellidoAU.ForeColor = Color.Gray;
-		//}
-
-		//private void txtIdEquipo_Enter(object sender, EventArgs e)
-		//{
-		//	txtIdBienAC.Text = "";
-		//	txtIdBienAC.ForeColor = Color.Black;
-		//}
-
-		//private void txtDocumento_Enter(object sender, EventArgs e)
-		//{
-		//	txtDocumentoAC.Text = "";
-		//	txtDocumentoAC.ForeColor = Color.Black;
-		//}
-
-		//private void txtNombre_Enter(object sender, EventArgs e)
-		//{
-		//	txtNombreAC.Text = "";
-		//	txtNombreAC.ForeColor = Color.Black;
-		//}
-
-		//private void txtEquipo_Enter(object sender, EventArgs e)
-		//{
-		//	txtBienAC.Text = "";
-		//	txtBienAC.ForeColor = Color.Black;
-		//}
-
-		//private void txtDocumentoAU_Enter(object sender, EventArgs e)
-		//{
-		//	txtDocumentoAC.Text = "";
-		//	txtDocumentoAC.ForeColor = Color.Black;
-		//}
-
-		//private void txtNombreAU_Enter(object sender, EventArgs e)
-		//{
-		//	txtNombreAU.Text = "";
-		//	txtNombreAU.ForeColor = Color.Black;
-		//}
-
-		//private void txtApellidoAU_Enter(object sender, EventArgs e)
-		//{
-		//	txtApellidoAU.Text = "";
-		//	txtApellidoAU.ForeColor = Color.Black;
-		//}
-
         private void timerAdmin_Tick(object sender, EventArgs e)
         {
 			lbl_horaAdmin.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
@@ -98,31 +44,18 @@ namespace ProyectoFormativo
         public enum KnownColorNew
         {
             Black = 35,
-            
             Blue = 37,
-            
             Fuchsia = 73,
-            
             Gray = 78,
-
             Green = 79,
-
             Maroon = 108,
-           
             Orange = 127,
-            
             Pink = 137,
-           
             Purple = 140,
-
             Red = 141,
-           
             Silver = 150,
-           
             Violet = 162,
-            
             White = 164,
-
 			Yellow = 166,
 		}
 
@@ -305,7 +238,7 @@ namespace ProyectoFormativo
         //--------------------------------------------------- FIN MODULO CONTROL ----------------------------------------------------
 
 
-        //---------------------------------------------------- MODULO RESPOTES ------------------------------------------------------
+        //---------------------------------------------------- MODULO REPORTES ------------------------------------------------------
 
         private void btn_salirReportes_Click(object sender, EventArgs e)
 		{
@@ -317,7 +250,19 @@ namespace ProyectoFormativo
 			}
 		}
 
-        private void txt_filtrarReporteDocAdmin_Enter(object sender, EventArgs e)
+		private void txt_filtrarReporteDocAdmin_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				btnFiltarR_Click(sender, e);
+			}
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void txt_filtrarReporteDocAdmin_Enter(object sender, EventArgs e)
 		{
 			if (txt_filtrarReporteDocAdmin.Text == "Documento")
 			{
@@ -659,5 +604,18 @@ namespace ProyectoFormativo
 				CargarDGFiltrarDF();
 			}
 		}
+
+		private void DGVReportesAdmin_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+		{
+			if (this.DGVReportesAdmin.Columns[e.ColumnIndex].HeaderText == "Hora S.")
+			{
+				if (e.Value.GetType() == typeof(System.DBNull))
+				{
+					e.CellStyle.BackColor = System.Drawing.Color.Yellow;
+				}
+			}
+		}
+
+		//------------------------------------------------- FIN MODULO REPORTES --------------------------------------------------
 	}
 } 
