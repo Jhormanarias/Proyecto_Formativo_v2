@@ -181,7 +181,7 @@ namespace Controllers
         //la hora de salida este vacia y si lo esta puede darle salida de lo contrario no puede por q el bien ya salio
 
 
-        //------------------------------------------------- REPOSTES -------------------------------------------------------
+        //------------------------------------------------- REPORTES -------------------------------------------------------
 
         //CONSULTO LOS REPORTES DEL CONTROL
         public DataSet Func_Reportes()

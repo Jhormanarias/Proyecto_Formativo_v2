@@ -16,7 +16,7 @@ namespace ProyectoFormativo
 {
 	public partial class FrmControlAdmin : Form
 	{
-		//Vaiables modulo respotes
+		//Vaiables modulo reportes
 		ClaseControlAdmin objp = new ClaseControlAdmin();
 		DataSet dsTabla;
 		int PagInicio = 1, Indice = 0, NumFilas = 10, PagFinal, control = 0;
@@ -97,6 +97,14 @@ namespace ProyectoFormativo
 			lbl_Rol.Visible = true;
 			lbl_Nom_User.Text = ClaseControlFrmVigilante.usuario;
 			lbl_Rol.Text = ClaseControlFrmVigilante.rol;
+
+			btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
+
+			btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnFiltarR.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -134,11 +142,19 @@ namespace ProyectoFormativo
 					{
 						btnIngresoAdmin.Enabled = false;
 						btnSalidaAdmin.Enabled = true;
+						btnSalidaAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+						btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
+						btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+						btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 					}
 					else
 					{
 						btnSalidaAdmin.Enabled = false;
 						btnIngresoAdmin.Enabled = true;
+						btnIngresoAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+						btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
+						btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+						btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 					}
 				}
 			}
@@ -151,6 +167,10 @@ namespace ProyectoFormativo
 			btnSalidaAdmin.Enabled = false;
 			txt_Documento_C_Admin.Clear();
 			txt_BuscarBien_C_Admin.Clear();
+			btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 			DataTable dt = (DataTable)DGVControl_Admin.DataSource;
 			if (dt != null)
 			{
@@ -226,11 +246,19 @@ namespace ProyectoFormativo
 				{
 					btnIngresoAdmin.Enabled = false;
 					btnSalidaAdmin.Enabled = true;
+					btnSalidaAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+					btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
+					btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+					btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 				}
 				else
 				{
 					btnSalidaAdmin.Enabled = false;
 					btnIngresoAdmin.Enabled = true;
+					btnIngresoAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+					btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
+					btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
+					btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 				}
 			}
 		}
@@ -284,6 +312,9 @@ namespace ProyectoFormativo
 		{
 			dt_Fecha_RAdmin.Enabled = true;
 			btnFiltarR.Enabled = true;
+			btnFiltarR.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnFiltarR.ForeColor = System.Drawing.SystemColors.HighlightText;
+
 			if (this.dt_Fecha_RAdmin.Checked == false)
 			{
 				dt_Fecha_RAdmin.Enabled = false;
@@ -293,6 +324,8 @@ namespace ProyectoFormativo
 				//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
 				CargarDG();
 				btnFiltarR.Enabled = false;
+				btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnFiltarR.ForeColor = System.Drawing.SystemColors.ControlLight;
 			}
 		}
 
@@ -300,6 +333,9 @@ namespace ProyectoFormativo
 		{
 			txt_filtrarReporteDocAdmin.Enabled = true;
 			btnFiltarR.Enabled = true;
+			btnFiltarR.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnFiltarR.ForeColor = System.Drawing.SystemColors.HighlightText;
+
 			if (this.cb_Documento_RAdmin.Checked == false)
 			{
 				txt_filtrarReporteDocAdmin.Enabled = false;
@@ -310,6 +346,8 @@ namespace ProyectoFormativo
 			{
 				CargarDG();
 				btnFiltarR.Enabled = false;
+				btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnFiltarR.ForeColor = System.Drawing.SystemColors.ControlLight;
 			}
 		}
 
