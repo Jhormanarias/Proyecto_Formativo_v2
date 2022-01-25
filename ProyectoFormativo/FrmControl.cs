@@ -311,7 +311,8 @@ namespace ProyectoFormativo
 			{
 				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
-				FrmControlVigi_Load(sender, e);
+				//FrmControlVigi_Load(sender, e);
+				combox_pag_SelectionChangeCommitted(sender, e);
 			}
 		}
 

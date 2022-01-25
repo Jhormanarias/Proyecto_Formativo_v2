@@ -216,7 +216,7 @@ namespace ProyectoFormativo
 			{
 				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelarAdmin_Click(sender, e);
-				FrmControlAdmin_Load(sender, e);
+				combox_pagAdmin_SelectionChangeCommitted(sender, e);
 			}
 		}
 
@@ -227,7 +227,7 @@ namespace ProyectoFormativo
 			{
 				MessageBox.Show("Salida registrada", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelarAdmin_Click(sender, e);
-				//combox_pag_SelectionChangeCommitted(sender, e);
+				combox_pagAdmin_SelectionChangeCommitted(sender, e);
 			}
 		}
 
