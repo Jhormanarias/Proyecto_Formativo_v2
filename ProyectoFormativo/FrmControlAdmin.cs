@@ -40,30 +40,49 @@ namespace ProyectoFormativo
 			lbl_horaRAdminReporte.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
 		}
 
-		//Lista de colores para el bombobox
+		//Lista de colores para el combobox
         public enum KnownColorNew
         {
-            Black = 35,
-            Blue = 37,
-            Fuchsia = 73,
-            Gray = 78,
-            Green = 79,
-            Maroon = 108,
-            Orange = 127,
-            Pink = 137,
-            Purple = 140,
-            Red = 141,
-            Silver = 150,
-            Violet = 162,
-            White = 164,
-			Yellow = 166,
+            Black = 1,
+            Blue = 2,
+            Fuchsia = 3,
+            Gray = 4,
+            Green = 5,
+            Maroon = 6,
+            Orange = 7,
+            Pink = 8,
+            Purple = 9,
+            Red = 10,
+            Silver = 11,
+            Violet = 12,
+            White = 13,
+			Yellow = 14,
+			Multicolor = 15
+		}
+		public enum KnownColorNewEs
+		{
+			Negro = 1,
+			Azul = 2,
+			Fucsia = 3,
+			Gris = 4,
+			Verde = 5,
+			Marrón = 6,
+			Naranja = 7,
+			Rosa = 8,
+			Púrpura = 9,
+			Rojo = 10,
+			Plata = 11,
+			Violeta = 12,
+			Blanco = 13,
+			Amarillo = 14,
+			Multicolor = 15
 		}
 
 		//Funcion para cargar los colores al combobox
-        private void MostrarColores()
+		private void MostrarColores()
 		{
 			cb_Color.Items.Clear();
-			string[] colores = Enum.GetNames(typeof(KnownColorNew));
+			string[] colores = Enum.GetNames(typeof(KnownColorNewEs));
 			cb_Color.Items.AddRange(colores);
         }
 
@@ -73,15 +92,16 @@ namespace ProyectoFormativo
             try
             {
 				e.DrawBackground();
-				string texto = cb_Color.Items[e.Index].ToString();
+				string[] textoEs = Enum.GetNames(typeof(KnownColorNewEs));
+				string[] texto = Enum.GetNames(typeof(KnownColorNew));
 				Brush borde = new SolidBrush(e.ForeColor);
-				Color color = System.Drawing.Color.FromName(texto);
+				Color color = System.Drawing.Color.FromName(texto[e.Index]);
 				Brush pincel = new SolidBrush(color);
 				Pen boli = new Pen(e.ForeColor);
 
 				e.Graphics.DrawRectangle(boli, new Rectangle(e.Bounds.Left + 2, e.Bounds.Top + 2, 20, e.Bounds.Height - 4));
 				e.Graphics.FillRectangle(pincel, new Rectangle(e.Bounds.Left + 3, e.Bounds.Top + 3, 18, e.Bounds.Height - 6));
-				e.Graphics.DrawString(texto, e.Font, borde, e.Bounds.Left + 25, e.Bounds.Top + 2);
+				e.Graphics.DrawString(textoEs[e.Index], e.Font, borde, e.Bounds.Left + 25, e.Bounds.Top + 2);
 
 				e.DrawFocusRectangle();
             }
@@ -98,19 +118,29 @@ namespace ProyectoFormativo
 			lbl_Nom_User.Text = ClaseControlFrmVigilante.usuario;
 			lbl_Rol.Text = ClaseControlFrmVigilante.rol;
 
+			//formulario control
 			btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 			btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 
+			//formulario reportes
 			btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnFiltarR.ForeColor = System.Drawing.SystemColors.ControlLight;
+
+			//formulario equipos
+			btnGuardarE.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnGuardarE.ForeColor = System.Drawing.SystemColors.ControlLight;
+			this.txtDoc_Equipo.ForeColor = System.Drawing.Color.DimGray;
+			this.txtTipodeBienE.ForeColor = System.Drawing.Color.DimGray;
+			this.txtMarcaE.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNSerieE.ForeColor = System.Drawing.Color.DimGray;
+			this.txtCargadorE.ForeColor = System.Drawing.Color.DimGray;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
 		private void btnBuscar_ControlA_Click(object sender, EventArgs e)
         {
-			//DGVControl_U.ColumnHeadersVisible = false;
 			if (txt_Documento_C_Admin.Text == "" & txt_BuscarBien_C_Admin.Text == "")
 			{
 				MessageBox.Show("Llene un campo", "Adertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -187,7 +217,6 @@ namespace ProyectoFormativo
 				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelarAdmin_Click(sender, e);
 				FrmControlAdmin_Load(sender, e);
-				//combox_pag_SelectionChangeCommitted(sender, e);
 			}
 		}
 
@@ -321,7 +350,6 @@ namespace ProyectoFormativo
 			}
 			if (this.cb_Fecha_RAdmin.Checked == false && this.cb_Documento_RAdmin.Checked == false)
 			{
-				//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
 				CargarDG();
 				btnFiltarR.Enabled = false;
 				btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -364,13 +392,11 @@ namespace ProyectoFormativo
 				else
 				{
 					doc = Convert.ToInt64(txt_filtrarReporteDocAdmin.Text);
-					//DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
 					dsTabla = objp.Func_FiltrarDocx(doc);
 					DataTable Tabla = dsTabla.Tables[1];
 
 					if (Tabla.Rows.Count > 0)
 					{
-						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarDoc(doc);
 						CargarDGFiltrarCx();
 					}
 					else
@@ -379,7 +405,6 @@ namespace ProyectoFormativo
 						DataTable dt = (DataTable)DGVReportesAdmin.DataSource;
 						if (dt == null)
 						{
-							//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
 							CargarDG();
 						}
 					}
@@ -389,12 +414,10 @@ namespace ProyectoFormativo
 			//Filtro por fecha
 			if (this.cb_Fecha_RAdmin.Checked == true && this.cb_Documento_RAdmin.Checked == false)
 			{
-				//DataTable tabla = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
 				dsTabla = objp.Func_FiltrarFex(fechaR);
 				DataTable Tabla = dsTabla.Tables[1];
 				if (Tabla.Rows.Count > 0)
 				{
-					//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_FiltrarFe(fechaR);
 					CargarDGFiltrarFx();
 				}
 				else
@@ -403,7 +426,6 @@ namespace ProyectoFormativo
 					DataTable dt = (DataTable)DGVReportesAdmin.DataSource;
 					if (dt == null)
 					{
-						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
 						CargarDG();
 					}
 				}
@@ -420,12 +442,10 @@ namespace ProyectoFormativo
 				else
 				{
 					doc = Convert.ToInt64(txt_filtrarReporteDocAdmin.Text);
-					//DataTable tabla = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
 					dsTabla = objp.Func_Filtrarx(fechaR, doc);
 					DataTable Tabla = dsTabla.Tables[1];
 					if (Tabla.Rows.Count > 0)
 					{
-						//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Filtrar(fechaR, doc);
 						CargarDGFiltrarDFx();
 					}
 					else
@@ -434,7 +454,6 @@ namespace ProyectoFormativo
 						DataTable dt = (DataTable)DGVReportesAdmin.DataSource;
 						if (dt == null)
 						{
-							//DGVReportes.DataSource = ClaseControlFrmVigilante.Func_Reportes();
 							CargarDG();
 						}
 					}
@@ -449,7 +468,6 @@ namespace ProyectoFormativo
 			objp.Final1 = PagFinal;
 			dsTabla = objp.Func_Reportes();
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -474,7 +492,6 @@ namespace ProyectoFormativo
 			objp.Final1 = PagFinal;
 			dsTabla = objp.Func_FiltrarDoc(doc);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -499,7 +516,6 @@ namespace ProyectoFormativo
 			objp.Final1 = 10;
 			dsTabla = objp.Func_FiltrarDoc(doc);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -523,7 +539,6 @@ namespace ProyectoFormativo
 			objp.Final1 = PagFinal;
 			dsTabla = objp.Func_FiltrarFe(fechaR);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -548,7 +563,6 @@ namespace ProyectoFormativo
 			objp.Final1 = 10;
 			dsTabla = objp.Func_FiltrarFe(fechaR);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -567,13 +581,12 @@ namespace ProyectoFormativo
 			control = 2;
 		}
 
-		private void CargarDGFiltrarDF()
+        private void CargarDGFiltrarDF()
 		{
 			objp.Inicio1 = PagInicio;
 			objp.Final1 = PagFinal;
 			dsTabla = objp.Func_Filtrar(fechaR, doc);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -592,13 +605,12 @@ namespace ProyectoFormativo
 			control = 3;
 		}
 
-		private void CargarDGFiltrarDFx()
+        private void CargarDGFiltrarDFx()
 		{
 			objp.Inicio1 = 1;
 			objp.Final1 = 10;
 			dsTabla = objp.Func_Filtrar(fechaR, doc);
 			DGVReportesAdmin.DataSource = dsTabla.Tables[1];
-			//DGVReportes.Columns[0].Visible = false;
 
 			int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
 
@@ -617,8 +629,8 @@ namespace ProyectoFormativo
 			control = 3;
 		}
 
-		//accion para cambiar de paginas en la tabla
-		private void combox_pagAdmin_SelectionChangeCommitted(object sender, EventArgs e)
+        //accion para cambiar de paginas en la tabla
+        private void combox_pagAdmin_SelectionChangeCommitted(object sender, EventArgs e)
 		{
 			int pagina = Convert.ToInt32(combox_pagAdmin.SelectedItem.ToString());
 			Indice = pagina - 1;
@@ -643,7 +655,7 @@ namespace ProyectoFormativo
 			}
 		}
 
-		private void DGVReportesAdmin_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void DGVReportesAdmin_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
 		{
 			if (this.DGVReportesAdmin.Columns[e.ColumnIndex].HeaderText == "Hora S.")
 			{
@@ -654,6 +666,180 @@ namespace ProyectoFormativo
 			}
 		}
 
-		//------------------------------------------------- FIN MODULO REPORTES --------------------------------------------------
+        //------------------------------------------------- FIN MODULO REPORTES --------------------------------------------------
+
+		//---------------------------------------------------- MODULO EQUIPOS ----------------------------------------------------
+
+        private void btnSalirE_Click(object sender, EventArgs e)
+		{
+			DialogResult rpta = new DialogResult();
+			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (rpta == DialogResult.Yes)
+			{
+				Application.Exit();
+			}
+		}
+
+        private void txtDoc_Equipo_Enter(object sender, EventArgs e)
+		{
+			if (txtDoc_Equipo.Text == "N Documento: ")
+			{
+				txtDoc_Equipo.Text = "";
+				this.txtDoc_Equipo.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtDoc_Equipo_Leave(object sender, EventArgs e)
+		{
+			if (txtDoc_Equipo.Text == "")
+			{
+				txtDoc_Equipo.Text = "N Documento: ";
+				this.txtDoc_Equipo.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtDoc_Equipo_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				btnBuscar_EquipoU_Click(sender, e);
+			}
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+			{
+				e.Handled = true;
+			}
+		}
+
+        private void txtTipodeBienE_Enter(object sender, EventArgs e)
+		{
+			if (txtTipodeBienE.Text == "Tipo de bien:")
+			{
+				txtTipodeBienE.Text = "";
+				this.txtTipodeBienE.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtTipodeBienE_Leave(object sender, EventArgs e)
+		{
+			if (txtTipodeBienE.Text == "")
+			{
+				txtTipodeBienE.Text = "Tipo de bien:";
+				this.txtTipodeBienE.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtMarcaE_Enter(object sender, EventArgs e)
+		{
+			if (txtMarcaE.Text == "Marca:")
+			{
+				txtMarcaE.Text = "";
+				this.txtMarcaE.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtMarcaE_Leave(object sender, EventArgs e)
+		{
+			if (txtMarcaE.Text == "")
+			{
+				txtMarcaE.Text = "Marca:";
+				this.txtMarcaE.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtNSerieE_Enter(object sender, EventArgs e)
+		{
+			if (txtNSerieE.Text == "N de serie:")
+			{
+				txtNSerieE.Text = "";
+				this.txtNSerieE.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtNSerieE_Leave(object sender, EventArgs e)
+		{
+			if (txtNSerieE.Text == "")
+			{
+				txtNSerieE.Text = "N de serie:";
+				this.txtNSerieE.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+		private void txtCargadorE_Enter(object sender, EventArgs e)
+		{
+			if (txtCargadorE.Text == "Cargador:")
+			{
+				txtCargadorE.Text = "";
+				this.txtCargadorE.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+		private void txtCargadorE_Leave(object sender, EventArgs e)
+		{
+			if (txtCargadorE.Text == "")
+			{
+				txtCargadorE.Text = "Cargador:";
+				this.txtCargadorE.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+		private void btnBuscar_EquipoU_Click(object sender, EventArgs e)
+		{
+			if (cb_Color.Text != "Color")
+            {
+				cb_Color.SelectedIndex = -1;
+				cb_Color.Text = "Color";
+            }
+
+			if (txtDoc_Equipo.Text == "N Documento: " || txtDoc_Equipo.Text == "")
+            {
+				MessageBox.Show("Por favor ingrese un documento");
+            }
+            else
+            {
+				DataTable tabla = ClaseControlAdmin.Func_BuscarVistante(Convert.ToInt64(txtDoc_Equipo.Text));
+
+                if (tabla.Rows.Count > 0)
+                {
+					string id_visitante = tabla.Rows[0][0].ToString();
+					txtDocET.Text = tabla.Rows[0][3].ToString();
+					txtNomET.Text = tabla.Rows[0][1].ToString() + ' ' + tabla.Rows[0][2].ToString();
+					txtTipodeBienE.Enabled = true;
+					txtMarcaE.Enabled = true;
+					txtNSerieE.Enabled = true;
+					txtCargadorE.Enabled = true;
+					cb_Color.Enabled = true;
+					btnGuardarE.Enabled = true;
+					btnGuardarE.BackColor = System.Drawing.SystemColors.MenuHighlight;
+					btnGuardarE.ForeColor = System.Drawing.SystemColors.HighlightText;
+				}
+                else
+                {
+					MessageBox.Show("Visitante no registrado, por favor verifique el documento", "Advertencia!");
+                }
+			}
+			
+		}
+
+		private void btnGuardarE_Click(object sender, EventArgs e)
+		{
+			string combobox = cb_Color.Text;
+			int combobox1 = cb_Color.SelectedIndex;
+
+			if ((txtTipodeBienE.Text == "Tipo de bien:" || txtTipodeBienE.Text == "") || (txtMarcaE.Text == "Marca:" || txtMarcaE.Text == "") || (txtNSerieE.Text == "N de serie:" || txtNSerieE.Text == "") || (txtCargadorE.Text == "Cargador:" || txtCargadorE.Text == ""))
+            {
+				MessageBox.Show("Favor de llenar todos los campos.");
+            }
+            else
+            {
+				if (combobox == "Color" || combobox1 == -1)
+				{
+					MessageBox.Show("Favor de agregar un color");
+                }
+                else
+                {
+
+                }
+			}
+		}
 	}
 } 

@@ -60,7 +60,7 @@ namespace Controllers
             {
                 ParameterName = "@DOC",
                 Value = doc,
-                SqlDbType = SqlDbType.Int
+                SqlDbType = SqlDbType.BigInt
             });
 
             adap.Fill(tabla);
@@ -283,6 +283,20 @@ namespace Controllers
             DataSet dt = new DataSet();
             da.Fill(dt);
             return dt;
+        }
+
+
+        //------------------------------------------------- GESTIONAR EQUIPO ------------------------------------------------
+
+        public static DataTable Func_BuscarVistante(long doc)
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_TRAERVISITANTE", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
+            adap.Fill(tabla);
+            return tabla;
         }
     }
 }

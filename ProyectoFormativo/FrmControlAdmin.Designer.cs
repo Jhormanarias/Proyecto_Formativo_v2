@@ -67,13 +67,13 @@ namespace ProyectoFormativo
             this.txtDocumentoAU = new System.Windows.Forms.TextBox();
             this.Propietario = new System.Windows.Forms.TabPage();
             this.Equipo = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSalirE = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNomET = new System.Windows.Forms.TextBox();
+            this.txtDocET = new System.Windows.Forms.TextBox();
             this.cb_Color = new System.Windows.Forms.ComboBox();
             this.txtCargadorE = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnGuardarE = new System.Windows.Forms.Button();
             this.txtNSerieE = new System.Windows.Forms.TextBox();
             this.txtMarcaE = new System.Windows.Forms.TextBox();
             this.txtTipodeBienE = new System.Windows.Forms.TextBox();
@@ -439,7 +439,7 @@ namespace ProyectoFormativo
             // Equipo
             // 
             this.Equipo.BackColor = System.Drawing.Color.Transparent;
-            this.Equipo.Controls.Add(this.button6);
+            this.Equipo.Controls.Add(this.btnSalirE);
             this.Equipo.Controls.Add(this.groupBox6);
             this.Equipo.Controls.Add(this.groupBox5);
             this.Equipo.Controls.Add(this.groupBox3);
@@ -453,22 +453,23 @@ namespace ProyectoFormativo
             this.Equipo.Text = "Equipo";
             this.Equipo.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnSalirE
             // 
-            this.button6.Location = new System.Drawing.Point(670, 13);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Salir";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSalirE.Location = new System.Drawing.Point(670, 13);
+            this.btnSalirE.Name = "btnSalirE";
+            this.btnSalirE.Size = new System.Drawing.Size(75, 23);
+            this.btnSalirE.TabIndex = 15;
+            this.btnSalirE.Text = "Salir";
+            this.btnSalirE.UseVisualStyleBackColor = true;
+            this.btnSalirE.Click += new System.EventHandler(this.btnSalirE_Click);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox3);
-            this.groupBox6.Controls.Add(this.textBox2);
+            this.groupBox6.Controls.Add(this.txtNomET);
+            this.groupBox6.Controls.Add(this.txtDocET);
             this.groupBox6.Controls.Add(this.cb_Color);
             this.groupBox6.Controls.Add(this.txtCargadorE);
-            this.groupBox6.Controls.Add(this.button4);
+            this.groupBox6.Controls.Add(this.btnGuardarE);
             this.groupBox6.Controls.Add(this.txtNSerieE);
             this.groupBox6.Controls.Add(this.txtMarcaE);
             this.groupBox6.Controls.Add(this.txtTipodeBienE);
@@ -479,23 +480,23 @@ namespace ProyectoFormativo
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Agregar";
             // 
-            // textBox3
+            // txtNomET
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(218, 56);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.Text = "Nombre";
+            this.txtNomET.Enabled = false;
+            this.txtNomET.Location = new System.Drawing.Point(218, 56);
+            this.txtNomET.Name = "txtNomET";
+            this.txtNomET.Size = new System.Drawing.Size(100, 20);
+            this.txtNomET.TabIndex = 9;
+            this.txtNomET.Text = "Nombre";
             // 
-            // textBox2
+            // txtDocET
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(112, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.Text = "Documento";
+            this.txtDocET.Enabled = false;
+            this.txtDocET.Location = new System.Drawing.Point(112, 56);
+            this.txtDocET.Name = "txtDocET";
+            this.txtDocET.Size = new System.Drawing.Size(100, 20);
+            this.txtDocET.TabIndex = 8;
+            this.txtDocET.Text = "Documento";
             // 
             // cb_Color
             // 
@@ -517,21 +518,24 @@ namespace ProyectoFormativo
             this.txtCargadorE.Size = new System.Drawing.Size(100, 20);
             this.txtCargadorE.TabIndex = 6;
             this.txtCargadorE.Text = "Cargador:";
+            this.txtCargadorE.Enter += new System.EventHandler(this.txtCargadorE_Enter);
+            this.txtCargadorE.Leave += new System.EventHandler(this.txtCargadorE_Leave);
             // 
-            // button4
+            // btnGuardarE
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(459, 23);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 48);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Guardar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnGuardarE.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGuardarE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarE.Enabled = false;
+            this.btnGuardarE.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGuardarE.FlatAppearance.BorderSize = 0;
+            this.btnGuardarE.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnGuardarE.Location = new System.Drawing.Point(459, 23);
+            this.btnGuardarE.Name = "btnGuardarE";
+            this.btnGuardarE.Size = new System.Drawing.Size(104, 48);
+            this.btnGuardarE.TabIndex = 0;
+            this.btnGuardarE.Text = "Guardar";
+            this.btnGuardarE.UseVisualStyleBackColor = false;
+            this.btnGuardarE.Click += new System.EventHandler(this.btnGuardarE_Click);
             // 
             // txtNSerieE
             // 
@@ -541,6 +545,8 @@ namespace ProyectoFormativo
             this.txtNSerieE.Size = new System.Drawing.Size(100, 20);
             this.txtNSerieE.TabIndex = 4;
             this.txtNSerieE.Text = "N de serie:";
+            this.txtNSerieE.Enter += new System.EventHandler(this.txtNSerieE_Enter);
+            this.txtNSerieE.Leave += new System.EventHandler(this.txtNSerieE_Leave);
             // 
             // txtMarcaE
             // 
@@ -550,6 +556,8 @@ namespace ProyectoFormativo
             this.txtMarcaE.Size = new System.Drawing.Size(100, 20);
             this.txtMarcaE.TabIndex = 5;
             this.txtMarcaE.Text = "Marca:";
+            this.txtMarcaE.Enter += new System.EventHandler(this.txtMarcaE_Enter);
+            this.txtMarcaE.Leave += new System.EventHandler(this.txtMarcaE_Leave);
             // 
             // txtTipodeBienE
             // 
@@ -559,6 +567,8 @@ namespace ProyectoFormativo
             this.txtTipodeBienE.Size = new System.Drawing.Size(100, 20);
             this.txtTipodeBienE.TabIndex = 3;
             this.txtTipodeBienE.Text = "Tipo de bien:";
+            this.txtTipodeBienE.Enter += new System.EventHandler(this.txtTipodeBienE_Enter);
+            this.txtTipodeBienE.Leave += new System.EventHandler(this.txtTipodeBienE_Leave);
             // 
             // groupBox5
             // 
@@ -752,6 +762,7 @@ namespace ProyectoFormativo
             this.btnBuscar_EquipoU.TabIndex = 0;
             this.btnBuscar_EquipoU.Text = "Buscar";
             this.btnBuscar_EquipoU.UseVisualStyleBackColor = false;
+            this.btnBuscar_EquipoU.Click += new System.EventHandler(this.btnBuscar_EquipoU_Click);
             // 
             // txtDoc_Equipo
             // 
@@ -760,6 +771,9 @@ namespace ProyectoFormativo
             this.txtDoc_Equipo.Size = new System.Drawing.Size(111, 20);
             this.txtDoc_Equipo.TabIndex = 3;
             this.txtDoc_Equipo.Text = "N Documento: ";
+            this.txtDoc_Equipo.Enter += new System.EventHandler(this.txtDoc_Equipo_Enter);
+            this.txtDoc_Equipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDoc_Equipo_KeyPress);
+            this.txtDoc_Equipo.Leave += new System.EventHandler(this.txtDoc_Equipo_Leave);
             // 
             // Control
             // 
@@ -1439,7 +1453,7 @@ namespace ProyectoFormativo
         private System.Windows.Forms.Timer timerAdmin;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox txtCargadorE;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnGuardarE;
         private System.Windows.Forms.TextBox txtNSerieE;
         private System.Windows.Forms.TextBox txtMarcaE;
         private System.Windows.Forms.TextBox txtTipodeBienE;
@@ -1504,10 +1518,10 @@ namespace ProyectoFormativo
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Serial;
         private System.Windows.Forms.DataGridViewTextBoxColumn Color;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSalirE;
         private System.Windows.Forms.ComboBox cb_Color;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNomET;
+        private System.Windows.Forms.TextBox txtDocET;
         private System.Windows.Forms.Button btnFiltarR;
         private System.Windows.Forms.Label lbl_Nom_User;
         private System.Windows.Forms.TabPage Usuarios;
