@@ -345,7 +345,16 @@ namespace ProyectoFormativo
 				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
 				//FrmControlVigi_Load(sender, e);
-				combox_pag_SelectionChangeCommitted(sender, e);
+
+				DataTable dt = (DataTable)DGVReportes.DataSource;
+				if (dt.Rows.Count > 0)
+				{
+					combox_pag_SelectionChangeCommitted(sender, e);
+                }
+                else
+                {
+					CargarDG();
+                }
 			}
 		}
 
@@ -372,7 +381,16 @@ namespace ProyectoFormativo
 				MessageBox.Show("Salida registrada", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelar_C_U_Click(sender, e);
 				//FrmControlVigi_Load(sender, e);
-				combox_pag_SelectionChangeCommitted(sender, e);
+
+				DataTable dt = (DataTable)DGVReportes.DataSource;
+				if (dt.Rows.Count > 0)
+				{
+					combox_pag_SelectionChangeCommitted(sender, e);
+				}
+				else
+				{
+					CargarDG();
+				}
 			}
 		}
 

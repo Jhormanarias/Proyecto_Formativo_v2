@@ -886,6 +886,8 @@ namespace ProyectoFormativo
 					btnGuardarE.Enabled = true;
 					btnGuardarE.BackColor = System.Drawing.SystemColors.MenuHighlight;
 					btnGuardarE.ForeColor = System.Drawing.SystemColors.HighlightText;
+					txtDoc_Equipo.Text = "N Documento: ";
+					this.txtDoc_Equipo.ForeColor = System.Drawing.Color.DimGray;
 				}
                 else
                 {
@@ -1060,6 +1062,22 @@ namespace ProyectoFormativo
                 {
 					MessageBox.Show("Bien eliminado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					comboBoxPagBienes_SelectionChangeCommitted(sender, e);
+					DataTable dt = (DataTable)DGVReportesAdmin.DataSource;
+					if (dt.Rows.Count > 0)
+					{
+						combox_pagAdmin_SelectionChangeCommitted(sender, e);
+					}
+					else
+					{
+						CargarDG();
+						btnModificarBien.Enabled = false;
+						btnEliminarBien.Enabled = false;
+						btnModificarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+						btnModificarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+						btnEliminarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+						btnEliminarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+						comboBoxPagBienes.ResetText();
+					}
 				}
                 else
                 {
