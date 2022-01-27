@@ -1030,7 +1030,7 @@ namespace ProyectoFormativo
 			//}
 		}
 
-		//activo los votones modificar y eliminar al dar click en una celda
+		//activo los botones modificar y eliminar al dar click en una celda
 		private void DGVBienes_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 			n = e.RowIndex;
