@@ -195,8 +195,6 @@ namespace Controllers
             DataSet dt = new DataSet();
             da.Fill(dt);
             return dt;
-
-
         }
 
 
@@ -288,6 +286,7 @@ namespace Controllers
 
         //------------------------------------------------- GESTIONAR EQUIPO ------------------------------------------------
 
+        //Funcion para buscar visitante
         public static DataTable Func_BuscarVistante(long doc)
         {
             DataTable tabla = new DataTable();
@@ -297,6 +296,66 @@ namespace Controllers
             adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
             adap.Fill(tabla);
             return tabla;
+        }
+
+        //Funcion para insertar un bien con id de visitante
+        public static bool Func_insertarBien(string serial, string tipodebien, string marca, string color, string cargador, long idvisitante )
+        {
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_INGRESARBIEN", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@SERIAL", SqlDbType.NVarChar).Value = serial;
+                adap.SelectCommand.Parameters.Add("@TIPOBIEN", SqlDbType.VarChar).Value = tipodebien;
+                adap.SelectCommand.Parameters.Add("@MARCA", SqlDbType.VarChar).Value = marca;
+                adap.SelectCommand.Parameters.Add("@COLOR", SqlDbType.VarChar).Value = color;
+                adap.SelectCommand.Parameters.Add("@CARGADOR", SqlDbType.NVarChar).Value = cargador;
+                adap.SelectCommand.Parameters.Add("@IDVISITANTE", SqlDbType.BigInt).Value = idvisitante;
+                adap.Fill(tabla);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+                return false;
+            }
+        }
+
+        //Funcion para llenar la tabla bienes con paginado
+        public DataSet Func_Bienes()
+        {
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlCommand comando = new SqlCommand("PA_LISTARBIENES", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@inicio", Inicio1);
+            comando.Parameters.AddWithValue("@final", Final1);
+            SqlDataAdapter da = new SqlDataAdapter(comando);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //Funcion para eliminar bien colsuntando por el serial
+        public static bool Func_EliminarBien(string serialBien)
+        {
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_ELIMINARBIEN", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@SERIALBIEN", SqlDbType.NVarChar).Value = serialBien;
+                adap.Fill(tabla);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+                return false;
+                //MessageBox.Show("Error: " + ex.ToString());
+            }
         }
     }
 }

@@ -228,6 +228,39 @@ namespace ProyectoFormativo
 				CargarDGFiltrarDF();
 			}
 		}
+
+		private void combox_pag_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				int pagina = Convert.ToInt32(combox_pag.Text.ToString());
+
+				if (pagina <= combox_pag.Items.Count)
+				{
+					Indice = pagina - 1;
+					PagInicio = (pagina - 1) * NumFilas + 1;
+					PagFinal = pagina * NumFilas;
+
+					if (control == 0)
+					{
+						CargarDG();
+					}
+					if (control == 1)
+					{
+						CargarDGFiltrarC();
+					}
+					if (control == 2)
+					{
+						CargarDGFiltrarF();
+					}
+					if (control == 3)
+					{
+						CargarDGFiltrarDF();
+					}
+				}
+			}
+		}
+
 		private void relog_Tick(object sender, EventArgs e)
 		{
 			lbl_hora.Text = DateTime.Now.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture);
@@ -462,9 +495,10 @@ namespace ProyectoFormativo
 			//	}
 			//}
 		}
+        
 
-		//Muestro nombre de usuario y tipo de rol
-		private void FrmControlVigi_Load(object sender, EventArgs e)
+        //Muestro nombre de usuario y tipo de rol
+        private void FrmControlVigi_Load(object sender, EventArgs e)
 		{
 			lbl_Nom_User.Visible = true;
 			lbl_Rol.Visible = true;
@@ -481,7 +515,8 @@ namespace ProyectoFormativo
             {
                 if (e.Value.GetType() == typeof(System.DBNull))
                 {
-                    e.CellStyle.BackColor = System.Drawing.Color.Yellow;
+					e.CellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(201, 188, 54);
+					e.CellStyle.BackColor = System.Drawing.Color.Yellow;
                 }
             }
         }

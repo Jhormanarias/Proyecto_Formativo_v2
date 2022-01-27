@@ -486,6 +486,7 @@
             this.combox_pag.Size = new System.Drawing.Size(51, 21);
             this.combox_pag.TabIndex = 12;
             this.combox_pag.SelectionChangeCommitted += new System.EventHandler(this.combox_pag_SelectionChangeCommitted);
+            this.combox_pag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combox_pag_KeyPress);
             // 
             // DGVReportes
             // 
