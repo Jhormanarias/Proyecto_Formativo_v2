@@ -79,7 +79,19 @@ namespace ProyectoFormativo
             this.txtMarcaE = new System.Windows.Forms.TextBox();
             this.txtTipodeBienE = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtPagBienes = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxPagBienes = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.DGVBienes = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminarBien = new System.Windows.Forms.Button();
             this.btnModificarBien = new System.Windows.Forms.Button();
             this.txtBuscarBien = new System.Windows.Forms.TextBox();
@@ -139,18 +151,7 @@ namespace ProyectoFormativo
             this.lbl_Rol = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Nom_User = new System.Windows.Forms.Label();
-            this.txtPagBienes = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxPagBienes = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_LimpiarBusq = new System.Windows.Forms.Button();
             this.tc_Usuario.SuspendLayout();
             this.Usuarios.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -589,6 +590,7 @@ namespace ProyectoFormativo
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btn_LimpiarBusq);
             this.groupBox5.Controls.Add(this.txtPagBienes);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.comboBoxPagBienes);
@@ -604,6 +606,42 @@ namespace ProyectoFormativo
             this.groupBox5.TabIndex = 13;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ver";
+            // 
+            // txtPagBienes
+            // 
+            this.txtPagBienes.Location = new System.Drawing.Point(682, 205);
+            this.txtPagBienes.Name = "txtPagBienes";
+            this.txtPagBienes.Size = new System.Drawing.Size(46, 20);
+            this.txtPagBienes.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(650, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "De";
+            // 
+            // comboBoxPagBienes
+            // 
+            this.comboBoxPagBienes.FormattingEnabled = true;
+            this.comboBoxPagBienes.Location = new System.Drawing.Point(593, 205);
+            this.comboBoxPagBienes.Name = "comboBoxPagBienes";
+            this.comboBoxPagBienes.Size = new System.Drawing.Size(51, 21);
+            this.comboBoxPagBienes.TabIndex = 16;
+            this.comboBoxPagBienes.SelectionChangeCommitted += new System.EventHandler(this.comboBoxPagBienes_SelectionChangeCommitted);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(536, 210);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Pagina";
             // 
             // DGVBienes
             // 
@@ -654,6 +692,63 @@ namespace ProyectoFormativo
             this.DGVBienes.TabIndex = 13;
             this.DGVBienes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVBienes_CellClick);
             // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "id_bien";
+            this.dataGridViewTextBoxColumn9.FillWeight = 70F;
+            this.dataGridViewTextBoxColumn9.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Tipobien";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Tipo de bien";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Marca";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Marca";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Color";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Color";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Serial";
+            this.dataGridViewTextBoxColumn12.HeaderText = "N. Serie";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Cargador";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Cargador";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Documento";
+            this.Column7.HeaderText = "Documento";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Nombre";
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // btnEliminarBien
             // 
             this.btnEliminarBien.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -684,6 +779,7 @@ namespace ProyectoFormativo
             this.btnModificarBien.TabIndex = 11;
             this.btnModificarBien.Text = "Modificar";
             this.btnModificarBien.UseVisualStyleBackColor = false;
+            this.btnModificarBien.Click += new System.EventHandler(this.btnModificarBien_Click);
             // 
             // txtBuscarBien
             // 
@@ -705,6 +801,7 @@ namespace ProyectoFormativo
             this.btnBuscarBien.TabIndex = 0;
             this.btnBuscarBien.Text = "Buscar";
             this.btnBuscarBien.UseVisualStyleBackColor = false;
+            this.btnBuscarBien.Click += new System.EventHandler(this.btnBuscarBien_Click);
             // 
             // groupBox3
             // 
@@ -1341,98 +1438,19 @@ namespace ProyectoFormativo
             this.lbl_Nom_User.Text = "nombre";
             this.lbl_Nom_User.Visible = false;
             // 
-            // txtPagBienes
+            // btn_LimpiarBusq
             // 
-            this.txtPagBienes.Location = new System.Drawing.Point(682, 205);
-            this.txtPagBienes.Name = "txtPagBienes";
-            this.txtPagBienes.Size = new System.Drawing.Size(46, 20);
-            this.txtPagBienes.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(650, 210);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 16);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "De";
-            // 
-            // comboBoxPagBienes
-            // 
-            this.comboBoxPagBienes.FormattingEnabled = true;
-            this.comboBoxPagBienes.Location = new System.Drawing.Point(593, 205);
-            this.comboBoxPagBienes.Name = "comboBoxPagBienes";
-            this.comboBoxPagBienes.Size = new System.Drawing.Size(51, 21);
-            this.comboBoxPagBienes.TabIndex = 16;
-            this.comboBoxPagBienes.SelectionChangeCommitted += new System.EventHandler(this.comboBoxPagBienes_SelectionChangeCommitted);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(536, 210);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 16);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Pagina";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "id_bien";
-            this.dataGridViewTextBoxColumn9.FillWeight = 70F;
-            this.dataGridViewTextBoxColumn9.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Tipobien";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Tipo de bien";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Marca";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Marca";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Color";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Color";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Serial";
-            this.dataGridViewTextBoxColumn12.HeaderText = "N. Serie";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Cargador";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Cargador";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Documento";
-            this.Column7.HeaderText = "Documento";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Nombre";
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.btn_LimpiarBusq.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_LimpiarBusq.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LimpiarBusq.ForeColor = System.Drawing.Color.DarkRed;
+            this.btn_LimpiarBusq.Image = global::ProyectoFormativo.Properties.Resources.refresh;
+            this.btn_LimpiarBusq.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_LimpiarBusq.Location = new System.Drawing.Point(319, 29);
+            this.btn_LimpiarBusq.Name = "btn_LimpiarBusq";
+            this.btn_LimpiarBusq.Size = new System.Drawing.Size(24, 23);
+            this.btn_LimpiarBusq.TabIndex = 19;
+            this.btn_LimpiarBusq.UseVisualStyleBackColor = true;
+            this.btn_LimpiarBusq.Click += new System.EventHandler(this.btn_LimpiarBusq_Click);
             // 
             // FrmControlAdmin
             // 
@@ -1592,6 +1610,7 @@ namespace ProyectoFormativo
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button btn_LimpiarBusq;
     }
 }
 

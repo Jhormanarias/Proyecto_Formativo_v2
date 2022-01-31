@@ -357,5 +357,63 @@ namespace Controllers
                 //MessageBox.Show("Error: " + ex.ToString());
             }
         }
+
+        //Funcion para editar bien colsuntando por el serial
+        public static bool Func_EditarBien(long idbien, string serial, string tipodebien, string marca, string color, string cargador)
+        {
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_EDITARBIEN", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@IDBIEN", SqlDbType.BigInt).Value = idbien;
+                adap.SelectCommand.Parameters.Add("@SERIALBIEN", SqlDbType.NVarChar).Value = serial;
+                adap.SelectCommand.Parameters.Add("@TIPOBIEN", SqlDbType.VarChar).Value = tipodebien;
+                adap.SelectCommand.Parameters.Add("@MARCA", SqlDbType.VarChar).Value = marca;
+                adap.SelectCommand.Parameters.Add("@COLOR", SqlDbType.VarChar).Value = color;
+                adap.SelectCommand.Parameters.Add("@CARGADOR", SqlDbType.NVarChar).Value = cargador;
+                adap.Fill(tabla);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+                return false;
+                //MessageBox.Show("Error: " + ex.ToString());
+            }
+        }
+
+        public DataSet Func_BuscarBienesx(string serialdoc)
+        {
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlCommand comando = new SqlCommand("PA_BUSCARBIENES", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@SERIALDOC", serialdoc);
+            comando.Parameters.AddWithValue("@INICIO", 1);
+            comando.Parameters.AddWithValue("@FINAL", 10);
+            SqlDataAdapter da = new SqlDataAdapter(comando);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataSet Func_BuscarBienes(string serialdoc)
+        {
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlCommand comando = new SqlCommand("PA_BUSCARBIENES", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@SERIALDOC", serialdoc);
+            comando.Parameters.AddWithValue("@INICIO", Inicio1);
+            comando.Parameters.AddWithValue("@FINAL", Final1);
+            SqlDataAdapter da = new SqlDataAdapter(comando);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //------------------------------------------------- GESTIONAR VISITANTE ------------------------------------------------
+
+
     }
 }
