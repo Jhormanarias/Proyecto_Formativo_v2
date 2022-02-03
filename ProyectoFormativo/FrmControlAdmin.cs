@@ -32,6 +32,7 @@ namespace ProyectoFormativo
 		private int controladd = 0;
 		private long idbien = 0;
 		private string serialdoc = "";
+		private long Nbien = 0;
 
 		public FrmControlAdmin()
 		{
@@ -1202,15 +1203,29 @@ namespace ProyectoFormativo
 		{
 			//capturo el id del datagrid
 			//string ced = DGVBienes.CurrentRow.Cells[0].Value.ToString();
-			long Nbien = Convert.ToInt64(DGVBienes.Rows[n].Cells[0].Value);
+			long NbienE = Convert.ToInt64(DGVBienes.Rows[n].Cells[0].Value);
 			DialogResult rpta = new DialogResult();
-			rpta = MessageBox.Show("Desea Eliminar el bien N. : " + Nbien.ToString(), "Advertencia!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			rpta = MessageBox.Show("Desea Eliminar el bien N. : " + NbienE.ToString(), "Advertencia!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 			if (rpta == DialogResult.OK)
 			{
 				if (ClaseControlAdmin.Func_EliminarBien(serialBien) == true)
                 {
 					MessageBox.Show("Bien eliminado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					comboBoxPagBienes_SelectionChangeCommitted(sender, e);
+
+					DGVBienes.ClearSelection();
+					btnModificarBien.Enabled = false;
+					btnEliminarBien.Enabled = false;
+					btnModificarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+					btnModificarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+					btnEliminarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+					btnEliminarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+
+					if (Nbien == NbienE)
+                    {
+						btnCancelarE_Click(sender, e);
+
+					}
 
 					DataTable dt = (DataTable)DGVReportesAdmin.DataSource;
 					if (dt.Rows.Count > 0)
@@ -1240,7 +1255,7 @@ namespace ProyectoFormativo
 		{
 			controladd = 1;
 
-			long Nbien = Convert.ToInt64(DGVBienes.Rows[n].Cells[0].Value);
+			Nbien = Convert.ToInt64(DGVBienes.Rows[n].Cells[0].Value);
 			DialogResult rpta = new DialogResult();
 			rpta = MessageBox.Show("Desea Modificar el bien N. : " + Nbien.ToString(), "Advertencia!!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 			if (rpta == DialogResult.OK)
@@ -1253,6 +1268,15 @@ namespace ProyectoFormativo
 				this.txtMarcaE.ForeColor = System.Drawing.Color.Black;
 				txtNSerieE.Text = DGVBienes.CurrentRow.Cells[4].Value.ToString();
 				this.txtNSerieE.ForeColor = System.Drawing.Color.Black;
+
+				//DGVBienes.ClearSelection();
+				btnModificarBien.Enabled = false;
+				btnEliminarBien.Enabled = false;
+				btnModificarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnModificarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+				btnEliminarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnEliminarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
+
 				if ((txtCargadorE.Text = DGVBienes.CurrentRow.Cells[5].Value.ToString()) == "")
                 {
 					txtCargadorE.Text = "Cargador:";

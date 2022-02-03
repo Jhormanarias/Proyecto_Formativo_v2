@@ -49,8 +49,12 @@ namespace ProyectoFormativo
             {
 				combox_pag.Items.Add(x.ToString());
 			}
-			
-			combox_pag.SelectedIndex = Indice;
+
+			DataTable dt = (DataTable)DGVReportes.DataSource;
+			if (dt.Rows.Count > 0)
+			{
+				combox_pag.SelectedIndex = Indice;
+			}
 
 			control = 0;
 		}
