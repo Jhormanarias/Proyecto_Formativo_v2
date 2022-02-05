@@ -414,6 +414,17 @@ namespace Controllers
 
         //------------------------------------------------- GESTIONAR VISITANTE ------------------------------------------------
 
+        //--------------------------------------------FORMULARIOCONTROLADMIN - USUARIO-------------------------------------------
+        public static DataTable Func_TraerUsuario(long doc)
+        {
+            DataTable tabla = new DataTable();
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlDataAdapter adap = new SqlDataAdapter("PA_TRAERUSUARIO ", conexion);
+            adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
+            adap.Fill(tabla);
+            return tabla;
+        }
 
     }
 }

@@ -22,3 +22,9 @@ C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.Asse
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
+C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
