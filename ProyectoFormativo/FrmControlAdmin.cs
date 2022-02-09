@@ -1194,6 +1194,7 @@ namespace ProyectoFormativo
 				btnEliminarBien.ForeColor = System.Drawing.SystemColors.HighlightText;
 			}
 		}
+
 		private void btnEliminarBien_Click(object sender, EventArgs e)
 		{
 			//capturo el id del datagrid
@@ -1341,6 +1342,240 @@ namespace ProyectoFormativo
 		}
 
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
+		private void txtDocumentoAU_Enter(object sender, EventArgs e)
+		{
+			if (txtDocumentoAU.Text == "N Documento: ")
+			{
+				txtDocumentoAU.Text = "";
+			}
+		}
 
+		private void txtDocumentoAU_Leave(object sender, EventArgs e)
+		{
+			if (txtDocumentoAU.Text == "")
+			{
+				txtDocumentoAU.Text = "N Documento: ";
+			}
+		}
+
+		private void txtNombreAU_Enter(object sender, EventArgs e)
+		{
+			if (txtNombreAU.Text == "Nombre: ")
+			{
+				txtNombreAU.Text = "";
+			}
+		}
+
+		private void txtNombreAU_Leave(object sender, EventArgs e)
+		{
+			if (txtNombreAU.Text == "")
+			{
+				txtNombreAU.Text = "Nombre: ";
+			}
+		}
+
+		private void txtApellidoAU_Enter(object sender, EventArgs e)
+		{
+			if (txtApellidoAU.Text == "Apellido:")
+			{
+				txtApellidoAU.Text = "";
+			}
+		}
+
+		private void txtApellidoAU_Leave(object sender, EventArgs e)
+		{
+			if (txtApellidoAU.Text == "")
+			{
+				txtApellidoAU.Text = "Apellido:";
+			}
+		}
+
+		private void txtContrasena_Enter(object sender, EventArgs e)
+		{
+			if (txtContrasena.Text == "Contraseña:")
+			{
+				txtContrasena.Text = "";
+			}
+		}
+
+		private void txtContrasena_Leave(object sender, EventArgs e)
+		{
+			if (txtContrasena.Text == "")
+			{
+				txtContrasena.Text = "Contraseña:";
+			}
+		}
+
+		private void txtCorreo_Enter(object sender, EventArgs e)
+		{
+			if (txtCorreo.Text == "Correo:")
+			{
+				txtCorreo.Text = "";
+			}
+		}
+
+		private void txtCorreo_Leave(object sender, EventArgs e)
+		{
+			if (txtCorreo.Text == "")
+			{
+				txtCorreo.Text = "Correo:";
+			}
+		}
+
+		private void btnBuscar_verU_Click(object sender, EventArgs e)
+		{
+
+			if (txtBuscar_VerU.Text == "")
+			{
+				MessageBox.Show("Por favor llene el campo", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			}
+			else
+			{
+				if (txtBuscar_VerU.Text != "")
+				{
+					//DGVUsuario.Rows.Add(ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtBuscar_VerU.Text)));
+					DataTable talaU = (ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtBuscar_VerU.Text)));
+					DGVUsuario.DataSource = talaU;
+					if(talaU.Rows.Count == 0)
+					{
+						MessageBox.Show("Este Usuario no Existe", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					}
+				}
+			}
+		}
+		private void btnNuevoU_Click(object sender, EventArgs e)
+		{
+			cbDocumento.Enabled = true;
+			txtDocumentoAU.Enabled = true;
+			cbRolAU.Enabled = true;
+			txtNombreAU.Enabled = true;
+			txtApellidoAU.Enabled = true;
+			btnGuardarAU.Enabled = true;
+			btnCancelar.Enabled = true;
+			txtCorreo.Enabled = true;
+			txtContrasena.Enabled = true;
+			//---------------------------
+			btnNuevoU.Enabled = false;
+			btnModificar_VerU.Enabled = false;
+			btnEliminar_VerU.Enabled = false;
+		}
+
+		private void DGVUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			n = e.RowIndex;
+			if(n != -1)
+			{
+				long doc = Convert.ToInt64(DGVUsuario.Rows[n].Cells[3].Value);
+				DataTable tablabien = ClaseControlAdmin.Func_TraerUsuario(doc);
+				//idbien = Convert.ToInt64(tablabien.Rows[0][0]);
+				btnModificar_VerU.Enabled = true;
+				btnEliminar_VerU.Enabled = true;
+			}
+		}
+
+		private void btnCancelar_Click(object sender, EventArgs e)
+		{
+			txtCorreo.Text = "Correo:";
+			txtDocumentoAU.Text = "N Documento: ";
+			txtContrasena.Text = "Contraseña:";
+			txtNombreAU.Text = "Nombre: ";
+			txtApellidoAU.Text = "Apellido:";
+			cbRolAU.SelectedIndex = 0;
+			cbDocumento.Enabled = false;
+			txtDocumentoAU.Enabled = false;
+			cbRolAU.Enabled = false;
+			txtNombreAU.Enabled = false;
+			txtApellidoAU.Enabled = false;
+			btnGuardarAU.Enabled = false;
+			btnCancelar.Enabled = false;
+			txtCorreo.Enabled = false;
+			txtContrasena.Enabled = false;
+			//---------------------------
+			btnNuevoU.Enabled = true;
+			btnModificar_VerU.Enabled = true;
+			btnEliminar_VerU.Enabled = true;
+		}
+		private void btnSalir_Click(object sender, EventArgs e)
+		{
+			DialogResult rpta = new DialogResult();
+			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (rpta == DialogResult.Yes)
+			{
+				Application.Exit();
+			}
+		}
+		private void btnGuardarAU_Click(object sender, EventArgs e)
+		{
+			if(controladd == 0)
+			{
+				if (txtDocumentoAU.Text == "N Documento: " || txtNombreAU.Text == "Nombre: " || txtApellidoAU.Text == "Apellido:" || txtContrasena.Text == "Contraseña:" || txtCorreo.Text == "Correo:")
+				{
+					MessageBox.Show("Por favor llene el campo", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+				else
+				{
+					int combobox1 = cbRolAU.SelectedIndex;
+					DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtDocumentoAU.Text));
+					if (tabla.Rows.Count > 0)
+					{
+						MessageBox.Show(" Este Usuario ya Existe", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					}
+					else
+					{
+						if (ClaseControlAdmin.Func_InsertUsuario(txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1.ToString()))
+						{
+							MessageBox.Show("Usuario insertado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+							btnCancelar_Click(sender, e);
+						}
+					}
+				}
+			}
+			if(controladd == 1)
+			{
+				if (txtDocumentoAU.Text == "N Documento: " || txtNombreAU.Text == "Nombre: " || txtApellidoAU.Text == "Apellido:" || txtContrasena.Text == "Contraseña:" || txtCorreo.Text == "Correo:")
+				{
+					MessageBox.Show("Por favor llene el campo", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+				else
+				{
+					if( txtDocumentoAU.Text != doc.ToString())
+					{
+						DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(doc);
+						if(tabla.Rows.Count > 0)
+						{
+							MessageBox.Show("este Usuario ya existe");
+						}
+					}
+				}
+			}
+		}
+
+		private void btnModificar_VerU_Click(object sender, EventArgs e)
+		{
+			controladd = 1;
+			string nom = DGVUsuario.Rows[n].Cells[1].Value.ToString();
+			DialogResult rpt = new DialogResult();
+			rpt = MessageBox.Show("Esta seguro que quiere modificar este usuario? "  +nom.ToString(), "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if(rpt == DialogResult.OK)
+			{
+				txtApellidoAU.Text = DGVUsuario.CurrentRow.Cells[2].Value.ToString();
+				txtNombreAU.Text = DGVUsuario.CurrentRow.Cells[1].Value.ToString();
+				txtDocumentoAU.Text = DGVUsuario.CurrentRow.Cells[3].Value.ToString();
+				txtContrasena.Text = DGVUsuario.CurrentRow.Cells[4].Value.ToString();
+				txtCorreo.Text = DGVUsuario.CurrentRow.Cells[5].Value.ToString();
+				btnModificar_VerU.Enabled = false;
+				btnEliminar_VerU.Enabled = false;
+				btnCancelar.Enabled = true;
+				// Activo los texbox
+				cbDocumento.Enabled = true;
+				cbRolAU.Enabled = true;
+				txtNombreAU.Enabled = true;
+				txtApellidoAU.Enabled = true;
+				btnGuardarAU.Enabled = true;
+				btnCancelar.Enabled = true;
+				txtCorreo.Enabled = true;
+				txtContrasena.Enabled = true;
+			}
+		}
 	}
 } 

@@ -426,5 +426,75 @@ namespace Controllers
             return tabla;
         }
 
+        public static bool Func_InsertUsuario(string nom, string ape, string doc, string contra, string correo, string rol)
+		{
+			try
+			{
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_INSERTUSUARIO ", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@NOM", SqlDbType.VarChar).Value = nom;
+                adap.SelectCommand.Parameters.Add("@APE", SqlDbType.VarChar).Value = ape;
+                adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.NVarChar).Value = doc;
+                adap.SelectCommand.Parameters.Add("@CONTRA", SqlDbType.VarChar).Value = contra;
+                adap.SelectCommand.Parameters.Add("@CORREO", SqlDbType.VarChar).Value = correo;
+                adap.SelectCommand.Parameters.Add("@ROL", SqlDbType.VarChar).Value = rol;
+                adap.Fill(tabla);
+                return true;
+
+            }
+			catch (Exception e)
+			{
+				e.ToString();
+                return false;
+			}
+		}
+
+        public static bool Func_EliminarUsuario(int id)
+		{
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_ELIMINARUSUARIO", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@ID", SqlDbType.Int).Value = id;
+                adap.Fill(tabla);
+                return true;
+            }
+            catch (Exception e)
+            {
+
+                e.ToString();
+                return false;
+			}
+		}
+
+        public static bool Func_ActualizarUser(long id, string nom, string ape, string doc, string contra, string correo, string rol)
+		{
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_ACTUALIZARUSU ", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@ID_USER", SqlDbType.VarChar).Value = id;
+                adap.SelectCommand.Parameters.Add("@NOM", SqlDbType.VarChar).Value = nom;
+                adap.SelectCommand.Parameters.Add("@APE", SqlDbType.VarChar).Value = ape;
+                adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.NVarChar).Value = doc;
+                adap.SelectCommand.Parameters.Add("@CONTRA", SqlDbType.VarChar).Value = contra;
+                adap.SelectCommand.Parameters.Add("@CORREO", SqlDbType.VarChar).Value = correo;
+                adap.SelectCommand.Parameters.Add("@ROL", SqlDbType.VarChar).Value = rol;
+                adap.Fill(tabla);
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return false;
+            }
+        }
     }
 }
