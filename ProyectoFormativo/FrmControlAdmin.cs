@@ -33,6 +33,8 @@ namespace ProyectoFormativo
 		private long idbien = 0;
 		private string serialdoc = "";
 		private long Nbien = 0;
+		// variables del formulario usuario
+		private long id_user = 0;
 
 		public FrmControlAdmin()
 		{
@@ -1467,9 +1469,26 @@ namespace ProyectoFormativo
 			{
 				long doc = Convert.ToInt64(DGVUsuario.Rows[n].Cells[3].Value);
 				DataTable tablabien = ClaseControlAdmin.Func_TraerUsuario(doc);
-				//idbien = Convert.ToInt64(tablabien.Rows[0][0]);
+				id_user = Convert.ToInt64(tablabien.Rows[0][0]);
 				btnModificar_VerU.Enabled = true;
 				btnEliminar_VerU.Enabled = true;
+			}
+		}
+
+		private void btnEliminar_VerU_Click(object sender, EventArgs e)
+		{
+			DialogResult rpt = new DialogResult();
+			rpt = MessageBox.Show("Esta seguro de que quieres eliminar a este usuario?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if (rpt == DialogResult.OK)
+			{
+				if (ClaseControlAdmin.Func_EliminarUsuario(id_user))
+				{
+					MessageBox.Show("Ha sido eliminado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+				txtBuscar_VerU.Text = "";
+				DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
+				btnModificar_VerU.Enabled = false;
+				btnEliminar_VerU.Enabled = false;
 			}
 		}
 
@@ -1526,6 +1545,8 @@ namespace ProyectoFormativo
 						{
 							MessageBox.Show("Usuario insertado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 							btnCancelar_Click(sender, e);
+							btnModificar_VerU.Enabled = false;
+							btnEliminar_VerU.Enabled = false;
 						}
 					}
 				}
@@ -1538,13 +1559,17 @@ namespace ProyectoFormativo
 				}
 				else
 				{
-					if( txtDocumentoAU.Text != doc.ToString())
+					int combobox1 = cbRolAU.SelectedIndex;
+					if (ClaseControlAdmin.Func_ActualizarUser(id_user, txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1.ToString()))
 					{
-						DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(doc);
-						if(tabla.Rows.Count > 0)
-						{
-							MessageBox.Show("este Usuario ya existe");
-						}
+						MessageBox.Show("Usuario Actualizado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						btnCancelar_Click(sender, e);
+						btnModificar_VerU.Enabled = false;
+						btnEliminar_VerU.Enabled = false;
+						DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
+						//this.DGVUsuario.DataSource = null;
+						//this.DGVUsuario.Rows.Clear();
+						txtBuscar_VerU.Text = "";
 					}
 				}
 			}

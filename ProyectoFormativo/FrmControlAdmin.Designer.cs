@@ -438,6 +438,7 @@ namespace ProyectoFormativo
 			this.btnEliminar_VerU.TabIndex = 12;
 			this.btnEliminar_VerU.Text = "Eliminar";
 			this.btnEliminar_VerU.UseVisualStyleBackColor = false;
+			this.btnEliminar_VerU.Click += new System.EventHandler(this.btnEliminar_VerU_Click);
 			// 
 			// btnModificar_VerU
 			// 

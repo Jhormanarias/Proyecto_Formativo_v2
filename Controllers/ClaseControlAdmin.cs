@@ -451,7 +451,7 @@ namespace Controllers
 			}
 		}
 
-        public static bool Func_EliminarUsuario(int id)
+        public static bool Func_EliminarUsuario(long id)
 		{
             try
             {
