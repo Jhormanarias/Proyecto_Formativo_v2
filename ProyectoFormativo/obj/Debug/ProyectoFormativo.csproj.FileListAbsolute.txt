@@ -121,3 +121,20 @@ C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
 C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
