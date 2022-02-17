@@ -56,13 +56,6 @@ namespace ProyectoFormativo
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.DGVUsuario = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEliminar_VerU = new System.Windows.Forms.Button();
 			this.btnModificar_VerU = new System.Windows.Forms.Button();
 			this.txtBuscar_VerU = new System.Windows.Forms.TextBox();
@@ -163,6 +156,14 @@ namespace ProyectoFormativo
 			this.lbl_Rol = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lbl_Nom_User = new System.Windows.Forms.Label();
+			this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Tipo_identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.tc_Usuario.SuspendLayout();
 			this.Usuarios.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -351,7 +352,8 @@ namespace ProyectoFormativo
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21});
+            this.dataGridViewTextBoxColumn21,
+            this.Tipo_identificacion});
 			this.DGVUsuario.EnableHeadersVisualStyles = false;
 			this.DGVUsuario.Location = new System.Drawing.Point(6, 67);
 			this.DGVUsuario.Name = "DGVUsuario";
@@ -373,56 +375,6 @@ namespace ProyectoFormativo
 			this.DGVUsuario.Size = new System.Drawing.Size(721, 131);
 			this.DGVUsuario.TabIndex = 14;
 			this.DGVUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVUsuario_CellClick);
-			// 
-			// dataGridViewTextBoxColumn15
-			// 
-			this.dataGridViewTextBoxColumn15.DataPropertyName = "id_usuario";
-			this.dataGridViewTextBoxColumn15.FillWeight = 70F;
-			this.dataGridViewTextBoxColumn15.HeaderText = "ID";
-			this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-			this.dataGridViewTextBoxColumn15.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn16
-			// 
-			this.dataGridViewTextBoxColumn16.DataPropertyName = "Nom_User";
-			this.dataGridViewTextBoxColumn16.HeaderText = "Nombre";
-			this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-			this.dataGridViewTextBoxColumn16.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn17
-			// 
-			this.dataGridViewTextBoxColumn17.DataPropertyName = "Apellido";
-			this.dataGridViewTextBoxColumn17.HeaderText = "Apellido";
-			this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-			this.dataGridViewTextBoxColumn17.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn18
-			// 
-			this.dataGridViewTextBoxColumn18.DataPropertyName = "Documento";
-			this.dataGridViewTextBoxColumn18.HeaderText = "Documento";
-			this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-			this.dataGridViewTextBoxColumn18.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn19
-			// 
-			this.dataGridViewTextBoxColumn19.DataPropertyName = "Contrasena";
-			this.dataGridViewTextBoxColumn19.HeaderText = "Contraseña";
-			this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-			this.dataGridViewTextBoxColumn19.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn20
-			// 
-			this.dataGridViewTextBoxColumn20.DataPropertyName = "Correo";
-			this.dataGridViewTextBoxColumn20.HeaderText = "Correo";
-			this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-			this.dataGridViewTextBoxColumn20.ReadOnly = true;
-			// 
-			// dataGridViewTextBoxColumn21
-			// 
-			this.dataGridViewTextBoxColumn21.DataPropertyName = "Rol";
-			this.dataGridViewTextBoxColumn21.HeaderText = "Rol";
-			this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-			this.dataGridViewTextBoxColumn21.ReadOnly = true;
 			// 
 			// btnEliminar_VerU
 			// 
@@ -1617,6 +1569,63 @@ namespace ProyectoFormativo
 			this.lbl_Nom_User.Text = "nombre";
 			this.lbl_Nom_User.Visible = false;
 			// 
+			// dataGridViewTextBoxColumn15
+			// 
+			this.dataGridViewTextBoxColumn15.DataPropertyName = "id_usuario";
+			this.dataGridViewTextBoxColumn15.FillWeight = 70F;
+			this.dataGridViewTextBoxColumn15.HeaderText = "ID";
+			this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+			this.dataGridViewTextBoxColumn15.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn16
+			// 
+			this.dataGridViewTextBoxColumn16.DataPropertyName = "Nom_User";
+			this.dataGridViewTextBoxColumn16.HeaderText = "Nombre";
+			this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+			this.dataGridViewTextBoxColumn16.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn17
+			// 
+			this.dataGridViewTextBoxColumn17.DataPropertyName = "Apellido";
+			this.dataGridViewTextBoxColumn17.HeaderText = "Apellido";
+			this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+			this.dataGridViewTextBoxColumn17.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn18
+			// 
+			this.dataGridViewTextBoxColumn18.DataPropertyName = "Documento";
+			this.dataGridViewTextBoxColumn18.HeaderText = "Documento";
+			this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+			this.dataGridViewTextBoxColumn18.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn19
+			// 
+			this.dataGridViewTextBoxColumn19.DataPropertyName = "Contrasena";
+			this.dataGridViewTextBoxColumn19.HeaderText = "Contraseña";
+			this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+			this.dataGridViewTextBoxColumn19.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn20
+			// 
+			this.dataGridViewTextBoxColumn20.DataPropertyName = "Correo";
+			this.dataGridViewTextBoxColumn20.HeaderText = "Correo";
+			this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+			this.dataGridViewTextBoxColumn20.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn21
+			// 
+			this.dataGridViewTextBoxColumn21.DataPropertyName = "Rol";
+			this.dataGridViewTextBoxColumn21.HeaderText = "Rol";
+			this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+			this.dataGridViewTextBoxColumn21.ReadOnly = true;
+			// 
+			// Tipo_identificacion
+			// 
+			this.Tipo_identificacion.DataPropertyName = "Tipo_identificacion";
+			this.Tipo_identificacion.HeaderText = "Identidad";
+			this.Tipo_identificacion.Name = "Tipo_identificacion";
+			this.Tipo_identificacion.ReadOnly = true;
+			// 
 			// FrmControlAdmin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1777,6 +1786,8 @@ namespace ProyectoFormativo
         private System.Windows.Forms.Button btnSalir;
 		private System.Windows.Forms.Button btnNuevoU;
 		private System.Windows.Forms.Button btnCancelar;
+		private System.Windows.Forms.TextBox txtCorreo;
+		private System.Windows.Forms.TextBox txtContrasena;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
@@ -1784,8 +1795,7 @@ namespace ProyectoFormativo
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-		private System.Windows.Forms.TextBox txtCorreo;
-		private System.Windows.Forms.TextBox txtContrasena;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Tipo_identificacion;
 	}
 }
 

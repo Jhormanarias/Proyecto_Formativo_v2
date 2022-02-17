@@ -426,7 +426,7 @@ namespace Controllers
             return tabla;
         }
 
-        public static bool Func_InsertUsuario(string nom, string ape, string doc, string contra, string correo, string rol)
+        public static bool Func_InsertUsuario(string nom, string ape, string doc, string contra, string correo, string rol, string identidad)
 		{
 			try
 			{
@@ -440,6 +440,7 @@ namespace Controllers
                 adap.SelectCommand.Parameters.Add("@CONTRA", SqlDbType.VarChar).Value = contra;
                 adap.SelectCommand.Parameters.Add("@CORREO", SqlDbType.VarChar).Value = correo;
                 adap.SelectCommand.Parameters.Add("@ROL", SqlDbType.VarChar).Value = rol;
+                adap.SelectCommand.Parameters.Add("@T_IDENTIDAD", SqlDbType.VarChar).Value = identidad;
                 adap.Fill(tabla);
                 return true;
 
@@ -471,7 +472,7 @@ namespace Controllers
 			}
 		}
 
-        public static bool Func_ActualizarUser(long id, string nom, string ape, string doc, string contra, string correo, string rol)
+        public static bool Func_ActualizarUser(long id, string nom, string ape, string doc, string contra, string correo, string rol, string identidad)
 		{
             try
             {
@@ -486,6 +487,7 @@ namespace Controllers
                 adap.SelectCommand.Parameters.Add("@CONTRA", SqlDbType.VarChar).Value = contra;
                 adap.SelectCommand.Parameters.Add("@CORREO", SqlDbType.VarChar).Value = correo;
                 adap.SelectCommand.Parameters.Add("@ROL", SqlDbType.VarChar).Value = rol;
+                adap.SelectCommand.Parameters.Add("@T_IDENTIDAD", SqlDbType.VarChar).Value = identidad;
                 adap.Fill(tabla);
                 return true;
 

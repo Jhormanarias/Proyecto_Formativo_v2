@@ -1533,7 +1533,8 @@ namespace ProyectoFormativo
 				}
 				else
 				{
-					int combobox1 = cbRolAU.SelectedIndex;
+					string combobox1 = cbRolAU.Text;
+					string combobox2 = cbDocumento.Text;
 					DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtDocumentoAU.Text));
 					if (tabla.Rows.Count > 0)
 					{
@@ -1541,7 +1542,7 @@ namespace ProyectoFormativo
 					}
 					else
 					{
-						if (ClaseControlAdmin.Func_InsertUsuario(txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1.ToString()))
+						if (ClaseControlAdmin.Func_InsertUsuario(txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1, combobox2))
 						{
 							MessageBox.Show("Usuario insertado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 							btnCancelar_Click(sender, e);
@@ -1559,8 +1560,9 @@ namespace ProyectoFormativo
 				}
 				else
 				{
-					int combobox1 = cbRolAU.SelectedIndex;
-					if (ClaseControlAdmin.Func_ActualizarUser(id_user, txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1.ToString()))
+					string combobox1 = cbRolAU.Text;
+					string combobox2 = cbDocumento.Text;
+					if (ClaseControlAdmin.Func_ActualizarUser(id_user, txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1, combobox2))
 					{
 						MessageBox.Show("Usuario Actualizado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 						btnCancelar_Click(sender, e);
