@@ -48,3 +48,12 @@ C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.pdb
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
+C:\Users\JHORMAN\Desktop\Nueva carpeta\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
