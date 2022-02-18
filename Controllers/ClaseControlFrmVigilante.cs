@@ -202,6 +202,9 @@ namespace Controllers
                 string horas = DateTime.Now.ToString("hh:mm:ss tt");
                 string fecha = DateTime.Now.ToString("dd-MM-yyyy");
 
+                //DateTime Datefecha = Convert.ToDateTime(fecha);
+                //DateTime Datehora = Convert.ToDateTime(horas);
+
                 if (tabla.Rows.Count >= 2)
                 {
                     SqlDataAdapter adap1 = new SqlDataAdapter("UPDATE CONTROLB SET hora_salida = ' " + horas + "' WHERE id_bien= '" + idbien.ToString() +"'", conexion);
