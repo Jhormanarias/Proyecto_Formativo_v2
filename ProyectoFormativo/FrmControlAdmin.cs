@@ -20,7 +20,7 @@ namespace ProyectoFormativo
 		ClaseControlAdmin objp = new ClaseControlAdmin();
 		DataSet dsTabla;
 		int PagInicio = 1, Indice = 0, NumFilas = 10, PagFinal, control = 0;
-		DateTime fechaR;
+		string fechaR = "";
 		long doc = 0;
 
 		//variables modulo control
@@ -414,7 +414,7 @@ namespace ProyectoFormativo
 
 		private void btnFiltarR_Click(object sender, EventArgs e)
 		{
-			fechaR = dt_Fecha_RAdmin.Value;
+			fechaR = dt_Fecha_RAdmin.Value.ToString("dd-MM-yyyy");
 			//filtro por documento
 			if (this.cb_Documento_RAdmin.Checked == true && this.cb_Fecha_RAdmin.Checked == false)
 			{

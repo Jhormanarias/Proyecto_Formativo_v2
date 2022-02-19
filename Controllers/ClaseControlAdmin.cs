@@ -199,7 +199,7 @@ namespace Controllers
 
 
         //FILTRO LOS REPORTES
-        public DataSet Func_Filtrar(DateTime fecha, long doc)
+        public DataSet Func_Filtrar(string fecha, long doc)
         {
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADOX2", conexion);
@@ -213,7 +213,7 @@ namespace Controllers
             da.Fill(dt);
             return dt;
         }
-        public DataSet Func_Filtrarx(DateTime fecha, long doc)
+        public DataSet Func_Filtrarx(string fecha, long doc)
         {
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADOX2", conexion);
@@ -255,7 +255,7 @@ namespace Controllers
             da.Fill(dt);
             return dt;
         }
-        public DataSet Func_FiltrarFe(DateTime fecha)
+        public DataSet Func_FiltrarFe(string fecha)
         {
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);
@@ -269,7 +269,7 @@ namespace Controllers
             return dt;
         }
 
-        public DataSet Func_FiltrarFex(DateTime fecha)
+        public DataSet Func_FiltrarFex(string fecha)
         {
             SqlConnection conexion = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand("PA_LISTARFILTRADO", conexion);

@@ -546,7 +546,7 @@ namespace ProyectoFormativo
 		//filtrar por busqueda en la tabla reporte 
         private void btn_Feltar_Click(object sender, EventArgs e)
         {
-			fechaR = dt_Fecha_R.Value;
+			fechaR = dt_Fecha_R.Value.Date;
 			//filtro por documento
 			if (this.cb_Documento_R.Checked == true && this.cb_Fecha_R.Checked == false)
             {
