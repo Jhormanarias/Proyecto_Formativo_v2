@@ -11,7 +11,6 @@ using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.Collections;
 using Controllers;
-using BarcodeLib;
 
 namespace ProyectoFormativo
 {
@@ -1191,7 +1190,7 @@ namespace ProyectoFormativo
 				idbien = Convert.ToInt64(tablabien.Rows[0][0]);
 				btnModificarBien.Enabled = true;
 				btnEliminarBien.Enabled = true;
-				btn_Codigo.Enabled = true;
+				btn_codigo.Enabled = true;
 				btnModificarBien.BackColor = System.Drawing.SystemColors.MenuHighlight;
 				btnModificarBien.ForeColor = System.Drawing.SystemColors.HighlightText;
 				btnEliminarBien.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -1345,15 +1344,13 @@ namespace ProyectoFormativo
 			btnEliminarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
-		private void btn_Codigo_Click(object sender, EventArgs e)
+		private void btn_codigo_Click(object sender, EventArgs e)
 		{
-			FrmCodigoBarras f = new FrmCodigoBarras();
+			FrmBarCode f = new FrmBarCode();
 			f.ShowDialog();
 		}
 
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
-
-		//--------------------------------------------------- MODULO BIENES USUARIOS -------------------------------------------------------
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
 		{
 			if (txtDocumentoAU.Text == "N Documento: ")

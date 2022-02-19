@@ -91,7 +91,7 @@ namespace ProyectoFormativo
             this.txtMarcaE = new System.Windows.Forms.TextBox();
             this.txtTipodeBienE = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btn_Codigo = new System.Windows.Forms.Button();
+            this.btn_codigo = new System.Windows.Forms.Button();
             this.btn_LimpiarBusq = new System.Windows.Forms.Button();
             this.txtPagBienes = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -764,7 +764,7 @@ namespace ProyectoFormativo
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.btn_Codigo);
+            this.groupBox5.Controls.Add(this.btn_codigo);
             this.groupBox5.Controls.Add(this.btn_LimpiarBusq);
             this.groupBox5.Controls.Add(this.txtPagBienes);
             this.groupBox5.Controls.Add(this.label6);
@@ -782,16 +782,16 @@ namespace ProyectoFormativo
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ver";
             // 
-            // btn_Codigo
+            // btn_codigo
             // 
-            this.btn_Codigo.Enabled = false;
-            this.btn_Codigo.Location = new System.Drawing.Point(391, 31);
-            this.btn_Codigo.Name = "btn_Codigo";
-            this.btn_Codigo.Size = new System.Drawing.Size(75, 23);
-            this.btn_Codigo.TabIndex = 20;
-            this.btn_Codigo.Text = "Codigo";
-            this.btn_Codigo.UseVisualStyleBackColor = true;
-            this.btn_Codigo.Click += new System.EventHandler(this.btn_Codigo_Click);
+            this.btn_codigo.Enabled = false;
+            this.btn_codigo.Location = new System.Drawing.Point(394, 32);
+            this.btn_codigo.Name = "btn_codigo";
+            this.btn_codigo.Size = new System.Drawing.Size(75, 23);
+            this.btn_codigo.TabIndex = 20;
+            this.btn_codigo.Text = "Codigo";
+            this.btn_codigo.UseVisualStyleBackColor = true;
+            this.btn_codigo.Click += new System.EventHandler(this.btn_codigo_Click);
             // 
             // btn_LimpiarBusq
             // 
@@ -1799,7 +1799,7 @@ namespace ProyectoFormativo
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.Button btn_Codigo;
+        private System.Windows.Forms.Button btn_codigo;
     }
 }
 
