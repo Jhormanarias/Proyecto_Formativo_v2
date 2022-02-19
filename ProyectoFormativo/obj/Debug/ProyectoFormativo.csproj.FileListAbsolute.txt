@@ -138,3 +138,5 @@ C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormat
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
