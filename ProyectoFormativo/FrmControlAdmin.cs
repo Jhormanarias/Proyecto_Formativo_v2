@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.Collections;
 using Controllers;
+using BarcodeLib;
 
 namespace ProyectoFormativo
 {
@@ -28,7 +29,7 @@ namespace ProyectoFormativo
 
 		//variables formulario equipo
 		private string id_visitante = "";
-		private string serialBien = "";
+		public static string serialBien = "";
 		private int controladd = 0;
 		private long idbien = 0;
 		private string serialdoc = "";
@@ -1190,6 +1191,7 @@ namespace ProyectoFormativo
 				idbien = Convert.ToInt64(tablabien.Rows[0][0]);
 				btnModificarBien.Enabled = true;
 				btnEliminarBien.Enabled = true;
+				btn_Codigo.Enabled = true;
 				btnModificarBien.BackColor = System.Drawing.SystemColors.MenuHighlight;
 				btnModificarBien.ForeColor = System.Drawing.SystemColors.HighlightText;
 				btnEliminarBien.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -1343,7 +1345,15 @@ namespace ProyectoFormativo
 			btnEliminarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
+		private void btn_Codigo_Click(object sender, EventArgs e)
+		{
+			FrmCodigoBarras f = new FrmCodigoBarras();
+			f.ShowDialog();
+		}
+
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
+
+		//--------------------------------------------------- MODULO BIENES USUARIOS -------------------------------------------------------
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
 		{
 			if (txtDocumentoAU.Text == "N Documento: ")
@@ -1492,7 +1502,7 @@ namespace ProyectoFormativo
 			}
 		}
 
-		private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
 		{
 			txtCorreo.Text = "Correo:";
 			txtDocumentoAU.Text = "N Documento: ";
