@@ -134,6 +134,7 @@ namespace ProyectoFormativo
 			btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
 			btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.ControlLight;
+			txt_BuscarBien_C_Admin.Focus();
 
 			//formulario reportes
 			btnFiltarR.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -168,6 +169,11 @@ namespace ProyectoFormativo
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
+		private void tc_Usuario_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			txt_BuscarBien_C_Admin.Focus();
+		}
+
 		private void btnBuscar_ControlA_Click(object sender, EventArgs e)
         {
 			if (txt_Documento_C_Admin.Text == "" & txt_BuscarBien_C_Admin.Text == "")
@@ -201,6 +207,7 @@ namespace ProyectoFormativo
 					{
 						btnIngresoAdmin.Enabled = false;
 						btnSalidaAdmin.Enabled = true;
+						btnSalidaAdmin.Focus();
 						btnSalidaAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
 						btnSalidaAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
 						btnIngresoAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -210,6 +217,7 @@ namespace ProyectoFormativo
 					{
 						btnSalidaAdmin.Enabled = false;
 						btnIngresoAdmin.Enabled = true;
+						btnIngresoAdmin.Focus();
 						btnIngresoAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
 						btnIngresoAdmin.ForeColor = System.Drawing.SystemColors.HighlightText;
 						btnSalidaAdmin.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -235,6 +243,7 @@ namespace ProyectoFormativo
 			{
 				dt.Clear();
 			}
+			txt_BuscarBien_C_Admin.Focus();
 		}
 
 		private void btnIngresoAdmin_Click(object sender, EventArgs e)
@@ -339,12 +348,27 @@ namespace ProyectoFormativo
 			}
 		}
 
-        //--------------------------------------------------- FIN MODULO CONTROL ----------------------------------------------------
+		private void btnSalidaAdmin_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				btnSalidaAdmin_Click(sender, e);
+			}
+		}
+
+		private void btnIngresoAdmin_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)13)
+			{
+				btnIngresoAdmin_Click(sender, e);
+			}
+		}
+		//--------------------------------------------------- FIN MODULO CONTROL ----------------------------------------------------
 
 
-        //---------------------------------------------------- MODULO REPORTES ------------------------------------------------------
+		//---------------------------------------------------- MODULO REPORTES ------------------------------------------------------
 
-        private void btn_salirReportes_Click(object sender, EventArgs e)
+		private void btn_salirReportes_Click(object sender, EventArgs e)
 		{
 			DialogResult rpta = new DialogResult();
 			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -1370,6 +1394,7 @@ namespace ProyectoFormativo
 			if (txtDocumentoAU.Text == "N Documento: ")
 			{
 				txtDocumentoAU.Text = "";
+				this.txtTipodeBienE.ForeColor = System.Drawing.Color.Black;
 			}
 		}
 

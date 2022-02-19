@@ -199,6 +199,7 @@ namespace ProyectoFormativo
             this.btnIngresoAdmin.Text = "Ingreso";
             this.btnIngresoAdmin.UseVisualStyleBackColor = false;
             this.btnIngresoAdmin.Click += new System.EventHandler(this.btnIngresoAdmin_Click);
+            this.btnIngresoAdmin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnIngresoAdmin_KeyPress);
             // 
             // tc_Usuario
             // 
@@ -214,6 +215,7 @@ namespace ProyectoFormativo
             this.tc_Usuario.SelectedIndex = 0;
             this.tc_Usuario.Size = new System.Drawing.Size(774, 403);
             this.tc_Usuario.TabIndex = 1;
+            this.tc_Usuario.SelectedIndexChanged += new System.EventHandler(this.tc_Usuario_SelectedIndexChanged);
             // 
             // Usuarios
             // 
@@ -1118,6 +1120,7 @@ namespace ProyectoFormativo
             this.btnSalidaAdmin.Text = "Salida";
             this.btnSalidaAdmin.UseVisualStyleBackColor = false;
             this.btnSalidaAdmin.Click += new System.EventHandler(this.btnSalidaAdmin_Click);
+            this.btnSalidaAdmin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnSalidaAdmin_KeyPress);
             // 
             // txt_BuscarBien_C_Admin
             // 

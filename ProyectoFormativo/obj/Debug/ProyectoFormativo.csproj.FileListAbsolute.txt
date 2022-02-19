@@ -179,3 +179,43 @@ C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\ProyectoFormativo\bin\
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.ValueTuple.xml
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmBarCode.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\BarcodeStandard.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Buffers.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Drawing.Common.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Memory.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Text.Json.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.ValueTuple.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll.config
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Buffers.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Memory.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Text.Json.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\System.ValueTuple.xml
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.SuggestedBindingRedirects.cache
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmBarCode.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
