@@ -236,7 +236,7 @@ namespace ProyectoFormativo
 		{
 			//captura ID del bien
 			long idbien = Convert.ToInt64(DGVControl_Admin.CurrentRow.Cells[0].Value.ToString());
-			if (ClaseControlFrmVigilante.Fun_ControlBien(idbien))
+			if (ClaseControlAdmin.Fun_ControlBien(idbien))
 			{
 				MessageBox.Show("Ingreso registrado", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelarAdmin_Click(sender, e);
@@ -256,7 +256,7 @@ namespace ProyectoFormativo
 		private void btnSalidaAdmin_Click(object sender, EventArgs e)
         {
 			long idbien = Convert.ToInt64(DGVControl_Admin.CurrentRow.Cells[0].Value.ToString());
-			if (ClaseControlFrmVigilante.Fun_ControlBien(idbien))
+			if (ClaseControlAdmin.Fun_ControlBien(idbien))
 			{
 				MessageBox.Show("Salida registrada", "Felicidades!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btn_cancelarAdmin_Click(sender, e);
@@ -735,7 +735,7 @@ namespace ProyectoFormativo
 
 		private void DGVReportesAdmin_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
 		{
-			if (this.DGVReportesAdmin.Columns[e.ColumnIndex].HeaderText == "Hora S.")
+			if (this.DGVReportesAdmin.Columns[e.ColumnIndex].HeaderText == "Salida")
 			{
 				if (e.Value.GetType() == typeof(System.DBNull))
 				{
