@@ -151,6 +151,15 @@ namespace ProyectoFormativo
 			this.txtMarcaE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtNSerieE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCargadorE.ForeColor = System.Drawing.Color.DimGray;
+			//formulario de usuarios
+			btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnGuardarAU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnGuardarAU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnEliminar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -1460,6 +1469,10 @@ namespace ProyectoFormativo
 			btnNuevoU.Enabled = false;
 			btnModificar_VerU.Enabled = false;
 			btnEliminar_VerU.Enabled = false;
+			btnGuardarAU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
 		}
 
 		private void DGVUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1511,8 +1524,8 @@ namespace ProyectoFormativo
 			txtContrasena.Enabled = false;
 			//---------------------------
 			btnNuevoU.Enabled = true;
-			btnModificar_VerU.Enabled = true;
-			btnEliminar_VerU.Enabled = true;
+			btnNuevoU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnNuevoU.ForeColor = System.Drawing.SystemColors.HighlightText;
 		}
 		private void btnSalir_Click(object sender, EventArgs e)
 		{
