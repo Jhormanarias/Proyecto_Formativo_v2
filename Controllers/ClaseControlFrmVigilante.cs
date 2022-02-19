@@ -199,17 +199,17 @@ namespace Controllers
 
                 tabla = Fun_ValidarBien(idbien);
 
-                string horas = DateTime.Now.ToString("hh:mm:ss tt");
-                string fecha = DateTime.Now.ToString("dd-MM-yyyy");
+                
+                string fecha = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
                 if (tabla.Rows.Count >= 2)
                 {
-                    SqlDataAdapter adap1 = new SqlDataAdapter("UPDATE CONTROLB SET hora_salida = ' " + horas + "' WHERE id_bien= '" + idbien.ToString() +"'", conexion);
+                    SqlDataAdapter adap1 = new SqlDataAdapter("UPDATE CONTROLB SET hora_salida = CONVERT(DATETIME, '" + fecha + "') WHERE id_bien = '" + idbien.ToString() + "'", conexion);
                     adap1.Fill(tabla);
                 }
 				else
 				{
-                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (fecha_registro, hora_entrada, hora_salida, id_usuario, id_bien) VALUES ('" + fecha + "', ' " + horas + "', NULL, '" + idusuario + "', '" + idbien.ToString() + "' )", conexion);
+                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (hora_entrada, hora_salida, id_usuario, id_bien) VALUES (CONVERT(DATETIME, '" + fecha + "'), NULL, '" + idusuario + "', '" + idbien.ToString() + "')", conexion);
                     adap1.Fill(tabla);
                 }
 
