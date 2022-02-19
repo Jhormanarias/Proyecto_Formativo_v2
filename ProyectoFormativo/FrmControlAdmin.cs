@@ -160,6 +160,11 @@ namespace ProyectoFormativo
 			btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 			btnEliminar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			this.txtApellidoAU.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNombreAU.ForeColor = System.Drawing.Color.DimGray;
+			this.txtDocumentoAU.ForeColor = System.Drawing.Color.DimGray;
+			this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
+			this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -1473,6 +1478,8 @@ namespace ProyectoFormativo
 			btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
 			btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
 			btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnNuevoU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnNuevoU.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
 		private void DGVUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1485,6 +1492,16 @@ namespace ProyectoFormativo
 				id_user = Convert.ToInt64(tablabien.Rows[0][0]);
 				btnModificar_VerU.Enabled = true;
 				btnEliminar_VerU.Enabled = true;
+				btnCancelar.Enabled = true;
+				btnNuevoU.Enabled = false;
+				btnModificar_VerU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+				btnModificar_VerU.ForeColor = System.Drawing.SystemColors.HighlightText;
+				btnEliminar_VerU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+				btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.HighlightText;
+				btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+				btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
+				btnNuevoU.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnNuevoU.ForeColor = System.Drawing.SystemColors.ControlLight;
 			}
 		}
 
@@ -1499,9 +1516,14 @@ namespace ProyectoFormativo
 					MessageBox.Show("Ha sido eliminado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
 				txtBuscar_VerU.Text = "";
-				DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
+				btnCancelar_Click(sender, e);
 				btnModificar_VerU.Enabled = false;
 				btnEliminar_VerU.Enabled = false;
+				controladd = 0;
+				btnEliminar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+				btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 			}
 		}
 
@@ -1512,7 +1534,12 @@ namespace ProyectoFormativo
 			txtContrasena.Text = "Contraseña:";
 			txtNombreAU.Text = "Nombre: ";
 			txtApellidoAU.Text = "Apellido:";
+			txtBuscar_VerU.Text = "";
 			cbRolAU.SelectedIndex = 0;
+			if(DGVUsuario.Rows.Count>0)
+			{
+				DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
+			}
 			cbDocumento.Enabled = false;
 			txtDocumentoAU.Enabled = false;
 			cbRolAU.Enabled = false;
@@ -1522,10 +1549,20 @@ namespace ProyectoFormativo
 			btnCancelar.Enabled = false;
 			txtCorreo.Enabled = false;
 			txtContrasena.Enabled = false;
+			btnModificar_VerU.Enabled = false;
+			btnEliminar_VerU.Enabled = false;
 			//---------------------------
 			btnNuevoU.Enabled = true;
 			btnNuevoU.BackColor = System.Drawing.SystemColors.MenuHighlight;
 			btnNuevoU.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnGuardarAU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnGuardarAU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnEliminar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 		private void btnSalir_Click(object sender, EventArgs e)
 		{
@@ -1581,10 +1618,10 @@ namespace ProyectoFormativo
 						btnCancelar_Click(sender, e);
 						btnModificar_VerU.Enabled = false;
 						btnEliminar_VerU.Enabled = false;
-						DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
 						//this.DGVUsuario.DataSource = null;
 						//this.DGVUsuario.Rows.Clear();
 						txtBuscar_VerU.Text = "";
+						controladd = 0;
 					}
 				}
 			}
@@ -1605,6 +1642,7 @@ namespace ProyectoFormativo
 				txtCorreo.Text = DGVUsuario.CurrentRow.Cells[5].Value.ToString();
 				btnModificar_VerU.Enabled = false;
 				btnEliminar_VerU.Enabled = false;
+				txtDocumentoAU.Enabled = false;
 				btnCancelar.Enabled = true;
 				// Activo los texbox
 				cbDocumento.Enabled = true;
@@ -1615,6 +1653,12 @@ namespace ProyectoFormativo
 				btnCancelar.Enabled = true;
 				txtCorreo.Enabled = true;
 				txtContrasena.Enabled = true;
+				btnEliminar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnEliminar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+				btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
+				btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
+				btnGuardarAU.BackColor = System.Drawing.SystemColors.MenuHighlight;
+				btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
 			}
 		}
 	}
