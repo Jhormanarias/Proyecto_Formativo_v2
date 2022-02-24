@@ -22,6 +22,7 @@ namespace Controllers
         public static long idusuario = 0;
         public static string usuario = "";
         public static string rol = "";
+        public static string idmaximo = "";
         //Prueba
         private int Inicio;
         private int Final;
@@ -141,12 +142,12 @@ namespace Controllers
 
                 if (tabla.Rows.Count >= 2)
                 {
-                    SqlDataAdapter adap1 = new SqlDataAdapter("UPDATE CONTROLB SET hora_salida = CONVERT(DATETIME, '" + fecha + "') WHERE id_bien = '" + idbien.ToString() + "'", conexion);
+                    SqlDataAdapter adap1 = new SqlDataAdapter("UPDATE CONTROLB SET hora_salida = CONVERT(DATETIME, '" + fecha + "'), id_usuario_salida = '" + idusuario + "', nom_user_salida = '" + usuario + "' WHERE id_bien = '" + idbien.ToString() + "' and id_control = '" + idmaximo + "'", conexion);
                     adap1.Fill(tabla);
                 }
                 else
                 {
-                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (hora_entrada, hora_salida, id_usuario, id_bien) VALUES (CONVERT(DATETIME, '" + fecha + "'), NULL, '" + idusuario + "', '" + idbien.ToString() + "' )", conexion);
+                    SqlDataAdapter adap1 = new SqlDataAdapter("INSERT INTO CONTROLB (hora_entrada, hora_salida, id_usuario, id_usuario_salida, id_bien, nom_user_salida) VALUES (CONVERT(DATETIME, '" + fecha + "'), NULL, '" + idusuario + "', NULL, '" + idbien.ToString() + "', NULL)", conexion);
                     adap1.Fill(tabla);
                 }
 
@@ -163,7 +164,6 @@ namespace Controllers
         //CONSULTO EL ESTADO Y SELECCIONO EL BIEN
         public static DataTable Fun_ValidarBien(long idbien)
         {
-            string idmaximo = "";
             DataTable tabla = new DataTable();
             SqlConnection conexion = new SqlConnection(cadena);
             SqlDataAdapter adap = new SqlDataAdapter("SELECT MAX(id_control) FROM CONTROLB WHERE hora_salida IS NULL AND id_bien = '" + idbien + "'", conexion);

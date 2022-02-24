@@ -32,7 +32,9 @@ namespace ProyectoFormativo
 		private int controladd = 0;
 		private long idbien = 0;
 		private string serialdoc = "";
+		public static string NomProietario = "";
 		private long Nbien = 0;
+
 		// variables del formulario usuario
 		private long id_user = 0;
 
@@ -1224,6 +1226,7 @@ namespace ProyectoFormativo
 			{
 				//capturo el serial del datagrid
 				serialBien = DGVBienes.Rows[n].Cells[4].Value.ToString();
+				NomProietario = DGVBienes.Rows[n].Cells[7].Value.ToString();
 				DataTable tablabien = ClaseControlAdmin.Func_BusVisitanteBien(serialBien);
 				idbien = Convert.ToInt64(tablabien.Rows[0][0]);
 				btnModificarBien.Enabled = true;
@@ -1376,6 +1379,7 @@ namespace ProyectoFormativo
 			DGVBienes.ClearSelection();
 			btnModificarBien.Enabled = false;
 			btnEliminarBien.Enabled = false;
+			btn_codigo.Enabled = false;
 			btnModificarBien.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnModificarBien.ForeColor = System.Drawing.SystemColors.ControlLight;
 			btnEliminarBien.BackColor = System.Drawing.SystemColors.ButtonFace;

@@ -177,5 +177,17 @@
   <ItemGroup>
     <None Include="Resources\loupe2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

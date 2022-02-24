@@ -17,6 +17,7 @@ namespace ProyectoFormativo
     public partial class FrmBarCode : Form
     {
         string data = "";
+        string nomPropietario = "";
         Image barcodeImage;
         //private Font fuente = new Font("Arial", 12, FontStyle.Regular, GraphicsUnit.Pixel);
 
@@ -36,6 +37,7 @@ namespace ProyectoFormativo
             Color foreColor = Color.Black;
             Color backColor = Color.Transparent;
             data = FrmControlAdmin.serialBien;
+            nomPropietario = FrmControlAdmin.NomProietario;
 
             // Para mostrar la cadena alfanumerica del codigo
             //barcodeAPI.IncludeLabel = true;
@@ -50,6 +52,7 @@ namespace ProyectoFormativo
 
             lblSerial.Visible = true;
             lblSerial.Text = "S/N: " + data;
+            lbl_NomPropietario.Text = "Generado a nombre de " + nomPropietario;
         }
 
         //A continuacion se agregara el siguiente método
