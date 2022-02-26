@@ -154,6 +154,7 @@ namespace ProyectoFormativo
 			this.txtMarcaE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtNSerieE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCargadorE.ForeColor = System.Drawing.Color.DimGray;
+
 			//formulario de usuarios
 			btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLight;
