@@ -38,7 +38,6 @@ C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.c
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
 C:\Users\David\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
@@ -75,3 +74,4 @@ C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\Contr
 C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
 C:\Users\David\Desktop\Proyecto Formativo 19-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache

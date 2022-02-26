@@ -1394,6 +1394,10 @@ namespace ProyectoFormativo
 		}
 
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
+
+
+		//--------------------------------------------------- MODULO USUARIO ----------------------------------------------------------
+
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
 		{
 			if (txtDocumentoAU.Text == "N Documento: ")
@@ -1564,7 +1568,7 @@ namespace ProyectoFormativo
 			}
 		}
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+		private void btnCancelar_Click(object sender, EventArgs e)
 		{
 			txtCorreo.Text = "Correo:";
 			txtDocumentoAU.Text = "N Documento: ";
@@ -1698,5 +1702,23 @@ namespace ProyectoFormativo
 				btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
 			}
 		}
+
+		//--------------------------------------------------- FIN MODULO USUARIO ----------------------------------------------------------
+
+		//--------------------------------------------------- MODULO PROPIETARIO ----------------------------------------------------------
+
+		private void BtnSalirP_Click(object sender, EventArgs e)
+		{
+			DialogResult rpta = new DialogResult();
+			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+			if (rpta == DialogResult.Yes)
+			{
+				Application.Exit();
+			}
+		}
+
+
+		//--------------------------------------------------- FIN MODULO PROPIETARIO -------------------------------------------------------
+
 	}
 } 

@@ -13,7 +13,7 @@ namespace Controllers
 {
 	public class ClaseControlAdmin
 	{
-        public static string cadena = "Data Source=.;Initial Catalog=BD_PROYECTO;User ID=ADSI;Password=2144539";
+        public static string cadena = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=BD_PROYECTO;User ID=ADSI;Password=2144539";
         public static string excepcion = "";
         public static long idvisitante = 0;
         public static string nomvisitante = "";
