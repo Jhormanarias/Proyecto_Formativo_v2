@@ -1605,6 +1605,8 @@ namespace ProyectoFormativo
 			btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
+
+		
 		private void btnSalir_Click(object sender, EventArgs e)
 		{
 			DialogResult rpta = new DialogResult();
@@ -1614,6 +1616,8 @@ namespace ProyectoFormativo
 				Application.Exit();
 			}
 		}
+
+
 		private void btnGuardarAU_Click(object sender, EventArgs e)
 		{
 			if(controladd == 0)
@@ -1715,6 +1719,60 @@ namespace ProyectoFormativo
 			{
 				Application.Exit();
 			}
+		}
+
+		private void btnGuardarP_Click(object sender, EventArgs e)
+		{
+			if (controladd == 0)
+			{
+				if (txtNDocumentoP.Text == "N Documento: " || txtNombreP.Text == "Nombre: " || txtApellidoP.Text == "Apellido:" || txtCorreoP.Text == "Correo:" || txtTelefonoP.Text == "Telefono:")
+				{
+					MessageBox.Show("Algun campo no se llenó", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+				else
+				{
+					string combobox1 = cbTipoDocumentoP.Text;
+					string combobox2 = cbDocumento.Text;
+					DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtNDocumentoP.Text));
+					if (tabla.Rows.Count > 0)
+					{
+						MessageBox.Show(" Este Usuario ya Existe", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					}
+					else
+					{
+						if (ClaseControlAdmin.Func_InsertUsuario(txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1, combobox2))
+						{
+							MessageBox.Show("Usuario insertado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+							btnCancelar_Click(sender, e);
+							btnModificarP.Enabled = false;
+							btnEliminarP.Enabled = false;
+						}
+					}
+				}
+			}
+		}
+
+		private void btnNuevoP_Click(object sender, EventArgs e)
+		{
+			cbDocumento.Enabled = true;
+			cbTipoDocumentoP.Enabled = true;
+			txtNDocumentoP.Enabled = true;
+			txtNombreP.Enabled = true;
+			txtApellidoP.Enabled = true;
+			btnGuardarP.Enabled = true;
+			btnCancelarP.Enabled = true;
+			txtCorreoP.Enabled = true;
+			txtTelefonoP.Enabled = true;
+			//---------------------------
+			btnNuevoP.Enabled = false;
+			btnModificarP.Enabled = false;
+			btnEliminarP.Enabled = false;
+			btnGuardarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnGuardarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnCancelarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnCancelarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnNuevoP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnNuevoP.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
 
 

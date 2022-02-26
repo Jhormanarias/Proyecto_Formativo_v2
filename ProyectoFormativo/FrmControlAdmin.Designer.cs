@@ -30,12 +30,12 @@ namespace ProyectoFormativo
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -84,8 +84,8 @@ namespace ProyectoFormativo
 			this.Propietario = new System.Windows.Forms.TabPage();
 			this.BtnSalirP = new System.Windows.Forms.Button();
 			this.groupBox9 = new System.Windows.Forms.GroupBox();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
+			this.btnNuevoP = new System.Windows.Forms.Button();
+			this.btnCancelarP = new System.Windows.Forms.Button();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -99,15 +99,15 @@ namespace ProyectoFormativo
 			this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.btnEliminarP = new System.Windows.Forms.Button();
+			this.btnModificarP = new System.Windows.Forms.Button();
 			this.txtBuscar_VerP = new System.Windows.Forms.TextBox();
-			this.button6 = new System.Windows.Forms.Button();
+			this.btnBuscarP = new System.Windows.Forms.Button();
 			this.groupBox10 = new System.Windows.Forms.GroupBox();
 			this.txtTelefonoP = new System.Windows.Forms.TextBox();
 			this.txtCorreoP = new System.Windows.Forms.TextBox();
 			this.btnGuardarP = new System.Windows.Forms.Button();
-			this.txtTipoDocumentoP = new System.Windows.Forms.ComboBox();
+			this.cbTipoDocumentoP = new System.Windows.Forms.ComboBox();
 			this.txtApellidoP = new System.Windows.Forms.TextBox();
 			this.txtNombreP = new System.Windows.Forms.TextBox();
 			this.txtNDocumentoP = new System.Windows.Forms.TextBox();
@@ -375,14 +375,14 @@ namespace ProyectoFormativo
 			this.DGVUsuario.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
 			this.DGVUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.DGVUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.Info;
-			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.SteelBlue;
-			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DGVUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.Info;
+			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.SteelBlue;
+			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DGVUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
 			this.DGVUsuario.ColumnHeadersHeight = 25;
 			this.DGVUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.DGVUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -399,18 +399,18 @@ namespace ProyectoFormativo
 			this.DGVUsuario.Name = "DGVUsuario";
 			this.DGVUsuario.ReadOnly = true;
 			this.DGVUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.LightGray;
-			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DGVUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
-			dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.LightGray;
-			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
-			this.DGVUsuario.RowsDefaultCellStyle = dataGridViewCellStyle23;
+			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.LightGray;
+			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DGVUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+			dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.LightGray;
+			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+			this.DGVUsuario.RowsDefaultCellStyle = dataGridViewCellStyle20;
 			this.DGVUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.DGVUsuario.Size = new System.Drawing.Size(721, 131);
 			this.DGVUsuario.TabIndex = 14;
@@ -672,17 +672,17 @@ namespace ProyectoFormativo
 			// 
 			// groupBox9
 			// 
-			this.groupBox9.Controls.Add(this.button2);
-			this.groupBox9.Controls.Add(this.button3);
+			this.groupBox9.Controls.Add(this.btnNuevoP);
+			this.groupBox9.Controls.Add(this.btnCancelarP);
 			this.groupBox9.Controls.Add(this.textBox2);
 			this.groupBox9.Controls.Add(this.label11);
 			this.groupBox9.Controls.Add(this.comboBox2);
 			this.groupBox9.Controls.Add(this.label12);
 			this.groupBox9.Controls.Add(this.dataGridView1);
-			this.groupBox9.Controls.Add(this.button4);
-			this.groupBox9.Controls.Add(this.button5);
+			this.groupBox9.Controls.Add(this.btnEliminarP);
+			this.groupBox9.Controls.Add(this.btnModificarP);
 			this.groupBox9.Controls.Add(this.txtBuscar_VerP);
-			this.groupBox9.Controls.Add(this.button6);
+			this.groupBox9.Controls.Add(this.btnBuscarP);
 			this.groupBox9.Location = new System.Drawing.Point(17, 129);
 			this.groupBox9.Name = "groupBox9";
 			this.groupBox9.Size = new System.Drawing.Size(732, 235);
@@ -690,34 +690,35 @@ namespace ProyectoFormativo
 			this.groupBox9.TabStop = false;
 			this.groupBox9.Text = "Ver";
 			// 
-			// button2
+			// btnNuevoP
 			// 
-			this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button2.Location = new System.Drawing.Point(320, 31);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(95, 30);
-			this.button2.TabIndex = 24;
-			this.button2.Text = "Nuevo";
-			this.button2.UseVisualStyleBackColor = false;
+			this.btnNuevoP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnNuevoP.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnNuevoP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnNuevoP.FlatAppearance.BorderSize = 0;
+			this.btnNuevoP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnNuevoP.Location = new System.Drawing.Point(320, 31);
+			this.btnNuevoP.Name = "btnNuevoP";
+			this.btnNuevoP.Size = new System.Drawing.Size(95, 30);
+			this.btnNuevoP.TabIndex = 24;
+			this.btnNuevoP.Text = "Nuevo";
+			this.btnNuevoP.UseVisualStyleBackColor = false;
+			this.btnNuevoP.Click += new System.EventHandler(this.btnNuevoP_Click);
 			// 
-			// button3
+			// btnCancelarP
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button3.Enabled = false;
-			this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button3.FlatAppearance.BorderSize = 0;
-			this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button3.Location = new System.Drawing.Point(421, 31);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(95, 30);
-			this.button3.TabIndex = 23;
-			this.button3.Text = "Cancelar";
-			this.button3.UseVisualStyleBackColor = false;
+			this.btnCancelarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnCancelarP.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancelarP.Enabled = false;
+			this.btnCancelarP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnCancelarP.FlatAppearance.BorderSize = 0;
+			this.btnCancelarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnCancelarP.Location = new System.Drawing.Point(421, 31);
+			this.btnCancelarP.Name = "btnCancelarP";
+			this.btnCancelarP.Size = new System.Drawing.Size(95, 30);
+			this.btnCancelarP.TabIndex = 23;
+			this.btnCancelarP.Text = "Cancelar";
+			this.btnCancelarP.UseVisualStyleBackColor = false;
 			// 
 			// textBox2
 			// 
@@ -762,14 +763,14 @@ namespace ProyectoFormativo
 			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
 			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.Info;
-			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.SteelBlue;
-			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.Info;
+			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.SteelBlue;
+			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
 			this.dataGridView1.ColumnHeadersHeight = 25;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -786,18 +787,18 @@ namespace ProyectoFormativo
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.LightGray;
-			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-			dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.LightGray;
-			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-			this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.LightGray;
+			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+			dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.LightGray;
+			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+			this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle23;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(721, 131);
 			this.dataGridView1.TabIndex = 14;
@@ -859,35 +860,35 @@ namespace ProyectoFormativo
 			this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
 			this.dataGridViewTextBoxColumn28.ReadOnly = true;
 			// 
-			// button4
+			// btnEliminarP
 			// 
-			this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button4.Enabled = false;
-			this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button4.FlatAppearance.BorderSize = 0;
-			this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button4.Location = new System.Drawing.Point(624, 30);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(103, 30);
-			this.button4.TabIndex = 12;
-			this.button4.Text = "Eliminar";
-			this.button4.UseVisualStyleBackColor = false;
+			this.btnEliminarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnEliminarP.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnEliminarP.Enabled = false;
+			this.btnEliminarP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnEliminarP.FlatAppearance.BorderSize = 0;
+			this.btnEliminarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnEliminarP.Location = new System.Drawing.Point(624, 30);
+			this.btnEliminarP.Name = "btnEliminarP";
+			this.btnEliminarP.Size = new System.Drawing.Size(103, 30);
+			this.btnEliminarP.TabIndex = 12;
+			this.btnEliminarP.Text = "Eliminar";
+			this.btnEliminarP.UseVisualStyleBackColor = false;
 			// 
-			// button5
+			// btnModificarP
 			// 
-			this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button5.Enabled = false;
-			this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button5.FlatAppearance.BorderSize = 0;
-			this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button5.Location = new System.Drawing.Point(522, 30);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(95, 30);
-			this.button5.TabIndex = 11;
-			this.button5.Text = "Modificar";
-			this.button5.UseVisualStyleBackColor = false;
+			this.btnModificarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnModificarP.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnModificarP.Enabled = false;
+			this.btnModificarP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnModificarP.FlatAppearance.BorderSize = 0;
+			this.btnModificarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnModificarP.Location = new System.Drawing.Point(522, 30);
+			this.btnModificarP.Name = "btnModificarP";
+			this.btnModificarP.Size = new System.Drawing.Size(95, 30);
+			this.btnModificarP.TabIndex = 11;
+			this.btnModificarP.Text = "Modificar";
+			this.btnModificarP.UseVisualStyleBackColor = false;
 			// 
 			// txtBuscar_VerP
 			// 
@@ -896,26 +897,26 @@ namespace ProyectoFormativo
 			this.txtBuscar_VerP.Size = new System.Drawing.Size(159, 20);
 			this.txtBuscar_VerP.TabIndex = 10;
 			// 
-			// button6
+			// btnBuscarP
 			// 
-			this.button6.BackColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-			this.button6.FlatAppearance.BorderSize = 0;
-			this.button6.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.button6.Location = new System.Drawing.Point(205, 30);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(99, 30);
-			this.button6.TabIndex = 0;
-			this.button6.Text = "Buscar";
-			this.button6.UseVisualStyleBackColor = false;
+			this.btnBuscarP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnBuscarP.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBuscarP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+			this.btnBuscarP.FlatAppearance.BorderSize = 0;
+			this.btnBuscarP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			this.btnBuscarP.Location = new System.Drawing.Point(205, 30);
+			this.btnBuscarP.Name = "btnBuscarP";
+			this.btnBuscarP.Size = new System.Drawing.Size(99, 30);
+			this.btnBuscarP.TabIndex = 0;
+			this.btnBuscarP.Text = "Buscar";
+			this.btnBuscarP.UseVisualStyleBackColor = false;
 			// 
 			// groupBox10
 			// 
 			this.groupBox10.Controls.Add(this.txtTelefonoP);
 			this.groupBox10.Controls.Add(this.txtCorreoP);
 			this.groupBox10.Controls.Add(this.btnGuardarP);
-			this.groupBox10.Controls.Add(this.txtTipoDocumentoP);
+			this.groupBox10.Controls.Add(this.cbTipoDocumentoP);
 			this.groupBox10.Controls.Add(this.txtApellidoP);
 			this.groupBox10.Controls.Add(this.txtNombreP);
 			this.groupBox10.Controls.Add(this.txtNDocumentoP);
@@ -958,21 +959,22 @@ namespace ProyectoFormativo
 			this.btnGuardarP.TabIndex = 0;
 			this.btnGuardarP.Text = "Guardar";
 			this.btnGuardarP.UseVisualStyleBackColor = false;
+			this.btnGuardarP.Click += new System.EventHandler(this.btnGuardarP_Click);
 			// 
-			// txtTipoDocumentoP
+			// cbTipoDocumentoP
 			// 
-			this.txtTipoDocumentoP.Enabled = false;
-			this.txtTipoDocumentoP.FormattingEnabled = true;
-			this.txtTipoDocumentoP.Items.AddRange(new object[] {
+			this.cbTipoDocumentoP.Enabled = false;
+			this.cbTipoDocumentoP.FormattingEnabled = true;
+			this.cbTipoDocumentoP.Items.AddRange(new object[] {
             "CC",
             "TI",
             "CE",
             "PS"});
-			this.txtTipoDocumentoP.Location = new System.Drawing.Point(11, 22);
-			this.txtTipoDocumentoP.Name = "txtTipoDocumentoP";
-			this.txtTipoDocumentoP.Size = new System.Drawing.Size(52, 21);
-			this.txtTipoDocumentoP.TabIndex = 12;
-			this.txtTipoDocumentoP.Text = "CC";
+			this.cbTipoDocumentoP.Location = new System.Drawing.Point(11, 22);
+			this.cbTipoDocumentoP.Name = "cbTipoDocumentoP";
+			this.cbTipoDocumentoP.Size = new System.Drawing.Size(52, 21);
+			this.cbTipoDocumentoP.TabIndex = 12;
+			this.cbTipoDocumentoP.Text = "CC";
 			// 
 			// txtApellidoP
 			// 
@@ -2207,8 +2209,8 @@ namespace ProyectoFormativo
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
 		private System.Windows.Forms.Button BtnSalirP;
 		private System.Windows.Forms.GroupBox groupBox9;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button btnNuevoP;
+		private System.Windows.Forms.Button btnCancelarP;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.ComboBox comboBox2;
@@ -2222,15 +2224,15 @@ namespace ProyectoFormativo
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button btnEliminarP;
+		private System.Windows.Forms.Button btnModificarP;
 		private System.Windows.Forms.TextBox txtBuscar_VerP;
-		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button btnBuscarP;
 		private System.Windows.Forms.GroupBox groupBox10;
 		private System.Windows.Forms.TextBox txtTelefonoP;
 		private System.Windows.Forms.TextBox txtCorreoP;
 		private System.Windows.Forms.Button btnGuardarP;
-		private System.Windows.Forms.ComboBox txtTipoDocumentoP;
+		private System.Windows.Forms.ComboBox cbTipoDocumentoP;
 		private System.Windows.Forms.TextBox txtApellidoP;
 		private System.Windows.Forms.TextBox txtNombreP;
 		private System.Windows.Forms.TextBox txtNDocumentoP;
