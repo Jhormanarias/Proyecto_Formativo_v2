@@ -912,6 +912,8 @@ namespace ProyectoFormativo
 			}
 		}
 
+		//Validación de solo números
+
 		private void txtBuscarBien_KeyPress(object sender, KeyPressEventArgs e)
 		{
 			if (Char.IsDigit(e.KeyChar))
