@@ -154,6 +154,7 @@ namespace ProyectoFormativo
 			this.txtMarcaE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtNSerieE.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCargadorE.ForeColor = System.Drawing.Color.DimGray;
+			this.txtBuscarBien.ForeColor = System.Drawing.Color.DimGray;
 
 			//formulario de usuarios
 			btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -893,7 +894,45 @@ namespace ProyectoFormativo
 			}
 		}
 
-        private void btnBuscar_EquipoU_Click(object sender, EventArgs e)
+		private void txtBuscarBien_Leave(object sender, EventArgs e)
+		{
+			if (txtBuscarBien.Text == "")
+			{
+				txtBuscarBien.Text = "N Documento propietario:";
+				this.txtBuscarBien.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+		private void txtBuscarBien_Enter(object sender, EventArgs e)
+		{
+			if (txtBuscarBien.Text == "N Documento propietario:")
+			{
+				txtBuscarBien.Text = "";
+				this.txtBuscarBien.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+		private void txtBuscarBien_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (Char.IsDigit(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else if (Char.IsControl(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else if (Char.IsSeparator(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else
+			{
+				e.Handled = true;
+			}
+		}
+
+		private void btnBuscar_EquipoU_Click(object sender, EventArgs e)
 		{
 			controladd = 0;
 
@@ -1344,7 +1383,7 @@ namespace ProyectoFormativo
 
 		private void btnBuscarBien_Click(object sender, EventArgs e)
 		{
-			if (txtBuscarBien.Text == "")
+			if (txtBuscarBien.Text == "" | txtBuscarBien.Text == "N Documento propietario:")
 			{
 				MessageBox.Show("Ingrese un N. de Serie o Documento");
 			}
@@ -1358,7 +1397,6 @@ namespace ProyectoFormativo
 				if (Tabla.Rows.Count > 0)
 				{
 					CargarDGBuscarBienesx();
-					btn_LimpiarBusq_Click(sender, e);
 				}
 				else
 				{
@@ -1375,7 +1413,8 @@ namespace ProyectoFormativo
 
 		private void btn_LimpiarBusq_Click(object sender, EventArgs e)
 		{
-			txtBuscarBien.Text = "";
+			txtBuscarBien.Text = "N Documento propietario:";
+			this.txtBuscarBien.ForeColor = System.Drawing.Color.DimGray;
 			CargarDGBienes();
 			DGVBienes.ClearSelection();
 			btnModificarBien.Enabled = false;
