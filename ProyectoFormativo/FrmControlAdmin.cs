@@ -199,7 +199,7 @@ namespace ProyectoFormativo
 
 				if (txt_nombre_R_Admin.Text == "")
 				{
-					MessageBox.Show("Visitante o bien no registrado", "Adertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show("Visitante o bien no registrado", "Adertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				}
 				else
 				{
@@ -1707,11 +1707,12 @@ namespace ProyectoFormativo
 			}
 		}
 
-		//--------------------------------------------------- FIN MODULO USUARIO ----------------------------------------------------------
 
-		//--------------------------------------------------- MODULO PROPIETARIO ----------------------------------------------------------
+        //--------------------------------------------------- FIN MODULO USUARIO ----------------------------------------------------------
 
-		private void BtnSalirP_Click(object sender, EventArgs e)
+        //--------------------------------------------------- MODULO PROPIETARIO ----------------------------------------------------------
+
+        private void BtnSalirP_Click(object sender, EventArgs e)
 		{
 			DialogResult rpta = new DialogResult();
 			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -1731,19 +1732,18 @@ namespace ProyectoFormativo
 				}
 				else
 				{
-					string combobox1 = cbTipoDocumentoP.Text;
-					string combobox2 = cbDocumento.Text;
-					DataTable tabla = ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtNDocumentoP.Text));
+					DataTable tabla = ClaseControlAdmin.Func_BuscarVistante(Convert.ToInt64(txtNDocumentoP.Text));
 					if (tabla.Rows.Count > 0)
 					{
 						MessageBox.Show(" Este Usuario ya Existe", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
 					else
 					{
-						if (ClaseControlAdmin.Func_InsertUsuario(txtNombreAU.Text, txtApellidoAU.Text, txtDocumentoAU.Text, txtContrasena.Text, txtCorreo.Text, combobox1, combobox2))
+						if (ClaseControlAdmin.Func_InsertarPropietario(txtNombreP.Text, txtApellidoP.Text, cbTipoDocumentoP.Text, Convert.ToInt64(txtNDocumentoP.Text), txtCorreoP.Text, txtTelefonoP.Text
+							))
 						{
 							MessageBox.Show("Usuario insertado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-							btnCancelar_Click(sender, e);
+							btnCancelarP_Click(sender, e);
 							btnModificarP.Enabled = false;
 							btnEliminarP.Enabled = false;
 						}
@@ -1774,6 +1774,45 @@ namespace ProyectoFormativo
 			btnNuevoP.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnNuevoP.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
+
+		private void btnCancelarP_Click(object sender, EventArgs e)
+		{
+			txtCorreoP.Text = "Correo:";
+			txtNDocumentoP.Text = "N Documento: ";
+			txtContrasena.Text = "Contraseña:";
+			txtNombreP.Text = "Nombre: ";
+			txtApellidoP.Text = "Apellido:";
+			txtTelefonoP.Text = "Telefono:";
+			txtBuscar_VerP.Text = "";
+			cbTipoDocumentoP.SelectedIndex = 0;
+			if (DGVUsuario.Rows.Count > 0)
+			{
+				DGVUsuario.Rows.RemoveAt(DGVUsuario.CurrentRow.Index);
+			}
+			cbTipoDocumentoP.Enabled = false;
+			txtNDocumentoP.Enabled = false;
+			txtNombreP.Enabled = false;
+			txtApellidoP.Enabled = false;
+			btnGuardarP.Enabled = false;
+			btnCancelarP.Enabled = false;
+			txtCorreoP.Enabled = false;
+			txtTelefonoP.Enabled = false;
+			btnModificarP.Enabled = false;
+			btnEliminarP.Enabled = false;
+			//---------------------------
+			btnNuevoP.Enabled = true;
+			btnNuevoP.BackColor = System.Drawing.SystemColors.MenuHighlight;
+			btnNuevoP.ForeColor = System.Drawing.SystemColors.HighlightText;
+			btnCancelarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnCancelarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnGuardarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnGuardarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnEliminarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnEliminarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnModificarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnModificarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+		}
+
 
 
 		//--------------------------------------------------- FIN MODULO PROPIETARIO -------------------------------------------------------

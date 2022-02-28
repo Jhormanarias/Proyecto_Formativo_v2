@@ -40,3 +40,9 @@ C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.Assem
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
+C:\Users\JHORMAN\Desktop\Proyecto Formativo 26-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
