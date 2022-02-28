@@ -1608,6 +1608,26 @@ namespace ProyectoFormativo
 			}
 		}
 
+        private void BtnSalirP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevoP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelarP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarP_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnCancelar_Click(object sender, EventArgs e)
 		{
 			txtCorreo.Text = "Correo:";
