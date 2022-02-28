@@ -498,5 +498,32 @@ namespace Controllers
                 return false;
             }
         }
+
+        //------------------------------------ FRMADMINCONTROL PROPIETARIO -----------------------------
+        public static bool Func_InsertarPropietario(string nom, string ape, string tiDoc, long doc, string correo, string tel)
+        {
+            try
+            {
+                DataTable tabla = new DataTable();
+                SqlConnection conexion = new SqlConnection(cadena);
+                SqlDataAdapter adap = new SqlDataAdapter("PA_INSERTARPROPIETARIO", conexion);
+                adap.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adap.SelectCommand.Parameters.Add("@NOM", SqlDbType.VarChar).Value = nom;
+                adap.SelectCommand.Parameters.Add("@APE", SqlDbType.VarChar).Value = ape;
+                adap.SelectCommand.Parameters.Add("@TIDOC", SqlDbType.NVarChar).Value = tiDoc;
+                adap.SelectCommand.Parameters.Add("@DOC", SqlDbType.BigInt).Value = doc;
+                adap.SelectCommand.Parameters.Add("@CORREO", SqlDbType.VarChar).Value = correo;
+                adap.SelectCommand.Parameters.Add("@TEL", SqlDbType.VarChar).Value = tel;
+                adap.Fill(tabla);
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return false;
+            }
+        }
+        //------------------------------------ FRMADMINCONTROL PROPIETARIO -----------------------------
     }
 }

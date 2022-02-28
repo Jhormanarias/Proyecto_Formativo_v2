@@ -170,6 +170,25 @@ namespace ProyectoFormativo
 			this.txtDocumentoAU.ForeColor = System.Drawing.Color.DimGray;
 			this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
+
+			//formulario propietario
+			btnCancelarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnCancelarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnGuardarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnGuardarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnModificarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnModificarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			btnEliminarP.BackColor = System.Drawing.SystemColors.ButtonFace;
+			btnEliminarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			this.txtNDocumentoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNombreP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNombreP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtApellidoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtCorreoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtTelefonoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtBuscar_VerP.ForeColor = System.Drawing.Color.DimGray;
+
+
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -916,22 +935,7 @@ namespace ProyectoFormativo
 
 		private void txtBuscarBien_KeyPress(object sender, KeyPressEventArgs e)
 		{
-			if (Char.IsDigit(e.KeyChar))
-			{
-				e.Handled = false;
-			}
-			else if (Char.IsControl(e.KeyChar))
-			{
-				e.Handled = false;
-			}
-			else if (Char.IsSeparator(e.KeyChar))
-			{
-				e.Handled = false;
-			}
-			else
-			{
-				e.Handled = true;
-			}
+			Func_ValidNumbers(sender, e);
 		}
 
 		private void btnBuscar_EquipoU_Click(object sender, EventArgs e)
@@ -1747,11 +1751,11 @@ namespace ProyectoFormativo
 			}
 		}
 
-		//--------------------------------------------------- FIN MODULO USUARIO ------------------------------------------
+        //--------------------------------------------------- FIN MODULO USUARIO ------------------------------------------
 
-		//---------------------------------------------------  MODULO PROPIETARIO ------------------------------------------
+        //---------------------------------------------------  MODULO PROPIETARIO ------------------------------------------
 
-		private void BtnSalirP_Click(object sender, EventArgs e)
+        private void BtnSalirP_Click(object sender, EventArgs e)
 		{
 			DialogResult rpta = new DialogResult();
 			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -1761,7 +1765,131 @@ namespace ProyectoFormativo
 			}
 		}
 
-		private void btnGuardarP_Click(object sender, EventArgs e)
+
+		//--------placeHolders------------------------------------------------------
+        private void txtNDocumentoP_Leave(object sender, EventArgs e)
+        {
+			if (txtNDocumentoP.Text == "")
+			{
+				txtNDocumentoP.Text = "N Documento: ";
+				this.txtNDocumentoP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtNDocumentoP_Enter(object sender, EventArgs e)
+        {
+			if (txtNDocumentoP.Text == "N Documento: ")
+			{
+				txtNDocumentoP.Text = "";
+				this.txtNDocumentoP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtNombreP_Leave(object sender, EventArgs e)
+        {
+			if (txtNombreP.Text == "")
+			{
+				txtNombreP.Text = "Nombre: ";
+				this.txtNombreP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtNombreP_Enter(object sender, EventArgs e)
+        {
+			if (txtNombreP.Text == "Nombre: ")
+			{
+				txtNombreP.Text = "";
+				this.txtNombreP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtApellidoP_Leave(object sender, EventArgs e)
+        {
+			if (txtApellidoP.Text == "")
+			{
+				txtApellidoP.Text = "Apellido:";
+				this.txtApellidoP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtApellidoP_Enter(object sender, EventArgs e)
+        {
+			if (txtApellidoP.Text == "Apellido:")
+			{
+				txtApellidoP.Text = "";
+				this.txtApellidoP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtCorreoP_Leave(object sender, EventArgs e)
+        {
+			if (txtCorreoP.Text == "")
+			{
+				txtCorreoP.Text = "Correo:";
+				this.txtCorreoP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtCorreoP_Enter(object sender, EventArgs e)
+        {
+			if (txtCorreoP.Text == "Correo:")
+			{
+				txtCorreoP.Text = "";
+				this.txtCorreoP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtTelefonoP_Leave(object sender, EventArgs e)
+        {
+			if (txtTelefonoP.Text == "")
+			{
+				txtTelefonoP.Text = "Telefono:";
+				this.txtTelefonoP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtTelefonoP_Enter(object sender, EventArgs e)
+        {
+			if (txtTelefonoP.Text == "Telefono:")
+			{
+				txtTelefonoP.Text = "";
+				this.txtTelefonoP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        private void txtBuscar_VerP_Leave(object sender, EventArgs e)
+        {
+			if (txtBuscar_VerP.Text == "")
+			{
+				txtBuscar_VerP.Text = "N Documento: ";
+				this.txtBuscar_VerP.ForeColor = System.Drawing.Color.DimGray;
+			}
+		}
+
+        private void txtBuscar_VerP_Enter(object sender, EventArgs e)
+        {
+			if (txtBuscar_VerP.Text == "N Documento: ")
+			{
+				txtBuscar_VerP.Text = "";
+				this.txtBuscar_VerP.ForeColor = System.Drawing.Color.Black;
+			}
+		}
+
+        //--------FIN placeHolders------------------------------------------------------
+
+
+        //Validación solo números en txt N Documento
+        private void txtNDocumentoP_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			Func_ValidNumbers(sender, e);
+		}
+
+        private void txtBuscar_VerP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+			Func_ValidNumbers(sender, e);
+		}
+
+        private void btnGuardarP_Click(object sender, EventArgs e)
 		{
 			if (controladd == 0)
 			{
@@ -1812,6 +1940,17 @@ namespace ProyectoFormativo
 			btnCancelarP.ForeColor = System.Drawing.SystemColors.HighlightText;
 			btnNuevoP.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnNuevoP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			//----------------------------
+			this.txtNDocumentoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNombreP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtNombreP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtApellidoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtCorreoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtTelefonoP.ForeColor = System.Drawing.Color.DimGray;
+			this.txtBuscar_VerP.ForeColor = System.Drawing.Color.DimGray;
+			//--------------------------
+			txtBuscar_VerP.Text = "N Documento: ";
+
 		}
 
 		private void btnCancelarP_Click(object sender, EventArgs e)
@@ -1822,7 +1961,7 @@ namespace ProyectoFormativo
 			txtNombreP.Text = "Nombre: ";
 			txtApellidoP.Text = "Apellido:";
 			txtTelefonoP.Text = "Telefono:";
-			txtBuscar_VerP.Text = "";
+			txtBuscar_VerP.Text = "N Documento: ";
 			cbTipoDocumentoP.SelectedIndex = 0;
 			if (DGVUsuario.Rows.Count > 0)
 			{
@@ -1850,6 +1989,28 @@ namespace ProyectoFormativo
 			btnEliminarP.ForeColor = System.Drawing.SystemColors.ControlLight;
 			btnModificarP.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnModificarP.ForeColor = System.Drawing.SystemColors.ControlLight;
+			this.txtBuscar_VerP.ForeColor = System.Drawing.Color.DimGray;
+		}
+
+		//----Función Para validar que solo sean números números
+		private void Func_ValidNumbers(object sender, KeyPressEventArgs e)
+        {
+			if (Char.IsDigit(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else if (Char.IsControl(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else if (Char.IsSeparator(e.KeyChar))
+			{
+				e.Handled = false;
+			}
+			else
+			{
+				e.Handled = true;
+			}
 		}
 
 
