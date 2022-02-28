@@ -1608,25 +1608,7 @@ namespace ProyectoFormativo
 			}
 		}
 
-        private void BtnSalirP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnNuevoP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancelarP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGuardarP_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnCancelar_Click(object sender, EventArgs e)
 		{
@@ -1665,7 +1647,8 @@ namespace ProyectoFormativo
 			btnModificar_VerU.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnModificar_VerU.ForeColor = System.Drawing.SystemColors.ControlLight;
 		}
-		private void btnSalir_Click(object sender, EventArgs e)
+
+        private void btnSalir_Click(object sender, EventArgs e)
 		{
 			DialogResult rpta = new DialogResult();
 			rpta = MessageBox.Show("¿Desea Salir?", "Advertencia!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -1674,7 +1657,8 @@ namespace ProyectoFormativo
 				Application.Exit();
 			}
 		}
-		private void btnGuardarAU_Click(object sender, EventArgs e)
+
+        private void btnGuardarAU_Click(object sender, EventArgs e)
 		{
 			if(controladd == 0)
 			{
@@ -1728,7 +1712,7 @@ namespace ProyectoFormativo
 			}
 		}
 
-		private void btnModificar_VerU_Click(object sender, EventArgs e)
+        private void btnModificar_VerU_Click(object sender, EventArgs e)
 		{
 			controladd = 1;
 			string nom = DGVUsuario.Rows[n].Cells[1].Value.ToString();
@@ -1765,5 +1749,29 @@ namespace ProyectoFormativo
 
 		//--------------------------------------------------- FIN MODULO USUARIO ------------------------------------------
 
+		//---------------------------------------------------  MODULO PROPIETARIO ------------------------------------------
+
+		private void BtnSalirP_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnGuardarP_Click(object sender, EventArgs e)
+		{
+
+        }
+
+		private void btnNuevoP_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnCancelarP_Click(object sender, EventArgs e)
+		{
+
+		}
+
+
+		//--------------------------------------------------- FIN MODULO PROPIETARIO ------------------------------------------
 	}
 } 
