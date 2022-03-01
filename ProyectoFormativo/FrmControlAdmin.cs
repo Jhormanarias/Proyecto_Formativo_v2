@@ -170,6 +170,7 @@ namespace ProyectoFormativo
 			this.txtDocumentoAU.ForeColor = System.Drawing.Color.DimGray;
 			this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
+			this.txtBuscar_VerU.ForeColor = System.Drawing.Color.DimGray;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -1519,6 +1520,22 @@ namespace ProyectoFormativo
 			}
 		}
 
+		private void txtBuscar_VerU_Enter(object sender, EventArgs e)
+		{
+			if (txtBuscar_VerU.Text == "Documento:")
+			{
+				txtBuscar_VerU.Text = "";
+			}
+		}
+
+		private void txtBuscar_VerU_Leave(object sender, EventArgs e)
+		{
+			if (txtBuscar_VerU.Text == "")
+			{
+				txtBuscar_VerU.Text = "Documento:";
+			}
+		}
+
 		private void btnBuscar_verU_Click(object sender, EventArgs e)
 		{
 
@@ -1615,7 +1632,7 @@ namespace ProyectoFormativo
 			txtContrasena.Text = "Contraseña:";
 			txtNombreAU.Text = "Nombre: ";
 			txtApellidoAU.Text = "Apellido:";
-			txtBuscar_VerU.Text = "";
+			txtBuscar_VerU.Text = "Documento:";
 			cbRolAU.SelectedIndex = 0;
 			if(DGVUsuario.Rows.Count>0)
 			{
@@ -1701,7 +1718,7 @@ namespace ProyectoFormativo
 						btnEliminar_VerU.Enabled = false;
 						//this.DGVUsuario.DataSource = null;
 						//this.DGVUsuario.Rows.Clear();
-						txtBuscar_VerU.Text = "";
+						txtBuscar_VerU.Text = "Documento:";
 						controladd = 0;
 					}
 				}
