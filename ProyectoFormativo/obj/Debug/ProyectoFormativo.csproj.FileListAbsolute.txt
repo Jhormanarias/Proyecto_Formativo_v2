@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-=======
 F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
 F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
@@ -32,6 +23,7 @@ C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\Pr
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+=======
 >>>>>>> Stashed changes
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
@@ -148,7 +140,6 @@ C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormat
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
 C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-<<<<<<< HEAD
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
@@ -166,8 +157,3 @@ C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\P
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
->>>>>>> parent of 131cf01 (Delete obj for merge)
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-=======
->>>>>>> parent of ce1b872 (terminado otra vez)

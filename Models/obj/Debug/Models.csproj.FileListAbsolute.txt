@@ -28,18 +28,9 @@ C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Deb
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
-<<<<<<< HEAD
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
-C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
-=======
->>>>>>> parent of ce1b872 (terminado otra vez)
