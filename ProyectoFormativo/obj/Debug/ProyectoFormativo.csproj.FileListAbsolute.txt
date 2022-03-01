@@ -140,3 +140,20 @@ C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormat
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
 C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
