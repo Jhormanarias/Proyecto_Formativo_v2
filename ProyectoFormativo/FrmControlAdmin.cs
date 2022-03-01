@@ -1436,9 +1436,6 @@ namespace ProyectoFormativo
 		}
 
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
-
-		//---------------------------------------------------  MODULO USUARIO ------------------------------------------
-
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
 		{
 			if (txtDocumentoAU.Text == "N Documento: ")
@@ -1759,8 +1756,5 @@ namespace ProyectoFormativo
 				btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
 			}
 		}
-
-		//--------------------------------------------------- FIN MODULO USUARIO ------------------------------------------
-
 	}
 } 
