@@ -1,0 +1,9 @@
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe.config
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmBarCode.resources
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
