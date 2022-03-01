@@ -170,7 +170,6 @@ namespace ProyectoFormativo
 			this.txtDocumentoAU.ForeColor = System.Drawing.Color.DimGray;
 			this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
 			this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
-			this.txtBuscar_VerU.ForeColor = System.Drawing.Color.DimGray;
 		}
 
 		//----------------------------------------------------- MODULO CONTROL ---------------------------------------------------------//
@@ -1436,6 +1435,9 @@ namespace ProyectoFormativo
 		}
 
 		//--------------------------------------------------- FIN MODULO BIENES -------------------------------------------------------
+
+		//---------------------------------------------------  MODULO USUARIO ------------------------------------------
+
 		private void txtDocumentoAU_Enter(object sender, EventArgs e)
 		{
 			if (txtDocumentoAU.Text == "N Documento: ")
@@ -1514,22 +1516,6 @@ namespace ProyectoFormativo
 			if (txtCorreo.Text == "")
 			{
 				txtCorreo.Text = "Correo:";
-			}
-		}
-
-		private void txtBuscar_VerU_Enter(object sender, EventArgs e)
-		{
-			if (txtBuscar_VerU.Text == "Documento:")
-			{
-				txtBuscar_VerU.Text = "";
-			}
-		}
-
-		private void txtBuscar_VerU_Leave(object sender, EventArgs e)
-		{
-			if (txtBuscar_VerU.Text == "")
-			{
-				txtBuscar_VerU.Text = "Documento:";
 			}
 		}
 
@@ -1629,7 +1615,7 @@ namespace ProyectoFormativo
 			txtContrasena.Text = "Contraseña:";
 			txtNombreAU.Text = "Nombre: ";
 			txtApellidoAU.Text = "Apellido:";
-			txtBuscar_VerU.Text = "Documento:";
+			txtBuscar_VerU.Text = "";
 			cbRolAU.SelectedIndex = 0;
 			if(DGVUsuario.Rows.Count>0)
 			{
@@ -1715,7 +1701,7 @@ namespace ProyectoFormativo
 						btnEliminar_VerU.Enabled = false;
 						//this.DGVUsuario.DataSource = null;
 						//this.DGVUsuario.Rows.Clear();
-						txtBuscar_VerU.Text = "Documento:";
+						txtBuscar_VerU.Text = "";
 						controladd = 0;
 					}
 				}
@@ -1756,5 +1742,8 @@ namespace ProyectoFormativo
 				btnGuardarAU.ForeColor = System.Drawing.SystemColors.HighlightText;
 			}
 		}
+
+		//--------------------------------------------------- FIN MODULO USUARIO ------------------------------------------
+
 	}
 } 
