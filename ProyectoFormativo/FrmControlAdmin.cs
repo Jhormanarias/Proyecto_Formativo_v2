@@ -1497,6 +1497,7 @@ namespace ProyectoFormativo
 			btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
 			btnNuevoU.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnNuevoU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			controladd = 0;
 		}
 
 		private void DGVUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
