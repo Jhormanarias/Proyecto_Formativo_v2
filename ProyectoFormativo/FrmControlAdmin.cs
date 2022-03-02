@@ -1549,6 +1549,7 @@ namespace ProyectoFormativo
         }
         private void btnNuevoU_Click(object sender, EventArgs e)
         {
+            controladd = 0;
             cbDocumento.Enabled = true;
             txtDocumentoAU.Enabled = true;
             cbRolAU.Enabled = true;
@@ -1619,6 +1620,7 @@ namespace ProyectoFormativo
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            controladd = 0;
             txtCorreo.Text = "Correo:";
             txtDocumentoAU.Text = "N Documento: ";
             txtContrasena.Text = "Contraseña:";
@@ -2025,7 +2027,7 @@ namespace ProyectoFormativo
                 {
                     if (ClaseControlAdmin.Func_UpdatePropietario(id_prop, txtNombreP.Text, txtApellidoP.Text, txtCorreoP.Text, txtTelefonoP.Text))
                     {
-                        MessageBox.Show("Usuario Actualizado correctamente", "Insertado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Usuario Actualizado correctamente", "Actualizado!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnCancelarP_Click(sender, e);
                         controladd = 0;
                     }

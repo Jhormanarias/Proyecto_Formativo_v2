@@ -333,7 +333,6 @@ C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\Pr
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
 C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-=======
 >>>>>>> Stashed changes
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
@@ -468,3 +467,6 @@ C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\P
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
 C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
 >>>>>>> parent of e76c1fc (Solucion error <<<<<Files>>>> y cambio en cadena de conexion para merge)
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe.config
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmBarCode.resources
+C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
