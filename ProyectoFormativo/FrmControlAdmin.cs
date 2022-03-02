@@ -1458,13 +1458,13 @@ namespace ProyectoFormativo
 		private void btnBuscar_verU_Click(object sender, EventArgs e)
 		{
 
-			if (txtBuscar_VerU.Text == "")
+			if (txtBuscar_VerU.Text == "Documento:")
 			{
 				MessageBox.Show("Por favor llene el campo", "Advertencia!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 			else
 			{
-				if (txtBuscar_VerU.Text != "")
+				if (txtBuscar_VerU.Text != "Documento:")
 				{
 					//DGVUsuario.Rows.Add(ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtBuscar_VerU.Text)));
 					DataTable talaU = (ClaseControlAdmin.Func_TraerUsuario(Convert.ToInt64(txtBuscar_VerU.Text)));
@@ -1497,6 +1497,7 @@ namespace ProyectoFormativo
 			btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
 			btnNuevoU.BackColor = System.Drawing.SystemColors.ButtonFace;
 			btnNuevoU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			controladd = 0;
 		}
 
 		private void DGVUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -1519,6 +1520,15 @@ namespace ProyectoFormativo
 				btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
 				btnNuevoU.BackColor = System.Drawing.SystemColors.ButtonFace;
 				btnNuevoU.ForeColor = System.Drawing.SystemColors.ControlLight;
+			}
+		}
+
+		private void txtDocumentoAU_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+			{
+				e.Handled = true;
+				return;
 			}
 		}
 
