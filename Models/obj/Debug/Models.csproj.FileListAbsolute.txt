@@ -40,3 +40,9 @@ C:\Users\JHORMAN\Desktop\Proyecto Formativo 28-02-2022\Proyecto_Formativo_v2\Mod
 C:\Users\JHORMAN\Desktop\Proyecto Formativo 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\JHORMAN\Desktop\Proyecto Formativo 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
 C:\Users\JHORMAN\Desktop\Proyecto Formativo 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.dll
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\bin\Debug\Models.pdb
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.dll
+C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Models\obj\Debug\Models.pdb
