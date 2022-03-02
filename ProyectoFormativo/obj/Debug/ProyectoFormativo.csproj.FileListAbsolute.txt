@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e7dbefe (Compilacion para visualizar cambios merge)
 C:\Users\SENA\Desktop\gsdgdfgfdgfgfdg\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 C:\Users\SENA\Desktop\gsdgdfgfdgfgfdg\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
 C:\Users\SENA\Desktop\gsdgdfgfdgfgfdg\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
@@ -307,6 +310,7 @@ C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proy
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+<<<<<<< HEAD
 =======
 F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
 F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
@@ -470,3 +474,5 @@ C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\P
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe.config
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmBarCode.resources
 C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+=======
+>>>>>>> parent of e7dbefe (Compilacion para visualizar cambios merge)
