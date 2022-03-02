@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Controlador">
+      <HintPath>C:\Users\SENA\Documents\Vista\Controlador\bin\Debug\Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="Models">
       <HintPath>..\Models\bin\Debug\Models.dll</HintPath>
     </Reference>

@@ -57,6 +57,7 @@ C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Controllers\ob
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
 C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+<<<<<<< HEAD
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.dll
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\Controllers\bin\Debug\Controllers.pdb
 C:\Users\David\Downloads\Compressed\Proyecto_Formativo_v2\Controllers\bin\Debug\Models.dll
@@ -93,3 +94,5 @@ C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proy
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.dll
 C:\Users\JHORMAN\Desktop\Proyecto Formativo despues de la cagada 28-02-2022\Proyecto_Formativo_v2\Controllers\obj\Debug\Controllers.pdb
+=======
+>>>>>>> parent of e76c1fc (Solucion error <<<<<Files>>>> y cambio en cadena de conexion para merge)
