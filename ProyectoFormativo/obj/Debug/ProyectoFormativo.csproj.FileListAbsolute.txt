@@ -1,159 +1,17 @@
-F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-<<<<<<< Updated upstream
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-=======
->>>>>>> Stashed changes
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-F:\ProyectoFormativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-F:\ProyectoFormativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\SENA\Desktop\Proyecto\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\SENA\Desktop\----CARPETA DONDE DEBE DE TRABAJAR PARA EL PROYECTO--\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\Controllers.dll
-F:\CAMBIOS MVC\Proyecto_Formativo\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControl.resources
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\SENA\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csprojAssemblyReference.cache
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
-C:\Users\David\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\Gustavo\Desktop\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
-C:\Users\David\Documents\GitHub\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
-C:\Users\Gustavo\Desktop\Carpeta para cosas que casi no uso\Proyecto_Formativo\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe.config
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.exe
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\ProyectoFormativo.pdb
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.dll
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Controllers.pdb
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.AssemblyReference.cache
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlVigi.resources
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.FrmControlAdmin.resources
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.login.resources
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.Properties.Resources.resources
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.GenerateResource.cache
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CoreCompileInputs.cache
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.csproj.CopyComplete
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.exe
+C:\Users\JHORMAN\Desktop\Proyecto_Formativo_v2\ProyectoFormativo\obj\Debug\ProyectoFormativo.pdb
